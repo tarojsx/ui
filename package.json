@@ -1,0 +1,65 @@
+{
+    "name": "@tarojsx/ui",
+    "version": "0.1.0",
+    "description": "We reinvents the UI for Taro3+",
+    "source": "src/index.ts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "author": "colder",
+    "license": "MIT",
+    "keywords": [
+        "taro",
+        "taro3",
+        "ui",
+        "components",
+        "react",
+        "reactjs",
+        "wx",
+        "weixin",
+        "wechat",
+        "weapp",
+        "wechat-mini-program",
+        "javascript",
+        "typescript"
+    ],
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tarojsx/ui.git"
+    },
+    "homepage": "https://github.com/tarojsx/ui",
+    "bugs": {
+        "url": "https://github.com/tarojsx/ui/issues"
+    },
+    "scripts": {
+        "start": "tsc --watch",
+        "build": "tsc",
+        "prebuild": "rimraf dist tsconfig.tsbuildinfo"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@tarojs/components": "^3.0.0-beta.0",
+        "@tarojs/taro": "^3.0.0-beta.0",
+        "@types/classnames": "^2.2.10",
+        "@types/node": "^13.9.2",
+        "@types/react": "^16.9.23",
+        "@types/react-is": "^16.7.1",
+        "react": "^16.13.0",
+        "rimraf": "^3.0.2",
+        "taro-ui": "^2.3.1",
+        "tslib": "^1.11.1",
+        "typescript": "^3.8.3"
+    },
+    "peerDependencies": {
+        "taro-ui": "*"
+    },
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "printWidth": 120
+    }
+}

@@ -1,0 +1,28 @@
+.at-statistic {
+    line-height: 1.5;
+
+    &__title {
+        margin-bottom: 8px;
+        color: rgba(0, 0, 0, 0.45);
+        font-size: 24px;
+    }
+
+    &__content {
+        color: rgba(0, 0, 0, 0.85);
+        font-size: 48px;
+
+        // &__value {
+        // }
+
+        &__prefix {
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        &__suffix {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 32px;
+        }
+    }
+}

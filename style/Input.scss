@@ -1,0 +1,11 @@
+@import '~taro-ui/dist/style/components/input.scss';
+@import '~taro-ui/dist/style/components/icon.scss';
+
+.at-input {
+    // padding: 24px 0;
+    margin-left: 24px;
+
+    input {
+        text-align: right;
+    }
+}

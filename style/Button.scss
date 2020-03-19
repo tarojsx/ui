@@ -1,0 +1,46 @@
+@import '~taro-ui/dist/style/variables/default.scss';
+@import '~taro-ui/dist/style/components/button.scss';
+@import '~taro-ui/dist/style/components/fab.scss';
+
+.at-button {
+    &__transparent {
+        position: relative;
+
+        button {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+
+    &__mini {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+            padding-right: 12px;
+        }
+    }
+
+    &_primary {
+        color: $color-brand;
+    }
+
+    &_success {
+        color: $color-success;
+    }
+
+    &_warning {
+        color: $color-warning;
+    }
+
+    &_error {
+        color: $color-error;
+    }
+
+    &_disabled {
+        opacity: $opacity-disabled;
+    }
+}

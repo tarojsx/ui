@@ -1,0 +1,35 @@
+@import '~taro-ui/dist/style/variables/default.scss';
+@import '~taro-ui/dist/style/components/list.scss';
+@import './utils.scss';
+
+.at-list {
+    &__item {
+        width: 100vw;
+        overflow: hidden;
+
+        &--ghost {
+            .at-list__item-thumb,
+            .at-list__item-icon,
+            .at-list__item-content {
+                opacity: $opacity-disabled;
+            }
+        }
+
+        &--thumb-circle {
+            .item-thumb__info {
+                border-radius: 50%;
+            }
+        }
+
+        .item-extra {
+            &__icon {
+                .at-icon-close {
+                    @include hit-slop(300%, 260%);
+
+                    transform: scale(0.7);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
