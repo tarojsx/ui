@@ -53,13 +53,13 @@ Taro3 释放了 React 的潜能, 是时候对 [Taro UI](https://github.com/NervJ
 
 - :telescope: 未来计划引入更多常用的基础组件.
 
-## 安装
-
-`npm i @tarojsx/ui`
-
 ## 需求
 
 * taro3+
+
+## 安装
+
+`npm i @tarojsx/ui`
 
 ## 使用
 
@@ -80,27 +80,64 @@ export default () => {
 
 ## 组件
 
-* [-] Calendar
-* [-] ActionSheet
+源于 Taro UI
+
+* [ ] Accordion
+* [ ] ActionSheet
+  * [ ] 子组件
 * [x] ActivityIndicator
+* [ ] Article
 * [x] Avatar
 * [x] Badge
 * [x] Button
+* [ ] Calendar
+  * [ ] Swipe 操作
+* [ ] Card
+* [ ] Checkbox
+* [ ] Countdown
+* [ ] Divider
+* [ ] Drawer
+* [ ] ~~Fab~~ (已合并入 Button)
+* [ ] Flex
 * [x] FloatLayout
+* [ ] Form
+* [ ] Grid
 * [x] Icon
 * [x] ImagePicker
+* [ ] Indexes
 * [x] Input
+* [ ] InputNumber
 * [x] List
 * [x] ListItem
 * [x] Loading
+* [ ] Loadmore
 * [x] Message
+* [ ] Modal
+* [ ] NavBar
+* [ ] Noticebar
+* [ ] Pagination
+* [ ] Picker
 * [x] Progress
+* [ ] Radio
+* [ ] Rate
+* [ ] SearchBar
+* [ ] SegmentedControl
+* [ ] Slider
 * [x] Steps
+* [ ] SwipeAction
+* [ ] Swiper
+* [ ] Switch
 * [x] TabBar
-* [-] Tabs
-* [-] TabsPane
+* [ ] Tabs
+  * [ ] Swipe 操作
+* [ ] TabsPane
+  * [ ] Swipe 操作
 * [x] Tag
 * [x] Textarea
+* [ ] Timeline
+* [ ] Toast
+
+扩展组件
 
 * [x] CustomTabBar
 * [x] ListHeader

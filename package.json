@@ -23,7 +23,8 @@
         "typescript"
     ],
     "files": [
-        "dist"
+        "dist",
+        "style"
     ],
     "repository": {
         "type": "git",
@@ -35,8 +36,10 @@
     },
     "scripts": {
         "start": "tsc --watch",
+        "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
-        "prebuild": "rimraf dist tsconfig.tsbuildinfo"
+        "prepublishOnly": "npm run build",
+        "release": "np"
     },
     "dependencies": {},
     "devDependencies": {
@@ -46,6 +49,7 @@
         "@types/node": "^13.9.2",
         "@types/react": "^16.9.23",
         "@types/react-is": "^16.7.1",
+        "np": "^6.2.0",
         "react": "^16.13.0",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.1",
@@ -55,6 +59,11 @@
     "peerDependencies": {
         "taro-ui": "*"
     },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org",
+        "access": "public"
+    },
+    "np": {},
     "prettier": {
         "semi": false,
         "singleQuote": true,
