@@ -27,7 +27,7 @@ export interface CustomTabBarProps {
      * `app.config.js` 中的 `tabBar` 字段
      *
      * @example
-     * ```
+     * ```tsx
      *  import appConfig from '../app.config'
      *  <CustomTabBar appTabBarConfig={appConfig.tabBar} />
      * ```
@@ -127,7 +127,7 @@ export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
     useEffect(() => {
         // console.log('CustomTabBar mounted')
 
-        if (custom) taroTabBarAPIPatcher()
+        taroTabBarAPIPatcher()
 
         /** 处理打过补丁后的 Taro API 传过来的事件. */
         const handler = (api: string, { index, ...params } = {} as any) => {
