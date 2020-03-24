@@ -70,6 +70,7 @@ export const Button: React.FC<ButtonProps> = props => {
                     [`at-button--${size}`]: size,
                     'at-button--disabled': props.disabled,
                     [`at-button--${type}`]: type,
+                    [`at-button_${type}`]: type,
                     'at-button--circle': circle,
                     'at-button--full': full,
                     'at-button--icon': props.loading,
