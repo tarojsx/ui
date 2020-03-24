@@ -28,6 +28,9 @@ const defaultProps: Partial<Props> = {
     generateDate: Date.now(),
 }
 
+/**
+ * @ignore
+ */
 export default class AtCalendarBody extends React.Component<Props, Readonly<State>> {
     static options = { addGlobalClass: true }
     static defaultProps: Partial<Props> = defaultProps

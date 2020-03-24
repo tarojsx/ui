@@ -11,7 +11,7 @@ import { View } from '@tarojs/components'
 import { BaseEvent } from '@tarojs/components/types/common'
 
 import '../../style/Calendar.scss'
-import Calendar from './types'
+import AtCalendar from './types'
 import AtCalendarBody from './body/index'
 import AtCalendarController from './controller/index'
 
@@ -30,6 +30,9 @@ const defaultProps: DefaultProps = {
     monthFormat: 'YYYY年MM月',
 }
 
+/**
+ * @ignore
+ */
 export class Calendar extends React.Component<Props, Readonly<State>> {
     static options = { addGlobalClass: true }
     static defaultProps: DefaultProps = defaultProps
@@ -47,8 +50,8 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
         if (!currentDate || currentDate === this.props.currentDate) return
 
         if (isMultiSelect && this.props.isMultiSelect) {
-            const { start, end } = currentDate as Calendar.SelectedDate
-            const { start: preStart, end: preEnd } = this.props.currentDate as Calendar.SelectedDate
+            const { start, end } = currentDate as AtCalendar.SelectedDate
+            const { start: preStart, end: preEnd } = this.props.currentDate as AtCalendar.SelectedDate
 
             if (start === preStart && preEnd === end) {
                 return
@@ -99,8 +102,8 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
         return state
     }
 
-    private getSelectedDate(start: number, end?: number): Calendar.SelectedDate {
-        const stateValue: Calendar.SelectedDate = {
+    private getSelectedDate(start: number, end?: number): AtCalendar.SelectedDate {
+        const stateValue: AtCalendar.SelectedDate = {
             start,
             end: start,
         }
@@ -112,7 +115,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
         return stateValue
     }
 
-    private getInitializeState(currentDate: Calendar.DateArg | Calendar.SelectedDate, isMultiSelect?: boolean): State {
+    private getInitializeState(currentDate: AtCalendar.DateArg | AtCalendar.SelectedDate, isMultiSelect?: boolean): State {
         let end: number
         let start: number
         let generateDateValue: number
@@ -130,7 +133,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
         }
 
         if (isMultiSelect) {
-            const { start: cStart, end: cEnd } = currentDate as Calendar.SelectedDate
+            const { start: cStart, end: cEnd } = currentDate as AtCalendar.SelectedDate
 
             const dayjsStart = dayjs(cStart)
 
@@ -143,7 +146,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
                       .valueOf()
                 : start
         } else {
-            const dayjsStart = dayjs(currentDate as Calendar.DateArg)
+            const dayjsStart = dayjs(currentDate as AtCalendar.DateArg)
 
             start = dayjsStart.startOf('day').valueOf()
             generateDateValue = dayjsStart.startOf('month').valueOf()
@@ -223,7 +226,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
     }
 
     // @bind
-    handleDayClick = (item: Calendar.Item) => {
+    handleDayClick = (item: AtCalendar.Item) => {
         const { isMultiSelect } = this.props
         const { isDisabled, value } = item
 
@@ -251,7 +254,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
     handleSelectedDate() {
         const selectDate = this.state.selectedDate
         if (_isFunction(this.props.onSelectDate)) {
-            const info: Calendar.SelectedDate = {
+            const info: AtCalendar.SelectedDate = {
                 start: dayjs(selectDate.start).format(this.props.format),
             }
 
@@ -266,7 +269,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
     }
 
     // @bind
-    handleDayLongClick = (item: Calendar.Item) => {
+    handleDayLongClick = (item: AtCalendar.Item) => {
         if (_isFunction(this.props.onDayLongClick)) {
             this.props.onDayLongClick({ value: item.value })
         }

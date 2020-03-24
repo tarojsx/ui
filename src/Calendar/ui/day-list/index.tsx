@@ -2,6 +2,9 @@ import _chunk from 'lodash/chunk'
 import React from 'react'
 import { View } from '@tarojs/components'
 
+/**
+ * @ignore
+ */
 export default class AtCalendarHeader extends React.Component {
     static options = { addGlobalClass: true }
 

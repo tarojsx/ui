@@ -4,6 +4,9 @@ import React from 'react'
 import { Text, View, Picker } from '@tarojs/components'
 import { Props, State } from './interface'
 
+/**
+ * @ignore
+ */
 export default class AtCalendarController extends React.Component<Props, State> {
     static options = { addGlobalClass: true }
 

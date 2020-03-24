@@ -20,6 +20,9 @@ export interface Props {
     onLongClick?: (item: Calendar.Item) => void
 }
 
+/**
+ * @ignore
+ */
 export default class AtCalendarList extends React.Component<Props> {
     static options = { addGlobalClass: true }
 
