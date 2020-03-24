@@ -87,14 +87,14 @@ export default () => {
 源于 Taro UI
 
 * [ ] Accordion
-* [ ] ActionSheet
+* [x] ActionSheet
   * [ ] 子组件
 * [x] ActivityIndicator
 * [ ] Article
 * [x] Avatar
 * [x] Badge
 * [x] Button
-* [ ] Calendar
+* [x] Calendar
   * [ ] Swipe 操作
 * [ ] Card
 * [ ] Checkbox
@@ -102,15 +102,15 @@ export default () => {
 * [ ] Divider
 * [ ] Drawer
 * [ ] ~~Fab~~ (已合并入 Button)
-* [ ] Flex
+* [ ] ~~Flex~~ (使用率不高)
 * [x] FloatLayout
-* [ ] Form
+* [x] Form
 * [ ] Grid
 * [x] Icon
 * [x] ImagePicker
 * [ ] Indexes
 * [x] Input
-* [ ] InputNumber
+* [x] InputNumber
 * [x] List
 * [x] ListItem
 * [x] Loading
@@ -132,9 +132,9 @@ export default () => {
 * [ ] Swiper
 * [ ] Switch
 * [x] TabBar
-* [ ] Tabs
+* [x] Tabs
   * [ ] Swipe 操作
-* [ ] TabsPane
+* [x] TabsPane
   * [ ] Swipe 操作
 * [x] Tag
 * [x] Textarea
