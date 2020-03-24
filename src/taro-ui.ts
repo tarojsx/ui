@@ -1,3 +1,8 @@
+/**
+ * taro-ui 兼容入口, 带 `At` 前缀.
+ * @packageDocumentation
+ */
+
 export {
     ActionSheet as AtActionSheet,
     ActionSheetProps as AtActionSheetProps,
@@ -16,6 +21,8 @@ export {
     ImagePickerProps as AtImagePickerProps,
     Input as AtInput,
     InputProps as AtInputProps,
+    InputNumber as AtInputNumber,
+    InputNumberProps as AtInputNumberProps,
     List as AtList,
     ListHeader as AtListHeader,
     ListItem as AtListItem,

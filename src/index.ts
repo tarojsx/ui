@@ -1,3 +1,8 @@
+/**
+ * 主入口
+ * @packageDocumentation
+ */
+
 export * from './ActionSheet'
 export * from './ActivityIndicator'
 export * from './Avatar'
@@ -10,6 +15,7 @@ export * from './Form'
 export * from './Icon'
 export * from './ImagePicker'
 export * from './Input'
+export * from './InputNumber'
 export * from './List'
 export * from './ListHeader'
 export * from './ListItem'
