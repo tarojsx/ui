@@ -88,6 +88,10 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
+# Docusaurus
+.Docusaurus
+website/build
+
 # vuepress build output
 .vuepress/dist
 
@@ -102,3 +106,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Other
+.DS_Store
+.temp

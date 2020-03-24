@@ -17,5 +17,16 @@
         "rootDir": "./src",
         "outDir": "./dist"
     },
-    "include": ["src"]
+    "include": ["src"],
+    "typedocOptions": {
+        "out": "docs",
+        "theme": "docusaurus2",
+        "disableOutputCheck": true,
+        "excludeExternals": true,
+        "excludeNotExported": true,
+        "excludePrivate": true,
+        "excludeProtected": true,
+        "hideBreadcrumbs": true,
+        "listInvalidSymbolLinks": true
+    }
 }

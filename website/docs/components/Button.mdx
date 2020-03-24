@@ -1,0 +1,79 @@
+---
+id: button
+title: Button
+sidebar_label: Button
+---
+
+## Hello from Docusaurus
+
+Are you ready to create the documentation site for your open source project?
+
+### type
+
+import { Button } from '../../../src/Button'
+
+```tsx
+<Button>default</Button>
+
+<Button type="primary">primary</Button>
+
+<Button type="secondary">secondary</Button>
+
+<Button type="warn">warn</Button>
+
+<Button type="error">error</Button>
+```
+
+export const Highlight = ({ children, color }) => (
+    <span
+        style={{
+            backgroundColor: color,
+            borderRadius: '2px',
+            color: '#fff',
+            padding: '0.2rem',
+        }}
+    >
+        {children}
+    </span>
+)
+
+<Highlight color="#25c2a0">Docusaurus green</Highlight> and
+<Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+
+I can write **Markdown** alongside my _JSX_!
+
+```tsx live
+function Clock(props) {
+    const [date, setDate] = useState(new Date())
+    useEffect(() => {
+        var timerID = setInterval(() => tick(), 1000)
+
+        return function cleanup() {
+            clearInterval(timerID)
+        }
+    })
+
+    function tick() {
+        setDate(new Date())
+    }
+
+    return (
+        <div>
+            <h2>It is {date.toLocaleTimeString()}.</h2>
+        </div>
+    )
+}
+```
+
+:::note
+The content and title _can_ include markdown.
+:::
+
+:::tip 提示
+The content and title _can_ include markdown.
+:::
+
+## API
+
+-   [`<Button />`](modules/_button_.md)
+-   [`ButtonProps`](interfaces/_button_.buttonprops.md)

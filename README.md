@@ -1,29 +1,32 @@
 <div align="center">
-    <h1>Taro3 UI</h1>
+    <h1>TaroX UI</h1>
 </div>
 <div align="center">
-    <strong>我们重新发明了 taro-ui</strong>
+    <strong>我们重新(zào)发(lún)明(zi)了 <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
 </div>
 
 <br />
 
 <div align="center">
     <a href="https://github.com/tarojsx/ui/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/tarojsx/ui.svg" alt="License" />
+        <img src="https://badgen.net/github/license/tarojsx/ui" alt="License" />
     </a>
     <a href="https://www.npmjs.com/package/@tarojsx/ui">
-        <img src="https://img.shields.io/npm/v/@tarojsx/ui.svg" alt="npm version" />
+        <img src="https://npm.taobao.org/badge/v/@tarojsx/ui.svg" alt="npm version" />
     </a>
     <a href="https://www.npmjs.com/org/tarojsx">
-        <img src="https://img.shields.io/npm/dm/@tarojsx/ui.svg" alt="npm downloads" />
+        <img src="https://npm.taobao.org/badge/d/@tarojsx/ui.svg" alt="npm downloads" />
+    </a>
+    <a href="https://github.com/tarojsx/ui/blob/master/package.json">
+        <img src="https://badgen.net/github/dependents-pkg/tarojsx/ui" alt="npm downloads" />
     </a>
     <a href="http://makeapullrequest.com">
-        <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs welcome" />
+        <img src="https://badgen.net/badge/PRs/welcome/green" alt="PRs welcome" />
     </a>
 </div>
 
 <div align="center">
-    <sub>Built with :purple_heart: by
+    <sub>Built with :purple_heart: by</sub>
     <a href="https://github.com/cncolder">@Colder</a> and
     <a href="https://github.com/tarojsx/ui/graphs/contributors">
         Contributors
@@ -37,11 +40,11 @@
 
 _当前代码提交频繁, 一些特性时有变化._
 
-Taro3 释放了 React 的潜能, 是时候对 [Taro UI](https://github.com/NervJS/taro-ui) 进行改进了.
+Taro3 释放了 React 的潜能, 是时候对 Taro UI 进行改进了.
 
 ## 特性
 
-- :electric_plug: 安装方式不变, 使用上尽可能向后兼容.
+- :electric_plug: 一键安装, 使用上尽可能向后兼容.
 
 - :clapper: 复用 taro-ui 样式, 不改变组件外观.
 
@@ -55,7 +58,8 @@ Taro3 释放了 React 的潜能, 是时候对 [Taro UI](https://github.com/NervJ
 
 ## 需求
 
-* taro3+
+* taro 3+
+* react 16.8+
 
 ## 安装
 

@@ -24,20 +24,28 @@
         }
     }
 
-    &_primary {
-        color: $color-brand;
-    }
+    // &_primary {
+    //     color: $color-white;
+    //     background-color: $color-brand;
+    // }
+
+    // &_secondary {
+    //     color: $color-brand;
+    // }
 
     &_success {
-        color: $color-success;
+        color: $color-white;
+        background-color: $color-success;
     }
 
-    &_warning {
-        color: $color-warning;
+    &_warn {
+        color: $color-white;
+        background-color: $color-warning;
     }
 
     &_error {
-        color: $color-error;
+        color: $color-white;
+        background-color: $color-error;
     }
 
     &_disabled {
