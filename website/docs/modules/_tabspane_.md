@@ -20,7 +20,7 @@ sidebar_label: "TabsPane"
 
 ▸ **TabsPane**(`props`: [TabsPanelProps](../interfaces/_tabspane_.tabspanelprops.md) & object): *Element‹›*
 
-*Defined in [src/TabsPane.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/TabsPane.tsx#L12)*
+*Defined in [src/TabsPane.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/TabsPane.tsx#L12)*
 
 **Parameters:**
 

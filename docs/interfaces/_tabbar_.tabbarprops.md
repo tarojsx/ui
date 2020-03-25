@@ -31,7 +31,7 @@ sidebar_label: "TabBarProps"
 
 • **backgroundColor**? : *string*
 
-*Defined in [src/TabBar.tsx:33](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L33)*
+*Defined in [src/TabBar.tsx:33](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L33)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **className**? : *string*
 
-*Defined in [src/TabBar.tsx:31](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L31)*
+*Defined in [src/TabBar.tsx:31](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L31)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **color**? : *string*
 
-*Defined in [src/TabBar.tsx:34](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L34)*
+*Defined in [src/TabBar.tsx:34](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L34)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **current**? : *number*
 
-*Defined in [src/TabBar.tsx:38](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L38)*
+*Defined in [src/TabBar.tsx:38](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L38)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **fixed**? : *boolean*
 
-*Defined in [src/TabBar.tsx:39](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L39)*
+*Defined in [src/TabBar.tsx:39](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L39)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **fontSize**? : *number*
 
-*Defined in [src/TabBar.tsx:37](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L37)*
+*Defined in [src/TabBar.tsx:37](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L37)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **iconSize**? : *number*
 
-*Defined in [src/TabBar.tsx:36](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L36)*
+*Defined in [src/TabBar.tsx:36](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L36)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **onClick**? : *CommonEventFunction‹object›*
 
-*Defined in [src/TabBar.tsx:42](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L42)*
+*Defined in [src/TabBar.tsx:42](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L42)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **scroll**? : *boolean*
 
-*Defined in [src/TabBar.tsx:40](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L40)*
+*Defined in [src/TabBar.tsx:40](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L40)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **selectedColor**? : *string*
 
-*Defined in [src/TabBar.tsx:35](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L35)*
+*Defined in [src/TabBar.tsx:35](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L35)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/TabBar.tsx:32](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L32)*
+*Defined in [src/TabBar.tsx:32](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L32)*
 
 ___
 
@@ -119,4 +119,4 @@ ___
 
 • **tabList**: *[TabBarListItem](../modules/_tabbar_.md#tabbarlistitem)[]*
 
-*Defined in [src/TabBar.tsx:41](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L41)*
+*Defined in [src/TabBar.tsx:41](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L41)*

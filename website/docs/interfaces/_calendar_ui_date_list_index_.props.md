@@ -22,7 +22,7 @@ sidebar_label: "Props"
 
 • **list**: *Calendar.List‹Item›*
 
-*Defined in [src/Calendar/ui/date-list/index.tsx:16](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/ui/date-list/index.tsx#L16)*
+*Defined in [src/Calendar/ui/date-list/index.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/ui/date-list/index.tsx#L16)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **onClick**? : *function*
 
-*Defined in [src/Calendar/ui/date-list/index.tsx:18](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/ui/date-list/index.tsx#L18)*
+*Defined in [src/Calendar/ui/date-list/index.tsx:18](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/ui/date-list/index.tsx#L18)*
 
 #### Type declaration:
 
@@ -48,7 +48,7 @@ ___
 
 • **onLongClick**? : *function*
 
-*Defined in [src/Calendar/ui/date-list/index.tsx:20](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/ui/date-list/index.tsx#L20)*
+*Defined in [src/Calendar/ui/date-list/index.tsx:20](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/ui/date-list/index.tsx#L20)*
 
 #### Type declaration:
 

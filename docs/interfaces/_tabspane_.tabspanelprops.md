@@ -75,7 +75,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/TabsPane.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/TabsPane.tsx#L9)*
+*Defined in [src/TabsPane.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/TabsPane.tsx#L9)*
 
 ___
 

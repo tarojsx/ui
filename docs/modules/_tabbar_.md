@@ -24,7 +24,7 @@ sidebar_label: "TabBar"
 
 Ƭ **TabBarListItem**: *object*
 
-*Defined in [src/TabBar.tsx:8](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L8)*
+*Defined in [src/TabBar.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L8)*
 
 #### Type declaration:
 
@@ -54,7 +54,7 @@ sidebar_label: "TabBar"
 
 ▸ **TabBar**(`props`: [TabBarProps](../interfaces/_tabbar_.tabbarprops.md) & object): *Element‹›*
 
-*Defined in [src/TabBar.tsx:45](https://github.com/tarojsx/ui/blob/bc31158/src/TabBar.tsx#L45)*
+*Defined in [src/TabBar.tsx:45](https://github.com/tarojsx/ui/blob/6701f45/src/TabBar.tsx#L45)*
 
 **Parameters:**
 

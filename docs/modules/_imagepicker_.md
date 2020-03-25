@@ -20,7 +20,7 @@ sidebar_label: "ImagePicker"
 
 ▸ **ImagePicker**(`props`: [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md) & object): *Element‹›*
 
-*Defined in [src/ImagePicker.tsx:49](https://github.com/tarojsx/ui/blob/bc31158/src/ImagePicker.tsx#L49)*
+*Defined in [src/ImagePicker.tsx:49](https://github.com/tarojsx/ui/blob/6701f45/src/ImagePicker.tsx#L49)*
 
 **Parameters:**
 

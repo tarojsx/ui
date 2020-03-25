@@ -20,7 +20,7 @@ sidebar_label: "Progress"
 
 ▸ **Progress**(`props`: [ProgressProps](../interfaces/_progress_.progressprops.md) & object): *Element‹›*
 
-*Defined in [src/Progress.tsx:24](https://github.com/tarojsx/ui/blob/bc31158/src/Progress.tsx#L24)*
+*Defined in [src/Progress.tsx:24](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L24)*
 
 **Parameters:**
 

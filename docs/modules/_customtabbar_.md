@@ -20,7 +20,7 @@ sidebar_label: "CustomTabBar"
 
 ▸ **CustomTabBar**(`props`: [CustomTabBarProps](../interfaces/_customtabbar_.customtabbarprops.md) & object): *ReactElement‹any, string | function | object›*
 
-*Defined in [src/CustomTabBar.tsx:73](https://github.com/tarojsx/ui/blob/bc31158/src/CustomTabBar.tsx#L73)*
+*Defined in [src/CustomTabBar.tsx:73](https://github.com/tarojsx/ui/blob/6701f45/src/CustomTabBar.tsx#L73)*
 
 自定义 TabBar Render Props 组件, 提供用于渲染自定义 TabBar 所需的属性.
 

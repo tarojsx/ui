@@ -17,7 +17,7 @@ sidebar_label: "Calendar/common/helper"
 
 ▸ **generateCalendarGroup**(`options`: GroupOptions): *function*
 
-*Defined in [src/Calendar/common/helper.ts:27](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/helper.ts#L27)*
+*Defined in [src/Calendar/common/helper.ts:27](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/helper.ts#L27)*
 
 **Parameters:**
 
@@ -43,7 +43,7 @@ ___
 
 ▸ **getGenerateDate**(`date`: Calendar.DateArg | undefined): *Dayjs*
 
-*Defined in [src/Calendar/common/helper.ts:112](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/helper.ts#L112)*
+*Defined in [src/Calendar/common/helper.ts:112](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/helper.ts#L112)*
 
 **Parameters:**
 

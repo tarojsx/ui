@@ -20,7 +20,7 @@ sidebar_label: "Steps"
 
 ▸ **Steps**(`props`: [StepsProps](../interfaces/_steps_.stepsprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Steps.tsx:18](https://github.com/tarojsx/ui/blob/bc31158/src/Steps.tsx#L18)*
+*Defined in [src/Steps.tsx:18](https://github.com/tarojsx/ui/blob/6701f45/src/Steps.tsx#L18)*
 
 **Parameters:**
 

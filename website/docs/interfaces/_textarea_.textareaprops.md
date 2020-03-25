@@ -28,7 +28,7 @@ sidebar_label: "TextareaProps"
 
 • **className**? : *string*
 
-*Defined in [src/Textarea.tsx:13](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L13)*
+*Defined in [src/Textarea.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L13)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **maxLength**? : *number*
 
-*Defined in [src/Textarea.tsx:16](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L16)*
+*Defined in [src/Textarea.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L16)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **onChange**? : *CommonEventFunction*
 
-*Defined in [src/Textarea.tsx:17](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L17)*
+*Defined in [src/Textarea.tsx:17](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L17)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Textarea.tsx:14](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L14)*
+*Defined in [src/Textarea.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L14)*
 
 ___
 
@@ -60,4 +60,4 @@ ___
 
 • **value**? : *string*
 
-*Defined in [src/Textarea.tsx:15](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L15)*
+*Defined in [src/Textarea.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L15)*

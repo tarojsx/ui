@@ -20,7 +20,7 @@ sidebar_label: "Textarea"
 
 ▸ **Textarea**(`props`: [TextareaProps](../interfaces/_textarea_.textareaprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Textarea.tsx:22](https://github.com/tarojsx/ui/blob/bc31158/src/Textarea.tsx#L22)*
+*Defined in [src/Textarea.tsx:22](https://github.com/tarojsx/ui/blob/6701f45/src/Textarea.tsx#L22)*
 
 **Parameters:**
 

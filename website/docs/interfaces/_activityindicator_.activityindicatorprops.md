@@ -76,7 +76,7 @@ ___
 
 *Overrides void*
 
-*Defined in [src/ActivityIndicator.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/ActivityIndicator.tsx#L10)*
+*Defined in [src/ActivityIndicator.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/ActivityIndicator.tsx#L10)*
 
 ___
 

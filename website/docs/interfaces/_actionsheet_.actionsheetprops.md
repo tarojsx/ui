@@ -26,7 +26,7 @@ sidebar_label: "ActionSheetProps"
 
 • **cancelText**? : *React.ReactNode*
 
-*Defined in [src/ActionSheet.tsx:13](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L13)*
+*Defined in [src/ActionSheet.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L13)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **className**? : *string*
 
-*Defined in [src/ActionSheet.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L9)*
+*Defined in [src/ActionSheet.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L9)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **isOpened**? : *boolean*
 
-*Defined in [src/ActionSheet.tsx:11](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L11)*
+*Defined in [src/ActionSheet.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L11)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/ActionSheet.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L10)*
+*Defined in [src/ActionSheet.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L10)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **title**? : *React.ReactNode*
 
-*Defined in [src/ActionSheet.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L12)*
+*Defined in [src/ActionSheet.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L12)*

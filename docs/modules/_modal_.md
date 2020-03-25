@@ -20,7 +20,7 @@ sidebar_label: "Modal"
 
 ▸ **Modal**(`props`: [ModalProps](../interfaces/_modal_.modalprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Modal.tsx:14](https://github.com/tarojsx/ui/blob/bc31158/src/Modal.tsx#L14)*
+*Defined in [src/Modal.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/Modal.tsx#L14)*
 
 **Parameters:**
 

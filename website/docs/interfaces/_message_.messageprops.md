@@ -21,7 +21,7 @@ sidebar_label: "MessageProps"
 
 • **className**? : *string*
 
-*Defined in [src/Message.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/Message.tsx#L9)*
+*Defined in [src/Message.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Message.tsx#L9)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Message.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/Message.tsx#L10)*
+*Defined in [src/Message.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Message.tsx#L10)*

@@ -14,14 +14,8 @@
     <a href="https://www.npmjs.com/package/@tarojsx/ui">
         <img src="https://badgen.net/npm/v/@tarojsx/ui" alt="npm version" />
     </a>
-    <a style="display:none;" href="https://www.npmjs.com/package/@tarojsx/ui">
-        <img src="https://npm.taobao.org/badge/v/@tarojsx/ui.svg" alt="npm version" />
-    </a>
     <a href="https://www.npmjs.com/org/tarojsx">
         <img src="https://badgen.net/npm/dt/@tarojsx/ui" alt="npm downloads" />
-    </a>
-    <a style="display:none;" href="https://www.npmjs.com/org/tarojsx">
-        <img src="https://npm.taobao.org/badge/d/@tarojsx/ui.svg" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/ui/blob/master/package.json">
         <img src="https://badgen.net/github/dependents-pkg/tarojsx/ui" alt="npm downloads" />
@@ -32,7 +26,7 @@
 </div>
 
 <div align="center">
-    <sub>Built with :purple_heart: by</sub>
+    Built with :purple_heart: by
     <a href="https://github.com/cncolder">@Colder</a> and
     <a href="https://github.com/tarojsx/ui/graphs/contributors">
         Contributors

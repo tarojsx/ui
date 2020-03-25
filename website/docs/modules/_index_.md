@@ -31,6 +31,8 @@ sidebar_label: "index"
 * [ImagePicker](_index_.md#imagepicker)
 * [ImagePickerProps](_index_.md#imagepickerprops)
 * [Input](_index_.md#input)
+* [InputNumber](_index_.md#inputnumber)
+* [InputNumberProps](_index_.md#inputnumberprops)
 * [InputProps](_index_.md#inputprops)
 * [List](_index_.md#list)
 * [ListHeader](_index_.md#listheader)
@@ -184,6 +186,18 @@ ___
 ###  Input
 
 • **Input**:
+
+___
+
+###  InputNumber
+
+• **InputNumber**:
+
+___
+
+###  InputNumberProps
+
+• **InputNumberProps**:
 
 ___
 

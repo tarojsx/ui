@@ -23,7 +23,7 @@ sidebar_label: "StepsProps"
 
 • **items**? : *object[]*
 
-*Defined in [src/Steps.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/Steps.tsx#L10)*
+*Defined in [src/Steps.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Steps.tsx#L10)*
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Steps.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/Steps.tsx#L9)*
+*Defined in [src/Steps.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Steps.tsx#L9)*
