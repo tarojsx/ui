@@ -25,7 +25,7 @@ sidebar_label: "utils"
 
 ▸ **delay**(`delayTime`: number): *Promise‹null›*
 
-*Defined in [src/utils.ts:6](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L6)*
+*Defined in [src/utils.ts:6](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L6)*
 
 **Parameters:**
 
@@ -41,7 +41,7 @@ ___
 
 ▸ **delayGetClientRect**(`__namedParameters`: object): *Promise‹Array‹execObject››*
 
-*Defined in [src/utils.ts:47](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L47)*
+*Defined in [src/utils.ts:47](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L47)*
 
 **Parameters:**
 
@@ -61,7 +61,7 @@ ___
 
 ▸ **delayGetScrollOffset**(`__namedParameters`: object): *Promise‹Array‹execObject››*
 
-*Defined in [src/utils.ts:34](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L34)*
+*Defined in [src/utils.ts:34](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L34)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **delayQuerySelector**(`self`: any, `selectorStr`: string, `delayTime`: number): *Promise‹Array‹execObject››*
 
-*Defined in [src/utils.ts:18](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L18)*
+*Defined in [src/utils.ts:18](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L18)*
 
 **Parameters:**
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **getEventDetail**(`event`: any): *EventDetail*
 
-*Defined in [src/utils.ts:105](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L105)*
+*Defined in [src/utils.ts:105](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L105)*
 
 **Parameters:**
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **handleTouchScroll**(`flag`: any): *void*
 
-*Defined in [src/utils.ts:189](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L189)*
+*Defined in [src/utils.ts:189](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L189)*
 
 **Parameters:**
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **initTestEnv**(): *void*
 
-*Defined in [src/utils.ts:177](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L177)*
+*Defined in [src/utils.ts:177](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L177)*
 
 **Returns:** *void*
 
@@ -139,7 +139,7 @@ ___
 
 ▸ **isTest**(): *boolean*
 
-*Defined in [src/utils.ts:183](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L183)*
+*Defined in [src/utils.ts:183](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L183)*
 
 **Returns:** *boolean*
 
@@ -149,7 +149,7 @@ ___
 
 ▸ **pxTransform**(`size`: any): *string*
 
-*Defined in [src/utils.ts:209](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L209)*
+*Defined in [src/utils.ts:209](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L209)*
 
 **Parameters:**
 
@@ -165,7 +165,7 @@ ___
 
 ▸ **uuid**(`len`: number, `radix`: number): *string*
 
-*Defined in [src/utils.ts:63](https://github.com/tarojsx/ui/blob/bc31158/src/utils.ts#L63)*
+*Defined in [src/utils.ts:63](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L63)*
 
 **Parameters:**
 

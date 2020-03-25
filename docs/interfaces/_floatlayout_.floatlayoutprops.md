@@ -568,7 +568,7 @@ ___
 
 *Overrides void*
 
-*Defined in [src/FloatLayout.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/FloatLayout.tsx#L10)*
+*Defined in [src/FloatLayout.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/FloatLayout.tsx#L10)*
 
 ___
 
@@ -576,7 +576,7 @@ ___
 
 • **title**? : *React.ReactNode*
 
-*Defined in [src/FloatLayout.tsx:11](https://github.com/tarojsx/ui/blob/bc31158/src/FloatLayout.tsx#L11)*
+*Defined in [src/FloatLayout.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/FloatLayout.tsx#L11)*
 
 ___
 

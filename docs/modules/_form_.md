@@ -20,7 +20,7 @@ sidebar_label: "Form"
 
 ▸ **Form**(`props`: [FormProps](../interfaces/_form_.formprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Form.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/Form.tsx#L9)*
+*Defined in [src/Form.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Form.tsx#L9)*
 
 **Parameters:**
 

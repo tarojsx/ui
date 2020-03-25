@@ -4,7 +4,7 @@ title: "taro-ui"
 sidebar_label: "taro-ui"
 ---
 
-重命名 `At` 前缀
+taro-ui 兼容入口, 带 `At` 前缀.
 
 ## Index
 
@@ -25,6 +25,8 @@ sidebar_label: "taro-ui"
 * [AtImagePicker](_taro_ui_.md#atimagepicker)
 * [AtImagePickerProps](_taro_ui_.md#atimagepickerprops)
 * [AtInput](_taro_ui_.md#atinput)
+* [AtInputNumber](_taro_ui_.md#atinputnumber)
+* [AtInputNumberProps](_taro_ui_.md#atinputnumberprops)
 * [AtInputProps](_taro_ui_.md#atinputprops)
 * [AtList](_taro_ui_.md#atlist)
 * [AtListHeader](_taro_ui_.md#atlistheader)
@@ -131,6 +133,18 @@ ___
 ###  AtInput
 
 • **AtInput**:
+
+___
+
+###  AtInputNumber
+
+• **AtInputNumber**:
+
+___
+
+###  AtInputNumberProps
+
+• **AtInputNumberProps**:
 
 ___
 

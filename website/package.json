@@ -6,6 +6,7 @@
         "prebuild": "rsync -achuv ../docs .",
         "build": "docusaurus build",
         "swizzle": "docusaurus swizzle",
+        "predeploy": "npm run build",
         "deploy": "docusaurus deploy"
     },
     "devDependencies": {

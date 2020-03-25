@@ -20,7 +20,7 @@ sidebar_label: "ActionSheet"
 
 ▸ **ActionSheet**(`props`: [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/ActionSheet.tsx:16](https://github.com/tarojsx/ui/blob/bc31158/src/ActionSheet.tsx#L16)*
+*Defined in [src/ActionSheet.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/ActionSheet.tsx#L16)*
 
 **Parameters:**
 

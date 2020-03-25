@@ -22,7 +22,7 @@ sidebar_label: "FormProps"
 
 ▸ **onSubmit**(`e`: BaseSyntheticEvent): *void*
 
-*Defined in [src/Form.tsx:6](https://github.com/tarojsx/ui/blob/bc31158/src/Form.tsx#L6)*
+*Defined in [src/Form.tsx:6](https://github.com/tarojsx/ui/blob/6701f45/src/Form.tsx#L6)*
 
 **Parameters:**
 

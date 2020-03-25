@@ -19,7 +19,7 @@ sidebar_label: "Calendar/common/plugins"
 
 ▸ **handleActive**(`args`: PluginArg, `item`: Item): *Item*
 
-*Defined in [src/Calendar/common/plugins.ts:12](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/plugins.ts#L12)*
+*Defined in [src/Calendar/common/plugins.ts:12](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/plugins.ts#L12)*
 
 **Parameters:**
 
@@ -36,7 +36,7 @@ ___
 
 ▸ **handleDisabled**(`args`: PluginArg, `item`: Item): *Item*
 
-*Defined in [src/Calendar/common/plugins.ts:88](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/plugins.ts#L88)*
+*Defined in [src/Calendar/common/plugins.ts:88](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/plugins.ts#L88)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **handleMarks**(`args`: PluginArg, `item`: Item): *Item*
 
-*Defined in [src/Calendar/common/plugins.ts:37](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/plugins.ts#L37)*
+*Defined in [src/Calendar/common/plugins.ts:37](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/plugins.ts#L37)*
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **handleValid**(`args`: PluginArg, `item`: Item): *Item*
 
-*Defined in [src/Calendar/common/plugins.ts:106](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/common/plugins.ts#L106)*
+*Defined in [src/Calendar/common/plugins.ts:106](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/plugins.ts#L106)*
 
 **Parameters:**
 

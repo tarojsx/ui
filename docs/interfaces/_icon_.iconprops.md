@@ -24,7 +24,7 @@ sidebar_label: "IconProps"
 
 • **onClick**? : *CommonEventFunction*
 
-*Defined in [src/Icon.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/Icon.tsx#L12)*
+*Defined in [src/Icon.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Icon.tsx#L12)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **size**? : *number | string*
 
-*Defined in [src/Icon.tsx:11](https://github.com/tarojsx/ui/blob/bc31158/src/Icon.tsx#L11)*
+*Defined in [src/Icon.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Icon.tsx#L11)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Icon.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/Icon.tsx#L10)*
+*Defined in [src/Icon.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Icon.tsx#L10)*

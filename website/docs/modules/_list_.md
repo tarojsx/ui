@@ -20,7 +20,7 @@ sidebar_label: "List"
 
 ▸ **List**(`props`: [ListProps](../interfaces/_list_.listprops.md) & object): *Element‹›*
 
-*Defined in [src/List.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/List.tsx#L12)*
+*Defined in [src/List.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/List.tsx#L12)*
 
 **Parameters:**
 

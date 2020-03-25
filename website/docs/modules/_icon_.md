@@ -20,7 +20,7 @@ sidebar_label: "Icon"
 
 ▸ **Icon**(`props`: [IconProps](../interfaces/_icon_.iconprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Icon.tsx:15](https://github.com/tarojsx/ui/blob/bc31158/src/Icon.tsx#L15)*
+*Defined in [src/Icon.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Icon.tsx#L15)*
 
 **Parameters:**
 

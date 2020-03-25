@@ -25,7 +25,7 @@ sidebar_label: "Calendar/interface"
 
 Ƭ **Props**: *[SingleSelectedProps](../interfaces/_calendar_interface_.singleselectedprops.md) | [MutilSelectedProps](../interfaces/_calendar_interface_.mutilselectedprops.md)*
 
-*Defined in [src/Calendar/interface.ts:49](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/interface.ts#L49)*
+*Defined in [src/Calendar/interface.ts:49](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L49)*
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 Ƭ **PropsWithDefaults**: *[Props](_calendar_interface_.md#props) & [DefaultProps](../interfaces/_calendar_interface_.defaultprops.md)*
 
-*Defined in [src/Calendar/interface.ts:79](https://github.com/tarojsx/ui/blob/bc31158/src/Calendar/interface.ts#L79)*
+*Defined in [src/Calendar/interface.ts:79](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L79)*

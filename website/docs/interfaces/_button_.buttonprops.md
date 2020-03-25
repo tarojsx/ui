@@ -30,7 +30,7 @@ sidebar_label: "ButtonProps"
 
 • **className**? : *string*
 
-*Defined in [src/Button.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L12)*
+*Defined in [src/Button.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L12)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 • **fab**? : *boolean*
 
-*Defined in [src/Button.tsx:19](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L19)*
+*Defined in [src/Button.tsx:19](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L19)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **iconInfo**? : *[IconProps](_icon_.iconprops.md)*
 
-*Defined in [src/Button.tsx:18](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L18)*
+*Defined in [src/Button.tsx:18](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L18)*
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 • **size**? : *_ButtonProps["size"] | AtButtonProps["size"]*
 
-*Defined in [src/Button.tsx:15](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L15)*
+*Defined in [src/Button.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L15)*
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Button.tsx:13](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L13)*
+*Defined in [src/Button.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L13)*
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 • **transparent**? : *boolean*
 
-*Defined in [src/Button.tsx:17](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L17)*
+*Defined in [src/Button.tsx:17](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L17)*
 
 透明按钮
 
@@ -80,4 +80,4 @@ ___
 
 • **type**? : *_ButtonProps["type"] | AtButtonProps["type"] | "error"*
 
-*Defined in [src/Button.tsx:14](https://github.com/tarojsx/ui/blob/bc31158/src/Button.tsx#L14)*
+*Defined in [src/Button.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L14)*

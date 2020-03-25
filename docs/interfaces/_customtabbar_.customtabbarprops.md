@@ -21,7 +21,7 @@ sidebar_label: "CustomTabBarProps"
 
 • **appTabBarConfig**: *TabBarConfig*
 
-*Defined in [src/CustomTabBar.tsx:35](https://github.com/tarojsx/ui/blob/bc31158/src/CustomTabBar.tsx#L35)*
+*Defined in [src/CustomTabBar.tsx:35](https://github.com/tarojsx/ui/blob/6701f45/src/CustomTabBar.tsx#L35)*
 
 `app.config.js` 中的 `tabBar` 字段
 
@@ -37,7 +37,7 @@ ___
 
 • **children**? : *function*
 
-*Defined in [src/CustomTabBar.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/CustomTabBar.tsx#L10)*
+*Defined in [src/CustomTabBar.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/CustomTabBar.tsx#L10)*
 
 #### Type declaration:
 

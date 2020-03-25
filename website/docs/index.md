@@ -5,7 +5,7 @@ sidebar_label: "README"
 ---
 
 <div align="center">
-    <h1>TaroX UI</h1>
+    <h1>Taro3 UI</h1>
 </div>
 <div align="center">
     <strong>我们重新(zào)发(lún)明(zi)了 <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
@@ -18,10 +18,10 @@ sidebar_label: "README"
         <img src="https://badgen.net/github/license/tarojsx/ui" alt="License" />
     </a>
     <a href="https://www.npmjs.com/package/@tarojsx/ui">
-        <img src="https://npm.taobao.org/badge/v/@tarojsx/ui.svg" alt="npm version" />
+        <img src="https://badgen.net/npm/v/@tarojsx/ui" alt="npm version" />
     </a>
     <a href="https://www.npmjs.com/org/tarojsx">
-        <img src="https://npm.taobao.org/badge/d/@tarojsx/ui.svg" alt="npm downloads" />
+        <img src="https://badgen.net/npm/dt/@tarojsx/ui" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/ui/blob/master/package.json">
         <img src="https://badgen.net/github/dependents-pkg/tarojsx/ui" alt="npm downloads" />
@@ -32,7 +32,7 @@ sidebar_label: "README"
 </div>
 
 <div align="center">
-    <sub>Built with :purple_heart: by</sub>
+    Built with :purple_heart: by
     <a href="https://github.com/cncolder">@Colder</a> and
     <a href="https://github.com/tarojsx/ui/graphs/contributors">
         Contributors
@@ -64,7 +64,7 @@ Taro3 释放了 React 的潜能, 是时候对 Taro UI 进行改进了.
 
 ## 需求
 
-* taro 3+
+* **taro 3+**
 * react 16.8+
 
 ## 安装
@@ -82,7 +82,9 @@ export default () => {
     return (
         <List>
             <ListHeader title="Taro3 UI" />
-            <ListItem title="版本" extra={<Text>0.1.0</Text>}>
+            <ListItem title="版本" extra={<Text>0.2.0</Text>}>
+                我们重新(zào)发(lún)明(zi)了 Taro UI
+            </ListItem>
         </List>
     )
 }
@@ -93,14 +95,14 @@ export default () => {
 源于 Taro UI
 
 * [ ] Accordion
-* [ ] ActionSheet
+* [x] ActionSheet
   * [ ] 子组件
 * [x] ActivityIndicator
 * [ ] Article
 * [x] Avatar
 * [x] Badge
 * [x] Button
-* [ ] Calendar
+* [x] Calendar
   * [ ] Swipe 操作
 * [ ] Card
 * [ ] Checkbox
@@ -108,15 +110,15 @@ export default () => {
 * [ ] Divider
 * [ ] Drawer
 * [ ] ~~Fab~~ (已合并入 Button)
-* [ ] Flex
+* [ ] ~~Flex~~ (使用率不高)
 * [x] FloatLayout
-* [ ] Form
+* [x] Form
 * [ ] Grid
 * [x] Icon
 * [x] ImagePicker
 * [ ] Indexes
 * [x] Input
-* [ ] InputNumber
+* [x] InputNumber
 * [x] List
 * [x] ListItem
 * [x] Loading
@@ -138,9 +140,9 @@ export default () => {
 * [ ] Swiper
 * [ ] Switch
 * [x] TabBar
-* [ ] Tabs
+* [x] Tabs
   * [ ] Swipe 操作
-* [ ] TabsPane
+* [x] TabsPane
   * [ ] Swipe 操作
 * [x] Tag
 * [x] Textarea

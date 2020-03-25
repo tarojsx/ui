@@ -30,6 +30,7 @@ sidebar_label: "Globals"
 * ["Icon"](modules/_icon_.md)
 * ["ImagePicker"](modules/_imagepicker_.md)
 * ["Input"](modules/_input_.md)
+* ["InputNumber"](modules/_inputnumber_.md)
 * ["List"](modules/_list_.md)
 * ["ListHeader"](modules/_listheader_.md)
 * ["ListItem"](modules/_listitem_.md)

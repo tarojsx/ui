@@ -20,7 +20,7 @@ sidebar_label: "Loading"
 
 ▸ **Loading**(`props`: [LoadingProps](../interfaces/_loading_.loadingprops.md) & object): *Element‹›*
 
-*Defined in [src/Loading.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/Loading.tsx#L12)*
+*Defined in [src/Loading.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Loading.tsx#L12)*
 
 **Parameters:**
 

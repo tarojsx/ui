@@ -21,7 +21,7 @@ sidebar_label: "LoadingProps"
 
 • **color**? : *string | number*
 
-*Defined in [src/Loading.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/Loading.tsx#L9)*
+*Defined in [src/Loading.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Loading.tsx#L9)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **size**? : *string | number*
 
-*Defined in [src/Loading.tsx:8](https://github.com/tarojsx/ui/blob/bc31158/src/Loading.tsx#L8)*
+*Defined in [src/Loading.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/Loading.tsx#L8)*

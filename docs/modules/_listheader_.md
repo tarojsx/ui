@@ -16,7 +16,7 @@ sidebar_label: "ListHeader"
 
 ▸ **ListHeader**(`props`: ListHeaderProps & object): *Element‹›*
 
-*Defined in [src/ListHeader.tsx:23](https://github.com/tarojsx/ui/blob/bc31158/src/ListHeader.tsx#L23)*
+*Defined in [src/ListHeader.tsx:23](https://github.com/tarojsx/ui/blob/6701f45/src/ListHeader.tsx#L23)*
 
 **Parameters:**
 

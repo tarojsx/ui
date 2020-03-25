@@ -20,7 +20,7 @@ sidebar_label: "Tag"
 
 ▸ **Tag**(`props`: [TagProps](../interfaces/_tag_.tagprops.md) & object): *Element‹›*
 
-*Defined in [src/Tag.tsx:19](https://github.com/tarojsx/ui/blob/bc31158/src/Tag.tsx#L19)*
+*Defined in [src/Tag.tsx:19](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L19)*
 
 **Parameters:**
 

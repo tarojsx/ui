@@ -41,9 +41,10 @@
         "dev:h5": "taro build --type h5 --watch",
         "build:h5": "taro build --type h5",
         "docs": "typedoc",
-        "postdocs": "rsync -acu docs website",
         "prepublishOnly": "npm run build",
-        "release": "np"
+        "release": "np",
+        "prewebsite": "npm run docs",
+        "website": "yarn --cwd website deploy"
     },
     "dependencies": {},
     "devDependencies": {

@@ -24,7 +24,7 @@ sidebar_label: "BadgeProps"
 
 • **className**? : *string*
 
-*Defined in [src/Badge.tsx:8](https://github.com/tarojsx/ui/blob/bc31158/src/Badge.tsx#L8)*
+*Defined in [src/Badge.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L8)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **dot**? : *boolean*
 
-*Defined in [src/Badge.tsx:10](https://github.com/tarojsx/ui/blob/bc31158/src/Badge.tsx#L10)*
+*Defined in [src/Badge.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L10)*
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 • **maxValue**? : *number*
 
-*Defined in [src/Badge.tsx:12](https://github.com/tarojsx/ui/blob/bc31158/src/Badge.tsx#L12)*
+*Defined in [src/Badge.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L12)*
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Badge.tsx:9](https://github.com/tarojsx/ui/blob/bc31158/src/Badge.tsx#L9)*
+*Defined in [src/Badge.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L9)*
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 • **value**? : *number | string*
 
-*Defined in [src/Badge.tsx:11](https://github.com/tarojsx/ui/blob/bc31158/src/Badge.tsx#L11)*
+*Defined in [src/Badge.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L11)*
