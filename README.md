@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>TaroX UI</h1>
+    <h1>Taro3 UI</h1>
 </div>
 <div align="center">
     <strong>我们重新(zào)发(lún)明(zi)了 <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
@@ -12,9 +12,15 @@
         <img src="https://badgen.net/github/license/tarojsx/ui" alt="License" />
     </a>
     <a href="https://www.npmjs.com/package/@tarojsx/ui">
+        <img src="https://badgen.net/npm/v/@tarojsx/ui" alt="npm version" />
+    </a>
+    <a style="display:none;" href="https://www.npmjs.com/package/@tarojsx/ui">
         <img src="https://npm.taobao.org/badge/v/@tarojsx/ui.svg" alt="npm version" />
     </a>
     <a href="https://www.npmjs.com/org/tarojsx">
+        <img src="https://badgen.net/npm/dt/@tarojsx/ui" alt="npm downloads" />
+    </a>
+    <a style="display:none;" href="https://www.npmjs.com/org/tarojsx">
         <img src="https://npm.taobao.org/badge/d/@tarojsx/ui.svg" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/ui/blob/master/package.json">
@@ -58,7 +64,7 @@ Taro3 释放了 React 的潜能, 是时候对 Taro UI 进行改进了.
 
 ## 需求
 
-* taro 3+
+* **taro 3+**
 * react 16.8+
 
 ## 安装
@@ -76,7 +82,9 @@ export default () => {
     return (
         <List>
             <ListHeader title="Taro3 UI" />
-            <ListItem title="版本" extra={<Text>0.1.0</Text>}>
+            <ListItem title="版本" extra={<Text>0.2.0</Text>}>
+                我们重新(zào)发(lún)明(zi)了 Taro UI
+            </ListItem>
         </List>
     )
 }
