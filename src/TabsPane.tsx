@@ -5,11 +5,11 @@ import { AtTabsPaneProps } from 'taro-ui/types/tabs-pane'
 
 import '../style/TabsPane.scss'
 
-export interface TabsPanelProps extends AtTabsPaneProps {
+export interface TabsPaneProps extends AtTabsPaneProps {
     style?: React.CSSProperties
 }
 
-export const TabsPane: React.FC<TabsPanelProps> = props => {
+export const TabsPane: React.FC<TabsPaneProps> = props => {
     const { className, style = {}, children, tabDirection = 'horizontal', index = 0, current = 0 } = props
 
     return (
