@@ -22,6 +22,26 @@
         &__icon {
             padding-right: 12px;
         }
+
+        &_primary {
+            color: $color-brand;
+        }
+
+        &_secondary {
+            color: $color-brand;
+        }
+
+        &_success {
+            color: $color-success;
+        }
+
+        &_warn {
+            color: $color-warning;
+        }
+
+        &_error {
+            color: $color-error;
+        }
     }
 
     // &_primary {
