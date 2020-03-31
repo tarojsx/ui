@@ -5,7 +5,7 @@ import { View } from '@tarojs/components'
 import { Icon, IconProps } from './Icon'
 import '../style/ListHeader.scss'
 
-interface ListHeaderProps {
+export interface ListHeaderProps {
     className?: string
     style?: React.CSSProperties
     title: React.ReactNode
