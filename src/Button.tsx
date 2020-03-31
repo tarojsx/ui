@@ -46,18 +46,21 @@ export const Button: React.FC<ButtonProps> = props => {
 
     if (size === 'mini') {
         return (
-            <View
-                className={classNames(
-                    'at-button__mini',
-                    { [`at-button_${type}`]: type, 'at-button_disabled': props.disabled },
-                    className
-                )}
-                onClick={props.onClick}
-            >
-                <View className={classNames({ 'at-button__mini__icon': props.loading || props.iconInfo })}>
-                    {props.loading ? <Loading /> : !!props.iconInfo ? <Icon {...props.iconInfo} /> : null}
+            <View className="at-button__transparent">
+                <View
+                    className={classNames(
+                        'at-button__mini',
+                        { [`at-button__mini_${type}`]: type, 'at-button_disabled': props.disabled },
+                        className
+                    )}
+                    onClick={props.onClick}
+                >
+                    <View className={classNames({ 'at-button__mini__icon': props.loading || props.iconInfo })}>
+                        {props.loading ? <Loading /> : !!props.iconInfo ? <Icon {...props.iconInfo} /> : null}
+                    </View>
+                    {children}
                 </View>
-                {children}
+                <_Button {...rest} />
             </View>
         )
     }
