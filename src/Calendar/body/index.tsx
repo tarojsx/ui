@@ -6,7 +6,7 @@ import _throttle from 'lodash/throttle'
 import React from 'react'
 import bind from 'bind-decorator'
 import { View, Swiper, SwiperItem } from '@tarojs/components'
-import { ITouchEvent, BaseEvent, ITouch } from '@tarojs/components/types/common'
+import { ITouchEvent, ITouch } from '@tarojs/components/types/common'
 
 import Calendar from '../types'
 import AtCalendarDayList from '../ui/day-list/index'
@@ -191,7 +191,7 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
     }
 
     // @bind
-    private handleChange(e: BaseEvent) {
+    private handleChange(e) {
         const { current, source } = e.detail
 
         if (source === 'touch') {

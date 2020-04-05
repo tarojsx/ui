@@ -1,4 +1,4 @@
-import { BaseEvent } from '@tarojs/components/types/common'
+import { CommonEventFunction } from '@tarojs/components'
 
 import Calendar from '../types'
 
@@ -17,7 +17,7 @@ export interface Props {
 
   onNextMonth: () => void
 
-  onSelectDate: (e: BaseEvent) => void
+  onSelectDate: CommonEventFunction
 }
 
 export interface State {}

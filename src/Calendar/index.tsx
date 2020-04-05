@@ -1,4 +1,3 @@
-import bind from 'bind-decorator'
 import classnames from 'classnames'
 import dayjs, { Dayjs } from 'dayjs'
 
@@ -8,7 +7,6 @@ import _isFunction from 'lodash/isFunction'
 
 import React from 'react'
 import { View } from '@tarojs/components'
-import { BaseEvent } from '@tarojs/components/types/common'
 
 import '../../style/Calendar.scss'
 import AtCalendar from './types'
@@ -211,7 +209,7 @@ export class Calendar extends React.Component<Props, Readonly<State>> {
 
     // picker 选择时间改变时触发
     // @bind
-    handleSelectDate = (e: BaseEvent & { detail: { value: string } }) => {
+    handleSelectDate = (e: any) => {
         const { value } = e.detail
 
         const _generateDate: Dayjs = dayjs(value)
