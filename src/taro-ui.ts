@@ -40,6 +40,8 @@ export {
     ModalProps as AtModalProps,
     Progress as AtProgress,
     ProgressProps as AtProgressProps,
+    SearchBar as AtSearchBar,
+    SearchBarProps as AtSearchBarProps,
     Statistic as AtStatistic,
     StatisticProps as AtStatisticProps,
     Steps as AtSteps,

@@ -126,7 +126,7 @@ export default () => {
 * [x] Progress
 * [ ] Radio
 * [ ] Rate
-* [ ] SearchBar
+* [x] SearchBar
 * [ ] SegmentedControl
 * [ ] Slider
 * [x] Steps
