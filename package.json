@@ -35,7 +35,7 @@
         "url": "https://github.com/tarojsx/ui/issues"
     },
     "scripts": {
-        "start": "tsc --watch",
+        "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
         "dev:h5": "taro build --type h5 --watch",
@@ -46,9 +46,16 @@
         "prewebsite": "npm run docs",
         "website": "yarn --cwd website deploy"
     },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -x @commitlint/config-conventional -E HUSKY_GIT_PARAMS"
+        }
+    },
     "dependencies": {},
     "devDependencies": {
-        "@docusaurus/init": "^2.0.0-alpha.48",
+        "@commitlint/cli": "^8.3.5",
+        "@commitlint/config-conventional": "^8.3.4",
+        "@docusaurus/init": "^2.0.0-alpha.50",
         "@tarojs/cli": "3.0.0-beta.1",
         "@tarojs/components": "3.0.0-beta.1",
         "@tarojs/react": "3.0.0-beta.1",
@@ -56,17 +63,18 @@
         "@tarojs/taro": "3.0.0-beta.1",
         "@tarojs/webpack-runner": "3.0.0-beta.1",
         "@types/classnames": "^2.2.10",
-        "@types/node": "^13.9.3",
-        "@types/react": "^16.9.25",
+        "@types/node": "^13.11.0",
+        "@types/react": "^16.9.32",
         "@types/react-is": "^16.7.1",
-        "@types/webpack": "^4.41.8",
+        "@types/webpack": "^4.41.10",
         "@types/webpack-chain": "^5.2.0",
         "babel-preset-taro": "3.0.0-beta.1",
+        "husky": "^4.2.3",
         "np": "^6.2.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "rimraf": "^3.0.2",
-        "taro-ui": "^2.3.1",
+        "taro-ui": "^2.3.2",
         "tslib": "^1.11.1",
         "typedoc": "^0.17.3",
         "typedoc-plugin-markdown": "^2.2.17",
