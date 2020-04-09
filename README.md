@@ -2,7 +2,7 @@
     <h1>Taro3 UI</h1>
 </div>
 <div align="center">
-    <strong>我们重新(zào)发(lún)明(zi)了 <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
+    <strong>我们重新(zào)发(lún)明(zi) <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
 </div>
 
 <br />
