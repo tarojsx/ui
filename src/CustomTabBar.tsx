@@ -82,7 +82,7 @@ export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
      * 当前版本 taro 3.0.0.alpha.9 在程序启动时返回 router, 之后总是返回 null.
      */
     const routerIndex = useMemo(
-        () => list.findIndex(item => Taro['Current'].router?.path.startsWith(item.pagePath)),
+        () => list.findIndex(item => Taro.Current.router?.path.startsWith(item.pagePath)),
         []
     )
     const [current, setCurrent] = useState(~routerIndex ? routerIndex : defaultCurrentIndex)
