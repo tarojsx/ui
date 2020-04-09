@@ -9,10 +9,10 @@
         "resolveJsonModule": true,
         "lib": ["ESNext", "DOM"],
         "skipLibCheck": true,
+        "importHelpers": true,
         "sourceMap": true,
         "declaration": true,
-        "importHelpers": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "incremental": true,
         "rootDir": "./src",
         "outDir": "./dist"
