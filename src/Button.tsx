@@ -21,10 +21,14 @@ export interface ButtonProps extends Omit<_ButtonProps, 'size' | 'type'>, Pick<A
 
 export const Button: React.FC<ButtonProps> = props => {
     const { className, style, type, size, circle, full, transparent, fab, children, ...rest } = props
+    const hoverProps = Object.keys(props).reduce(
+        (res, key) => (key.startsWith('hover') && props[key] ? { ...res, [key]: props[key] } : res),
+        {}
+    )
 
     if (transparent) {
         return (
-            <View className={classNames('at-button__transparent', className)}>
+            <View className={classNames('at-button__transparent', className)} {...hoverProps}>
                 {children}
                 <_Button {...rest} />
             </View>
@@ -53,6 +57,7 @@ export const Button: React.FC<ButtonProps> = props => {
                         { [`at-button__mini_${type}`]: type, 'at-button_disabled': props.disabled },
                         className
                     )}
+                    {...hoverProps}
                     onClick={props.onClick}
                 >
                     <View className={classNames({ 'at-button__mini__icon': props.loading || props.iconInfo })}>
