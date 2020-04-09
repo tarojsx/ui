@@ -13,19 +13,14 @@ export interface IconProps extends Omit<AtIconBaseProps, 'customStyle' | 'size'>
 }
 
 export const Icon: React.FC<IconProps> = props => {
-    const { className, style = {}, prefixClass = 'at-icon', value, color, size = 24, ...rest } = props
+    const { className, style = {}, prefixClass = 'at-icon', value, color, size, ...rest } = props
 
     const iconName = value && `${prefixClass}-${value}`
+    const iconStyle: React.CSSProperties = {
+        color,
+        ...style,
+    }
+    if (size) iconStyle.fontSize = Taro.pxTransform(Number(size) * 2)
 
-    return (
-        <Text
-            className={classNames(prefixClass, iconName, className)}
-            style={{
-                fontSize: `${Taro.pxTransform(Number(size) * 2)}`,
-                color,
-                ...style,
-            }}
-            {...rest}
-        />
-    )
+    return <Text className={classNames(prefixClass, iconName, className)} style={iconStyle} {...rest} />
 }
