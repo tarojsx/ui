@@ -1,5 +1,5 @@
-import React, { useRef, useState, useCallback, useEffect } from 'react'
-import Taro, { useDidShow, useDidHide } from '@tarojs/taro'
+import React, { useRef, useState, useEffect } from 'react'
+import Taro from '@tarojs/taro'
 import classNames from 'classnames'
 import { View } from '@tarojs/components'
 
@@ -39,13 +39,13 @@ export const Message: React.FC<MessageProps> = props => {
         return () => Taro.eventCenter.off('atMessage', atMessageHandler)
     }, [])
 
-    useDidShow(() => {
-        Taro.eventCenter.on('atMessage', atMessageHandler)
-    })
-
-    useDidHide(() => {
-        Taro.eventCenter.off('atMessage', atMessageHandler)
-    })
+    // TODO taro 3.0.0-beta.3 不允许子包中出现 @tarojs/runtime, link 后 runtime 中提供的 hooks 全部失效.
+    // useDidShow(() => {
+    //     Taro.eventCenter.on('atMessage', atMessageHandler)
+    // })
+    // useDidHide(() => {
+    //     Taro.eventCenter.off('atMessage', atMessageHandler)
+    // })
 
     return (
         <View
