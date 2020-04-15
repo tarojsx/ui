@@ -42,7 +42,7 @@ export interface InputProps
     onErrorClick?(error: string): void
 }
 
-export const Input: React.FC<InputProps> = props => {
+export const Input: React.FC<InputProps> = (props) => {
     const {
         innerRef,
         className,
@@ -57,7 +57,7 @@ export const Input: React.FC<InputProps> = props => {
         placeholderStyle,
         disabled,
         required,
-        maxLength,
+        maxLength = 140,
         readOnly,
         autoFocus,
         cursorSpacing = 50,
@@ -72,35 +72,35 @@ export const Input: React.FC<InputProps> = props => {
     } = props
 
     const onInput = useCallback<_InputProps['onInput']>(
-        e => {
+        (e) => {
             props.onChange && props.onChange(e)
         },
         [props.onChange]
     )
 
     const onFocus = useCallback<_InputProps['onFocus']>(
-        e => {
+        (e) => {
             props.onFocus && props.onFocus(e)
         },
         [props.onFocus]
     )
 
     const onBlur = useCallback<_InputProps['onBlur']>(
-        e => {
+        (e) => {
             props.onBlur && props.onBlur(e)
         },
         [props.onBlur]
     )
 
     const onConfirm = useCallback<_InputProps['onConfirm']>(
-        e => {
+        (e) => {
             props.onConfirm && props.onConfirm(e)
         },
         [props.onConfirm]
     )
 
     const onClick = useCallback<_InputProps['onClick']>(
-        e => {
+        (e) => {
             props.readOnly && props.onClick && props.onClick(e)
         },
         [props.readOnly, props.onClick]
@@ -128,7 +128,7 @@ export const Input: React.FC<InputProps> = props => {
         const normalizedProps = {
             type,
             maxLength,
-            editable: !readOnly,
+            disabled: !!readOnly,
             password: false,
         }
 
@@ -146,7 +146,7 @@ export const Input: React.FC<InputProps> = props => {
         }
 
         return { ...normalizedProps, type: normalizedProps.type as _InputProps['type'] }
-    }, [props])
+    }, [type, maxLength, readOnly])
 
     return (
         <View className={classNames('at-input', { 'at-input--without-border': !border }, className)} style={style}>
@@ -171,7 +171,7 @@ export const Input: React.FC<InputProps> = props => {
                     </Label>
                 )}
                 <_Input
-                    ref={node => {
+                    ref={(node) => {
                         // node 偶尔为 null
                         if (node && innerRef) {
                             // 赋值 name 后更像 input.
@@ -182,7 +182,6 @@ export const Input: React.FC<InputProps> = props => {
                         }
                     }}
                     className="at-input__input"
-                    {...normalizedProps}
                     id={name}
                     name={name}
                     placeholder={placeholder}
@@ -201,6 +200,7 @@ export const Input: React.FC<InputProps> = props => {
                     onFocus={onFocus}
                     onBlur={onBlur}
                     onConfirm={onConfirm}
+                    {...normalizedProps}
                 />
                 {clear && value && (
                     <View className="at-input__icon" onTouchEnd={onClearClick}>
