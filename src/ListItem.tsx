@@ -21,7 +21,7 @@ export interface ListItemProps extends Omit<AtListItemProps, 'title' | 'iconInfo
     onClear?(): any
 }
 
-export const ListItem: React.FC<ListItemProps> = props => {
+export const ListItem: React.FC<ListItemProps> = (props) => {
     const {
         className,
         children,
@@ -75,10 +75,7 @@ export const ListItem: React.FC<ListItemProps> = props => {
                 <View className="at-list__item-content item-content">
                     <View className="item-content__info">
                         <View className="item-content__info-title">{title}</View>
-                        <View className="item-content__info-note">
-                            {note}
-                            {children}
-                        </View>
+                        <View className="item-content__info-note">{note}</View>
                     </View>
                 </View>
                 <View className="at-list__item-extra item-extra">
@@ -97,7 +94,7 @@ export const ListItem: React.FC<ListItemProps> = props => {
                                     'item-extra__icon-clear',
                                     arrow === 'clear' ? 'at-icon-close' : `at-icon-chevron-${arrow}`
                                 )}
-                                onClick={e => {
+                                onClick={(e) => {
                                     if (arrow === 'clear') {
                                         e.preventDefault()
                                         e.stopPropagation()
@@ -109,7 +106,7 @@ export const ListItem: React.FC<ListItemProps> = props => {
                     )}
                 </View>
             </View>
-            {!!footer && <View className="at-list__item-footer">{footer}</View>}
+            {!!children && <View className="at-list__item-children">{children}</View>}
         </View>
     )
 }
