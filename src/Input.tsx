@@ -34,12 +34,12 @@ export interface InputProps
     name?: string
     required?: boolean
     readOnly?: boolean
-    error?: string
+    error?: any
     onChange?: _InputProps['onInput']
     onFocus?: _InputProps['onFocus']
     onBlur?: _InputProps['onBlur']
     onClick?(event: ITouchEvent): any
-    onErrorClick?(error: string): void
+    onErrorClick?(error: any): void
 }
 
 export const Input: React.FC<InputProps> = (props) => {
