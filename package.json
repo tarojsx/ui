@@ -24,6 +24,7 @@
     ],
     "files": [
         "dist",
+        "docs",
         "style"
     ],
     "repository": {
@@ -55,26 +56,26 @@
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
-        "@docusaurus/init": "^2.0.0-alpha.50",
-        "@tarojs/components": "3.0.0-beta.4",
-        "@tarojs/taro": "3.0.0-beta.4",
+        "@docusaurus/init": "^2.0.0-alpha.54",
+        "@tarojs/components": "3.0.0-beta.5",
+        "@tarojs/taro": "3.0.0-beta.5",
         "@types/classnames": "^2.2.10",
-        "@types/lodash": "^4.14.149",
-        "@types/node": "^13.11.1",
+        "@types/lodash": "^4.14.150",
+        "@types/node": "^13.13.4",
         "@types/react": "^16.9.34",
         "@types/react-is": "^16.7.1",
-        "@types/webpack": "^4.41.11",
+        "@types/webpack": "^4.41.12",
         "@types/webpack-chain": "^5.2.0",
-        "babel-preset-taro": "3.0.0-beta.4",
+        "babel-preset-taro": "3.0.0-beta.5",
         "husky": "^4.2.5",
-        "np": "^6.2.1",
+        "np": "^6.2.3",
         "rimraf": "^3.0.2",
-        "taro-ui": "^2.3.3",
+        "taro-ui": "^2.3.4",
         "tslib": "^1.11.1",
-        "typedoc": "^0.17.4",
+        "typedoc": "^0.17.6",
         "typedoc-plugin-markdown": "^2.2.17",
         "typescript": "^3.8.3",
-        "webpack": "^4.42.1"
+        "webpack": "^4.43.0"
     },
     "peerDependencies": {
         "taro-ui": "*"
