@@ -46,7 +46,7 @@ export interface ImagePickerProps {
     onFail?: (message: string) => void
 }
 
-export const ImagePicker: React.FC<ImagePickerProps> = props => {
+export const ImagePicker: React.FC<ImagePickerProps> = (props) => {
     const {
         className,
         style = {},
@@ -92,7 +92,7 @@ export const ImagePicker: React.FC<ImagePickerProps> = props => {
 
     const chooseFile = useCallback(async () => {
         const filePathName = process.env.TARO_ENV === 'alipay' ? 'apFilePaths' : 'tempFiles'
-        const params = {} as Taro.chooseImage.Param
+        const params = {} as Taro.chooseImage.Option
         if (multiple) {
             params.count = 99
         }
@@ -150,7 +150,7 @@ export const ImagePicker: React.FC<ImagePickerProps> = props => {
                                 <View className="at-image-picker__item">
                                     <View
                                         className="at-image-picker__remove-btn"
-                                        onClick={e => {
+                                        onClick={(e) => {
                                             e.stopPropagation()
                                             handleImageRemove(i * length + j)
                                         }}
@@ -168,7 +168,7 @@ export const ImagePicker: React.FC<ImagePickerProps> = props => {
                                 {item.type === 'btn' && (
                                     <View
                                         className="at-image-picker__item at-image-picker__choose-btn"
-                                        onClick={e => {
+                                        onClick={(e) => {
                                             e.stopPropagation()
                                             chooseFile()
                                         }}

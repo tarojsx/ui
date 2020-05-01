@@ -1,59 +1,52 @@
 import Taro from '@tarojs/taro'
-import { execObject, SelectorQuery } from '@tarojs/taro/types/index'
+import { SelectorQuery } from '@tarojs/taro/types/index'
 
 const ENV = Taro.getEnv()
 
-function delay(delayTime = 500): Promise<null> {
-    return new Promise(resolve => {
-        if ([Taro.ENV_TYPE.WEB, Taro.ENV_TYPE.SWAN].includes(ENV)) {
-            setTimeout(() => {
-                resolve()
-            }, delayTime)
-            return
-        }
-        resolve()
+function delay(delayTime = 25): Promise<null> {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve()
+        }, delayTime)
     })
 }
 
-function delayQuerySelector(self, selectorStr: string, delayTime = 500): Promise<Array<execObject>> {
-    const $scope = ENV === Taro.ENV_TYPE.WEB ? self : self.$scope
-    const selector: SelectorQuery = Taro.createSelectorQuery().in($scope)
-
-    return new Promise(resolve => {
+function delayQuerySelector(selectorStr: string, delayTime = 500): Promise<any[]> {
+    return new Promise((resolve) => {
+        const selector: SelectorQuery = Taro.createSelectorQuery()
         delay(delayTime).then(() => {
             selector
                 .select(selectorStr)
                 .boundingClientRect()
-                .exec((res: Array<execObject>) => {
+                .exec((res: any[]) => {
                     resolve(res)
                 })
         })
     })
 }
 
-function delayGetScrollOffset({ delayTime = 500 }): Promise<Array<execObject>> {
-    return new Promise(resolve => {
+function delayGetScrollOffset({ delayTime = 500 }): Promise<any[]> {
+    return new Promise((resolve) => {
         delay(delayTime).then(() => {
             Taro.createSelectorQuery()
                 .selectViewport()
                 .scrollOffset()
-                .exec((res: Array<execObject>) => {
+                .exec((res: any[]) => {
                     resolve(res)
                 })
         })
     })
 }
 
-function delayGetClientRect({ self, selectorStr, delayTime = 500 }): Promise<Array<execObject>> {
-    const $scope = ENV === Taro.ENV_TYPE.WEB || ENV === Taro.ENV_TYPE.SWAN ? self : self.$scope
-    const selector: SelectorQuery = Taro.createSelectorQuery().in($scope)
+function delayGetClientRect({ selectorStr, delayTime = 500 }): Promise<any[]> {
+    const selector: SelectorQuery = Taro.createSelectorQuery()
 
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
         delay(delayTime).then(() => {
             selector
                 .select(selectorStr)
                 .boundingClientRect()
-                .exec((res: Array<execObject>) => {
+                .exec((res: any[]) => {
                     resolve(res)
                 })
         })
@@ -102,7 +95,7 @@ interface EventDetail {
     y: number
 }
 
-function getEventDetail(event: any) {
+function getEventDetail(event: any): EventDetail {
     let detail: EventDetail
     switch (ENV) {
         case Taro.ENV_TYPE.WEB:
@@ -174,19 +167,26 @@ function getEventDetail(event: any) {
     return detail
 }
 
-function initTestEnv() {
+function initTestEnv(): void {
     if (process.env.NODE_ENV === 'test') {
-        Taro.initPxTransform({ designWidth: 750 } as any)
+        Taro.initPxTransform({
+            designWidth: 750,
+            deviceRatio: {
+                '640': 2.34 / 2,
+                '750': 1,
+                '828': 1.81 / 2,
+            },
+        })
     }
 }
 
-function isTest() {
+function isTest(): boolean {
     return process.env.NODE_ENV === 'test'
 }
 
 let scrollTop = 0
 
-function handleTouchScroll(flag) {
+function handleTouchScroll(flag: any): void {
     if (ENV !== Taro.ENV_TYPE.WEB) {
         return
     }
@@ -199,16 +199,49 @@ function handleTouchScroll(flag) {
         // 把脱离文档流的body拉上去！否则页面会回到顶部！
         document.body.style.top = `${-scrollTop}px`
     } else {
-        document.body.style.top = null
+        document.body.style.top = ''
         document.body.classList.remove('at-frozen')
 
         document.documentElement.scrollTop = scrollTop
     }
 }
 
-function pxTransform(size) {
+function pxTransform(size: number): string {
     if (!size) return ''
-    return Taro.pxTransform(size)
+    const designWidth = 750
+    const deviceRatio = {
+        640: 2.34 / 2,
+        750: 1,
+        828: 1.81 / 2,
+    }
+    return `${size / deviceRatio[designWidth]}rpx`
+}
+
+function objectToString(style: object | string): string {
+    if (style && typeof style === 'object') {
+        let styleStr = ''
+        Object.keys(style).forEach((key) => {
+            const lowerCaseKey = key.replace(/([A-Z])/g, '-$1').toLowerCase()
+            styleStr += `${lowerCaseKey}:${style[key]};`
+        })
+        return styleStr
+    } else if (style && typeof style === 'string') {
+        return style
+    }
+    return ''
+}
+
+/**
+ * 合并 style
+ * @param {Object|String} style1
+ * @param {Object|String} style2
+ * @returns {String}
+ */
+function mergeStyle(style1: object | string, style2: object | string): object | string {
+    if (style1 && typeof style1 === 'object' && style2 && typeof style2 === 'object') {
+        return Object.assign({}, style1, style2)
+    }
+    return objectToString(style1) + objectToString(style2)
 }
 
 export {
@@ -222,4 +255,5 @@ export {
     handleTouchScroll,
     delayGetClientRect,
     delayGetScrollOffset,
+    mergeStyle,
 }
