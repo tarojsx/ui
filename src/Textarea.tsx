@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useRef, useMemo } from 'react'
 import Taro from '@tarojs/taro'
 import classNames from 'classnames'
 import { View, Textarea as _Textarea, CommonEventFunction } from '@tarojs/components'
@@ -19,7 +19,7 @@ export interface TextareaProps
 
 const ENV = Taro.getEnv()
 
-export const Textarea: React.FC<TextareaProps> = props => {
+export const Textarea: React.FC<TextareaProps> = (props) => {
     const {
         className,
         style = {},
@@ -50,9 +50,20 @@ export const Textarea: React.FC<TextareaProps> = props => {
     )
     const placeholderCls = classNames('placeholder', placeholderClass)
 
+    const textareaRef = useRef<any>()
+
     return (
-        <View className={rootCls} style={style}>
+        <View
+            className={rootCls}
+            style={style}
+            onClick={() => {
+                if (textareaRef.current) {
+                    textareaRef.current.focus()
+                }
+            }}
+        >
             <_Textarea
+                ref={textareaRef as any}
                 className="at-textarea__textarea"
                 style={textareaStyle}
                 placeholderClass={placeholderCls}
