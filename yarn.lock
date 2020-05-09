@@ -1030,20 +1030,20 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@tarojs/api@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-beta.5.tgz#5894d72c0e62a582db679f922193a63e8bc5b29f"
-  integrity sha1-WJTXLA5ipYLbZ5+SIZOmPovFsp8=
+"@tarojs/api@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/api/download/@tarojs/api-3.0.0-beta.6.tgz#2ad482b7edeffd12e1d8e80d8988c5a197d4e7e1"
+  integrity sha1-KtSCt+3v/RLh2OgNiYjFoZfU5+E=
   dependencies:
-    "@tarojs/runtime" "3.0.0-beta.5"
+    "@tarojs/runtime" "3.0.0-beta.6"
 
-"@tarojs/components@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/components/download/@tarojs/components-3.0.0-beta.5.tgz?cache=0&sync_timestamp=1588214143829&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40tarojs%2Fcomponents%2Fdownload%2F%40tarojs%2Fcomponents-3.0.0-beta.5.tgz#f2daf04c4972ebdca35b012f747769ce3c1deade"
-  integrity sha1-8trwTEly69yjWwEvdHdpzjwd6t4=
+"@tarojs/components@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/components/download/@tarojs/components-3.0.0-beta.6.tgz#8549ed2187256bc5da1b8e2ac317959a2fb2efab"
+  integrity sha1-hUntIYcla8XaG44qwxeVmi+y76s=
   dependencies:
     "@stencil/core" "^1.8.1"
-    "@tarojs/taro" "3.0.0-beta.5"
+    "@tarojs/taro" "3.0.0-beta.6"
     better-scroll "^1.14.1"
     classnames "^2.2.5"
     intersection-observer "^0.7.0"
@@ -1052,29 +1052,29 @@
     swiper "4.4.2"
     weui "^1.1.2"
 
-"@tarojs/router@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-beta.5.tgz#ac8fb064290f9db31337bbcb0ae4c5c3302f0026"
-  integrity sha1-rI+wZCkPnbMTN7vLCuTFwzAvACY=
+"@tarojs/router@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/router/download/@tarojs/router-3.0.0-beta.6.tgz#2dddabec8327bebcff4c469fa5651d397be3083c"
+  integrity sha1-Ld2r7IMnvrz/TEafpWUdOXvjCDw=
   dependencies:
-    "@tarojs/runtime" "3.0.0-beta.5"
+    "@tarojs/runtime" "3.0.0-beta.6"
     history "^4.10.1"
     universal-router "^8.3.0"
     url-parse "^1.4.7"
 
-"@tarojs/runtime@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-beta.5.tgz#17451cffe391d257ef5ba5baf75a6cc5c532f7db"
-  integrity sha1-F0Uc/+OR0lfvW6W691psxcUy99s=
+"@tarojs/runtime@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/runtime/download/@tarojs/runtime-3.0.0-beta.6.tgz#59b95b30b56376063b5d55833318dde5f02b4dfa"
+  integrity sha1-WblbMLVjdgY7XVWDMxjd5fArTfo=
 
-"@tarojs/taro-h5@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-beta.5.tgz#cbe8544ad272bba5b148515da8a5b53128361138"
-  integrity sha1-y+hUStJyu6WxSFFdqKW1MSg2ETg=
+"@tarojs/taro-h5@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro-h5/download/@tarojs/taro-h5-3.0.0-beta.6.tgz#c6c1fa0e72f189799dfcced3d640657fa9095092"
+  integrity sha1-xsH6DnLxiXmd/M7T1kBlf6kJUJI=
   dependencies:
-    "@tarojs/api" "3.0.0-beta.5"
-    "@tarojs/router" "3.0.0-beta.5"
-    "@tarojs/runtime" "3.0.0-beta.5"
+    "@tarojs/api" "3.0.0-beta.6"
+    "@tarojs/router" "3.0.0-beta.6"
+    "@tarojs/runtime" "3.0.0-beta.6"
     base64-js "^1.3.0"
     jsonp-retry "^1.0.3"
     mobile-detect "^1.4.2"
@@ -1082,13 +1082,13 @@
     unfetch "^4.1.0"
     whatwg-fetch "^2.0.4"
 
-"@tarojs/taro@3.0.0-beta.5":
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-beta.5.tgz#fec8be52868b3ac69f3b1c827a2472dc853a115a"
-  integrity sha1-/si+UoaLOsafOxyCeiRy3IU6EVo=
+"@tarojs/taro@3.0.0-beta.6":
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/@tarojs/taro/download/@tarojs/taro-3.0.0-beta.6.tgz#62d5bcbbfe4186cdf9eca6921664ee5331e08e93"
+  integrity sha1-YtW8u/5Bhs357KaSFmTuUzHgjpM=
   dependencies:
-    "@tarojs/api" "3.0.0-beta.5"
-    "@tarojs/taro-h5" "3.0.0-beta.5"
+    "@tarojs/api" "3.0.0-beta.6"
+    "@tarojs/taro-h5" "3.0.0-beta.6"
 
 "@types/anymatch@*":
   version "1.3.1"
@@ -1595,10 +1595,10 @@ babel-plugin-dynamic-import-node@^2.3.0:
   dependencies:
     object.assign "^4.1.0"
 
-babel-plugin-transform-taroapi@3.0.0-beta.5:
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/babel-plugin-transform-taroapi/download/babel-plugin-transform-taroapi-3.0.0-beta.5.tgz#57ae35b4851c754467a2da30ee9bed494630d77d"
-  integrity sha1-V641tIUcdURnotow7pvtSUYw130=
+babel-plugin-transform-taroapi@3.0.0-beta.6:
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/babel-plugin-transform-taroapi/download/babel-plugin-transform-taroapi-3.0.0-beta.6.tgz?cache=0&sync_timestamp=1588948624237&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-plugin-transform-taroapi%2Fdownload%2Fbabel-plugin-transform-taroapi-3.0.0-beta.6.tgz#3fcd9de31184d343b7238f8322c9dc4dc005f8d5"
+  integrity sha1-P82d4xGE00O3I4+DIsncTcAF+NU=
 
 babel-polyfill@6.26.0:
   version "6.26.0"
@@ -1609,10 +1609,10 @@ babel-polyfill@6.26.0:
     core-js "^2.5.0"
     regenerator-runtime "^0.10.5"
 
-babel-preset-taro@3.0.0-beta.5:
-  version "3.0.0-beta.5"
-  resolved "https://registry.npm.taobao.org/babel-preset-taro/download/babel-preset-taro-3.0.0-beta.5.tgz#ed0ce62f3c56f57dc67583a5ee5fff7873c7607a"
-  integrity sha1-7QzmLzxW9X3GdYOl7l//eHPHYHo=
+babel-preset-taro@3.0.0-beta.6:
+  version "3.0.0-beta.6"
+  resolved "https://registry.npm.taobao.org/babel-preset-taro/download/babel-preset-taro-3.0.0-beta.6.tgz#60cf0b7b142290654a612e6ec1d6625b5562311b"
+  integrity sha1-YM8LexQikGVKYS5uwdZiW1ViMRs=
   dependencies:
     "@babel/core" "^7.8.0"
     "@babel/plugin-proposal-class-properties" "^7.7.4"
@@ -1623,8 +1623,8 @@ babel-preset-taro@3.0.0-beta.5:
     "@babel/preset-react" "^7.7.4"
     "@babel/preset-typescript" "^7.8.0"
     "@babel/runtime" "^7.7.4"
-    "@tarojs/taro-h5" "3.0.0-beta.5"
-    babel-plugin-transform-taroapi "3.0.0-beta.5"
+    "@tarojs/taro-h5" "3.0.0-beta.6"
+    babel-plugin-transform-taroapi "3.0.0-beta.6"
     core-js "^3.6.3"
 
 babel-runtime@^6.0.0, babel-runtime@^6.23.0, babel-runtime@^6.26.0:
