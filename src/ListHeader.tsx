@@ -30,7 +30,7 @@ export const ListHeader: React.FC<ListHeaderProps> = props => {
         thumb,
         iconInfo,
         sticky = false,
-        top = 0,
+        top,
     } = props
 
     return (
