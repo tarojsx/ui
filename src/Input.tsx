@@ -125,27 +125,36 @@ export const Input: React.FC<InputProps> = (props) => {
     }, [props.error, props.onErrorClick])
 
     const normalizedProps = useMemo(() => {
-        const normalizedProps = {
+        const obj = {
             type,
             maxLength,
             disabled: !!readOnly,
             password: false,
         }
 
-        switch (normalizedProps.type) {
+        switch (obj.type) {
             case 'phone':
-                normalizedProps.type = 'number'
-                normalizedProps.maxLength = 11
+                obj.type = 'number'
+                obj.maxLength = 11
                 break
             case 'password':
-                normalizedProps.type = 'text'
-                normalizedProps.password = true
+                obj.type = 'text'
+                obj.password = true
                 break
             default:
                 break
         }
 
-        return { ...normalizedProps, type: normalizedProps.type as _InputProps['type'] }
+        const normalizedProps = { ...obj, type: obj.type as _InputProps['type'] }
+
+        if (normalizedProps.maxLength) {
+            // BUG 当前 taro 3.0.0-beta.6 会以驼峰式设置 'maxLength' 属性, 但小程序真正需要的是小写 'maxlength'.
+            normalizedProps['maxlength'] = normalizedProps.maxLength
+        }
+
+        return normalizedProps
+
+        // return { ...normalizedProps, type: normalizedProps.type as _InputProps['type'] }
     }, [type, maxLength, readOnly])
 
     return (
