@@ -1,5 +1,6 @@
+@import '~taro-ui/dist/style/variables/default.scss';
 @import '~taro-ui/dist/style/components/icon.scss';
 
 .at-icon {
-    font-size: 24px;
+    font-size: 24px * $hd;
 }
