@@ -17,7 +17,7 @@ export interface InputProps
             | 'placeholderClass'
             | 'placeholderStyle'
             | 'disabled'
-            | 'maxLength'
+            | 'maxlength'
             | 'cursorSpacing'
             | 'confirmType'
             | 'cursor'
@@ -33,6 +33,10 @@ export interface InputProps
     type?: _InputProps['type'] | 'phone' | 'password'
     name?: string
     required?: boolean
+    /**
+     * 最大输入长度，设置为 -1 的时候不限制最大长度
+     */
+    maxLength?: number
     readOnly?: boolean
     error?: any
     onChange?: _InputProps['onInput']
@@ -57,7 +61,6 @@ export const Input: React.FC<InputProps> = (props) => {
         placeholderStyle,
         disabled,
         required,
-        maxLength = 140,
         readOnly,
         autoFocus,
         cursorSpacing = 50,
@@ -70,6 +73,7 @@ export const Input: React.FC<InputProps> = (props) => {
         error,
         clear,
     } = props
+    const maxlength = props.maxlength ?? props.maxLength ?? 140
 
     const onInput = useCallback<_InputProps['onInput']>(
         (e) => {
@@ -127,7 +131,7 @@ export const Input: React.FC<InputProps> = (props) => {
     const normalizedProps = useMemo(() => {
         const obj = {
             type,
-            maxLength,
+            maxlength,
             disabled: !!readOnly,
             password: false,
         }
@@ -135,7 +139,7 @@ export const Input: React.FC<InputProps> = (props) => {
         switch (obj.type) {
             case 'phone':
                 obj.type = 'number'
-                obj.maxLength = 11
+                obj.maxlength = 11
                 break
             case 'password':
                 obj.type = 'text'
@@ -147,15 +151,15 @@ export const Input: React.FC<InputProps> = (props) => {
 
         const normalizedProps = { ...obj, type: obj.type as _InputProps['type'] }
 
-        if (normalizedProps.maxLength) {
-            // BUG 当前 taro 3.0.0-beta.6 会以驼峰式设置 'maxLength' 属性, 但小程序真正需要的是小写 'maxlength'.
-            normalizedProps['maxlength'] = normalizedProps.maxLength
-        }
+        // if (normalizedProps.maxLength) {
+        //     // BUG 当前 taro 3.0.0-beta.6 会以驼峰式设置 'maxLength' 属性, 但小程序真正需要的是小写 'maxlength'.
+        //     normalizedProps['maxlength'] = normalizedProps.maxLength
+        // }
 
         return normalizedProps
 
         // return { ...normalizedProps, type: normalizedProps.type as _InputProps['type'] }
-    }, [type, maxLength, readOnly])
+    }, [type, maxlength, readOnly])
 
     return (
         <View className={classNames('at-input', { 'at-input--without-border': !border }, className)} style={style}>

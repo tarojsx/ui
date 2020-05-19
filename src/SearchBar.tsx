@@ -2,11 +2,14 @@ import React, { useState, useCallback } from 'react'
 import classNames from 'classnames'
 import { Input, Text, View } from '@tarojs/components'
 import { CommonEventFunction } from '@tarojs/components/types/common'
+import { InputProps } from '@tarojs/components/types/Input'
 import { AtSearchBarProps, AtSearchBarState } from 'taro-ui/types/search-bar'
 
 import '../style/SearchBar.scss'
 
-export interface SearchBarProps extends Omit<AtSearchBarProps, 'onChange' | 'customStyle'> {
+export interface SearchBarProps
+    extends Omit<AtSearchBarProps, 'customStyle' | 'onChange'>,
+        Pick<InputProps, 'maxlength'> {
     style?: React.CSSProperties
     /**
      * 输入框值改变时触发的事件
@@ -24,13 +27,12 @@ export interface SearchBarProps extends Omit<AtSearchBarProps, 'onChange' | 'cus
     onActionClick?: CommonEventFunction<{ value: string }>
 }
 
-export const SearchBar: React.FC<SearchBarProps> = props => {
+export const SearchBar: React.FC<SearchBarProps> = (props) => {
     const {
         className,
         style,
         value = '',
         placeholder = '搜索',
-        maxLength = 140,
         fixed = false,
         focus = false,
         disabled = false,
@@ -44,11 +46,12 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
         onClear = () => {},
         onActionClick = () => {},
     } = props
+    const maxlength = props.maxlength ?? props.maxLength ?? 140
 
     const [isFocus, setIsFocus] = useState(focus)
 
     const handleFocus = useCallback<CommonEventFunction>(
-        e => {
+        (e) => {
             setIsFocus(true)
             onFocus(e)
         },
@@ -56,7 +59,7 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
     )
 
     const handleBlur = useCallback<CommonEventFunction>(
-        e => {
+        (e) => {
             setIsFocus(false)
             onBlur(e)
         },
@@ -64,7 +67,7 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
     )
 
     const handleClear = useCallback<CommonEventFunction>(
-        e => {
+        (e) => {
             if (onClear) {
                 onClear(e)
             } else {
@@ -116,7 +119,7 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
                     value={value}
                     focus={isFocus}
                     disabled={disabled}
-                    maxLength={maxLength}
+                    maxlength={maxlength}
                     onInput={onChange}
                     onFocus={handleFocus}
                     onBlur={handleBlur}
@@ -129,7 +132,7 @@ export const SearchBar: React.FC<SearchBarProps> = props => {
             <View
                 className="at-search-bar__action"
                 style={actionStyle}
-                onClick={e => {
+                onClick={(e) => {
                     e.detail.value = value
                     onActionClick(e)
                 }}
