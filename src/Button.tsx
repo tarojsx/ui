@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import { Button as _Button, View } from '@tarojs/components'
 import { ButtonProps as _ButtonProps } from '@tarojs/components/types/Button'
 import { AtButtonProps } from 'taro-ui/types/button'
+import { useThrottleCallback } from '@tarojsx/hooks/dist/useThrottleCallback'
 
 import { Loading } from './Loading'
 import { Icon, IconProps } from './Icon'
@@ -13,6 +14,8 @@ export interface ButtonProps extends Omit<_ButtonProps, 'size' | 'type'>, Pick<A
     style?: React.CSSProperties
     type?: _ButtonProps['type'] | AtButtonProps['type'] | 'error'
     size?: _ButtonProps['size'] | AtButtonProps['size']
+    /** onClick 事件防抖时间间隔, 单位: ms, 默认 500ms. */
+    clickThrottle?: boolean | number
     /** 透明按钮 */
     transparent?: boolean
     iconInfo?: IconProps
@@ -20,17 +23,31 @@ export interface ButtonProps extends Omit<_ButtonProps, 'size' | 'type'>, Pick<A
 }
 
 export const Button: React.FC<ButtonProps> = (props) => {
-    const { className, style, type, size, circle, full, transparent, fab, children, ...rest } = props
+    const {
+        className,
+        style,
+        type,
+        size,
+        circle,
+        full,
+        transparent,
+        fab,
+        children,
+        clickThrottle,
+        onClick,
+        ...rest
+    } = props
     const hoverProps = Object.keys(props).reduce(
         (res, key) => (key.startsWith('hover') && props[key] ? { ...res, [key]: props[key] } : res),
         {}
     )
+    const handleClick = useThrottleCallback(onClick, clickThrottle)
 
     if (transparent) {
         return (
             <View className={classNames('at-button__transparent', className)} {...hoverProps}>
                 {children}
-                <_Button {...rest} />
+                {!props.disabled && !props.loading && <_Button onClick={handleClick} {...rest} />}
             </View>
         )
     }
@@ -45,6 +62,7 @@ export const Button: React.FC<ButtonProps> = (props) => {
                     },
                     className
                 )}
+                onClick={handleClick}
                 {...rest}
             >
                 {children}
@@ -61,14 +79,13 @@ export const Button: React.FC<ButtonProps> = (props) => {
                         'at-button_disabled': props.disabled,
                     })}
                     {...hoverProps}
-                    onClick={props.onClick}
                 >
                     <View className={classNames({ 'at-button__mini__icon': props.loading || props.iconInfo })}>
                         {props.loading ? <Loading /> : !!props.iconInfo ? <Icon {...props.iconInfo} /> : null}
                     </View>
                     {children}
                 </View>
-                <_Button {...rest} />
+                {!props.disabled && !props.loading && <_Button onClick={handleClick} {...rest} />}
             </View>
         )
     }
@@ -90,13 +107,15 @@ export const Button: React.FC<ButtonProps> = (props) => {
             )}
             style={style}
         >
-            {!props.disabled && <_Button className="at-button__wxbutton" {...rest} />}
             {!!props.loading && (
                 <View className="at-button__icon">
                     <Loading color={type === 'primary' ? '#fff' : ''} size={size === 'small' ? '30' : 0} />
                 </View>
             )}
             <View className="at-button__text">{children}</View>
+            {!props.disabled && !props.loading && (
+                <_Button className="at-button__wxbutton" onClick={handleClick} {...rest} />
+            )}
         </View>
     )
 }

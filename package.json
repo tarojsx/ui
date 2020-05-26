@@ -52,7 +52,10 @@
             "commit-msg": "commitlint -x @commitlint/config-conventional -E HUSKY_GIT_PARAMS"
         }
     },
-    "dependencies": {},
+    "dependencies": {
+        "@tarojsx/hooks": "^0.10.2",
+        "tslib": "^2.0.0"
+    },
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
@@ -71,7 +74,6 @@
         "np": "^6.2.3",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.4",
-        "tslib": "^2.0.0",
         "typedoc": "^0.17.7",
         "typedoc-plugin-markdown": "^2.2.17",
         "typescript": "^3.9.3",
