@@ -1,5 +1,7 @@
 import React, { useMemo, useState, useCallback, useEffect } from 'react'
 import Taro, { eventCenter, AppConfig } from '@tarojs/taro'
+import history from '@tarojsx/history'
+
 import { uuid } from './utils'
 
 type TabBarConfig = AppConfig['tabBar']
@@ -19,12 +21,12 @@ export interface CustomTabBarProps {
         /**
          * 切换选中项
          *
-         * **注意**: 只有调用此接口才能更新选中项!
+         * **注意**: 只有调用此接口才能正确更新选中项!
          */
         switchTabIndex(index: number): void
     }) => React.ReactElement
     /**
-     * `app.config.js` 中的 `tabBar` 字段
+     * `app.config.js` 中的 `tabBar` 字段, taro 3.0.0-rc.1 及以上版本可省略.
      *
      * @example
      * ```tsx
@@ -32,7 +34,7 @@ export interface CustomTabBarProps {
      *  <CustomTabBar appTabBarConfig={appConfig.tabBar} />
      * ```
      */
-    appTabBarConfig: TabBarConfig
+    appTabBarConfig?: TabBarConfig
 }
 
 let taroTabBarAPIPatched = false
@@ -70,8 +72,8 @@ let defaultCurrentIndex = -1
  *
  * @since 2.5.0 微信开发者工具调试基础库 >= 2.5.2
  */
-export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
-    const { children, appTabBarConfig } = props
+export const CustomTabBar: React.FC<CustomTabBarProps> = (props) => {
+    const { children, appTabBarConfig = ((window as any).__taroAppConfig as Taro.AppConfig)?.tabBar } = props
 
     const { custom, list, ...defaultTabBarStyle } = appTabBarConfig
 
@@ -81,15 +83,12 @@ export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
      * 根据路由推断 current index.
      * 当前版本 taro 3.0.0.alpha.9 在程序启动时返回 router, 之后总是返回 null.
      */
-    const routerIndex = useMemo(
-        () => list.findIndex(item => Taro.Current.router?.path.startsWith(item.pagePath)),
-        []
-    )
+    const routerIndex = useMemo(() => list.findIndex((item) => Taro.Current.router?.path.startsWith(item.pagePath)), [])
     const [current, setCurrent] = useState(~routerIndex ? routerIndex : defaultCurrentIndex)
 
     const [tabBarStyle, setTabBarStyle] = useState(defaultTabBarStyle)
     const [tabBarList, setTabBarList] = useState(
-        list.map<CustomTabBarItem>(item => ({
+        list.map<CustomTabBarItem>((item) => ({
             ...item,
             key: uuid(),
             pagePath: '/' + item.pagePath,
@@ -99,9 +98,13 @@ export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
             redDot: false,
         }))
     )
+
+    /**
+     * 更新指定位置的 Tab 配置
+     */
     const updateTabBarListAt = useCallback(
         (tabIndex: number, params: Partial<CustomTabBarItem>) => {
-            setTabBarList(prev => prev.map((item, index) => (index === tabIndex ? { ...item, ...params } : item)))
+            setTabBarList((prev) => prev.map((item, index) => (index === tabIndex ? { ...item, ...params } : item)))
         },
         [setTabBarList]
     )
@@ -122,6 +125,24 @@ export const CustomTabBar: React.FC<CustomTabBarProps> = props => {
             }
         },
         [tabBarList]
+    )
+
+    /**
+     * 监听 history 修正当前 Tab 索引
+     *
+     * @since taro 3.0.0-rc.1
+     */
+    useEffect(
+        () =>
+            history.listen((location) => {
+                const tabBarPagePaths = appTabBarConfig.list.map((item) => '/' + item.pagePath)
+                const index = tabBarPagePaths.indexOf(location.path)
+                if (index >= 0 && index < tabBarPagePaths.length) {
+                    defaultCurrentIndex = index
+                    setCurrent(index)
+                }
+            }),
+        [appTabBarConfig]
     )
 
     useEffect(() => {
