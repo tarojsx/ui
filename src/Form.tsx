@@ -4,7 +4,7 @@ import { FormProps as _FormProps } from '@tarojs/components/types/Form'
 import { useThrottleCallback } from '@tarojsx/hooks/dist/useThrottleCallback'
 
 export interface FormProps extends Omit<_FormProps, 'onSubmit'> {
-    /** onClick 事件防抖时间间隔, 单位: ms, 默认 500ms. */
+    /** onClick 事件节流时间间隔, 单位: ms, 默认 500ms. */
     submitThrottle?: boolean | number
     onSubmit?(e: React.BaseSyntheticEvent): void
 }

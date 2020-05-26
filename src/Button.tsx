@@ -14,7 +14,7 @@ export interface ButtonProps extends Omit<_ButtonProps, 'size' | 'type'>, Pick<A
     style?: React.CSSProperties
     type?: _ButtonProps['type'] | AtButtonProps['type'] | 'error'
     size?: _ButtonProps['size'] | AtButtonProps['size']
-    /** onClick 事件防抖时间间隔, 单位: ms, 默认 500ms. */
+    /** onClick 事件节流时间间隔, 单位: ms, 默认 500ms. */
     clickThrottle?: boolean | number
     /** 透明按钮 */
     transparent?: boolean
