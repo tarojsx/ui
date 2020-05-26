@@ -1,44 +1,15 @@
-import React, { useCallback } from 'react'
+import React, { useMemo, useCallback } from 'react'
 import Taro from '@tarojs/taro'
 import classNames from 'classnames'
-import _toString from 'lodash/toString'
-import { View, Input, Text, CommonEvent, CommonEventFunction } from '@tarojs/components'
+import { View, Input, Text, CommonEventFunction } from '@tarojs/components'
+import { InputProps } from '@tarojs/components/types/Input'
 import { AtInputNumberProps } from 'taro-ui/types/input-number'
 
 import '../style/InputNumber.scss'
-import { InputProps } from '@tarojs/components/types/Input'
-
-// 实现两数相加并保留小数点后最短尾数
-function addNum(num1: number, num2: number): number {
-    let sq1: number, sq2: number
-    try {
-        sq1 = _toString(num1).split('.')[1].length
-    } catch (e) {
-        sq1 = 0
-    }
-    try {
-        sq2 = _toString(num2).split('.')[1].length
-    } catch (e) {
-        sq2 = 0
-    }
-    const m = Math.pow(10, Math.max(sq1, sq2))
-    return (Math.round(num1 * m) + Math.round(num2 * m)) / m
-}
-
-// 格式化数字，处理01变成1,并且不处理1. 这种情况
-function parseValue(num: string): string {
-    if (num === '') return '0'
-
-    const numStr = _toString(num)
-    if (numStr.indexOf('0') === 0 && numStr.indexOf('.') === -1) {
-        // 处理01变成1,并且不处理1.
-        return _toString(parseFloat(num))
-    }
-    return _toString(num)
-}
 
 export interface InputNumberProps
-    extends Omit<Partial<AtInputNumberProps>, 'style' | 'customStyle' | 'onChange' | 'onErrorInput'> {
+    extends Omit<Partial<AtInputNumberProps>, 'style' | 'customStyle' | 'onChange' | 'onBlur' | 'onErrorInput'>,
+        Omit<InputProps, 'value' | 'type' | 'password' | 'children'> {
     style?: React.CSSProperties
     customStyle?: React.CSSProperties
     /**
@@ -46,9 +17,31 @@ export interface InputNumberProps
      * @param {number} value 输入框当前值
      * @description 开发者需要通过 onChange 事件来更新 value 值变化，onChange 函数必填
      */
-    onChange?: CommonEventFunction<{ value: number; delta?: number }>
+    onChange?: CommonEventFunction<{ value: number | string; delta?: number }>
 }
 
+/**
+ * 获取数据小数点后面部分长度
+ */
+const getPrecision = (num: number) => {
+    return String(num).split('.')[1]?.length || 0
+}
+/**
+ * 数字加法, 避免 float 数计算误差.
+ */
+const decimalAdd = (a: number, b: number) => {
+    /** 两个数字转化为整数所需的乘法系数 */
+    const ratio = Math.pow(10, Math.max(getPrecision(a), getPrecision(b)))
+    return Math.round((a + b) * ratio) / ratio
+}
+
+/**
+ * 数字输入框
+ *
+ * - 按 "+" 和 "-" 按 step 加减数字.
+ * - 手动输入数字时调起数字(number)或小数(digit)键盘, 默认距离键盘50px.
+ * - 失去光标时强制格式化数字.
+ */
 export const InputNumber: React.FC<InputNumberProps> = props => {
     const {
         className,
@@ -63,96 +56,50 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
         max = 100,
         step = 1,
         size = 'normal',
+        cursorSpacing = 50,
         onChange = () => {},
         onBlur = () => {},
+        ...rest
     } = props
 
-    // TODO: Fix dirty hack
+    const inputValue = useMemo(() => parseFloat(String(value)) || 0, [value])
+
+    const clamp = useCallback(n => Math.max(min, Math.min(max, n)), [min, max])
+
     const handleClick = useCallback<InputNumberProps['onChange']>(
         e => {
             e.preventDefault()
             e.stopPropagation()
+
             if (disabled) return
 
-            const nextValue = addNum(Number(value), e.detail.delta)
-            if (nextValue > max) {
-                e.detail.value = max
-                onChange(e)
-                return
-            }
-            if (nextValue < min) {
-                e.detail.value = min
-                onChange(e)
-                return
-            }
-
-            // if (disabled || nextValue > max || nextValue < min) return
-
-            // const lowThanMin = clickType === 'minus' && value <= min!
-            // const overThanMax = clickType === 'plus' && value >= max!
-            // if (lowThanMin || overThanMax || disabled) {
-            //     const deltaValue = clickType === 'minus' ? -step! : step
-            //     const errorValue = addNum(Number(value), deltaValue!)
-            //     if (disabled) {
-            //         onErrorInput({
-            //             type: 'DISABLED',
-            //             errorValue,
-            //         })
-            //     } else {
-            //         onErrorInput({
-            //             type: lowThanMin ? 'LOW' : 'OVER',
-            //             errorValue,
-            //         })
-            //     }
-            //     return
-            // }
-            // const deltaValue = clickType === 'minus' ? -step! : step
-            // let newValue = addNum(Number(value), deltaValue!)
-            // newValue = Number(handleValue(newValue))
-            e.detail.value = nextValue
+            e.detail.value = clamp(decimalAdd(inputValue, e.detail.delta))
             onChange(e)
         },
-        [disabled, value, min, max, step]
+        [disabled, inputValue, clamp, step]
     )
 
-    // TODO: Fix dirty hack
-    const handleValue = useCallback(
-        (value: string | number): string => {
-            let resultValue = value === '' ? min : value
-            // 此处不能使用 Math.max，会是字符串变数字，并丢失 .
-            if (resultValue! > max!) {
-                resultValue = max
-                // onErrorInput({
-                //     type: 'OVER',
-                //     errorValue: resultValue!,
-                // })
-            }
-            if (resultValue! < min!) {
-                resultValue = min
-                // onErrorInput({
-                //     type: 'LOW',
-                //     errorValue: resultValue!,
-                // })
-            }
-            resultValue = parseValue(String(resultValue))
-            return resultValue
-        },
-        [max, min]
-    )
-
-    const handleInput = useCallback<InputProps['onInput']>(
+    const handleChange = useCallback<InputProps['onInput']>(
         e => {
             const { value } = e.detail
-            if (disabled) return
-
-            const newValue = handleValue(value)
-            e.detail.value = Number(newValue) as any
-            onChange(e as any)
+            const num = parseFloat(value) || 0
+            if (num.toString() === value) {
+                e.detail.value = num as any
+            }
+            onChange(e)
         },
-        [onChange, disabled]
+        [onChange]
     )
 
-    const inputValue = Number(handleValue(value))
+    const handleBlur = useCallback<InputProps['onBlur']>(
+        e => {
+            const num = parseFloat(e.detail.value)
+            e.detail.value = isNaN(num) ? '' : (clamp(num) as any)
+            onChange(e)
+            onBlur(e)
+        },
+        [onBlur, onChange, clamp]
+    )
 
     return (
         <View
@@ -171,13 +118,16 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
                 <Text className="at-icon at-icon-subtract at-input-number__btn-subtract"></Text>
             </View>
             <Input
+                {...rest}
+                cursor={String(value).length}
+                cursorSpacing={cursorSpacing}
                 className="at-input-number__input"
                 style={width ? { width: Taro.pxTransform(width) } : {}}
                 type={type}
-                value={String(inputValue)}
+                value={(value as any) ?? ''}
                 disabled={disabledInput || disabled}
-                onInput={handleInput}
-                onBlur={onBlur}
+                onInput={handleChange}
+                onBlur={handleBlur}
             />
             <View
                 className={classNames('at-input-number__btn', {
