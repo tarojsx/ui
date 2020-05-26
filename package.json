@@ -53,6 +53,7 @@
         }
     },
     "dependencies": {
+        "@tarojsx/history": "^0.11.0",
         "@tarojsx/hooks": "^0.10.2",
         "tslib": "^2.0.0"
     },
@@ -60,8 +61,8 @@
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
         "@docusaurus/init": "^2.0.0-alpha.55",
-        "@tarojs/components": "^3.0.0-rc.0",
-        "@tarojs/taro": "^3.0.0-rc.0",
+        "@tarojs/components": "^3.0.0-rc.1",
+        "@tarojs/taro": "^3.0.0-rc.1",
         "@types/classnames": "^2.2.10",
         "@types/lodash": "^4.14.152",
         "@types/node": "^14.0.5",
@@ -69,7 +70,7 @@
         "@types/react-is": "^16.7.1",
         "@types/webpack": "^4.41.13",
         "@types/webpack-chain": "^5.2.0",
-        "babel-preset-taro": "^3.0.0-rc.0",
+        "babel-preset-taro": "^3.0.0-rc.1",
         "husky": "^4.2.5",
         "np": "^6.2.3",
         "rimraf": "^3.0.2",
