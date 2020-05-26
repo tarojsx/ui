@@ -60,8 +60,8 @@
         "@tarojs/components": "^3.0.0-rc.0",
         "@tarojs/taro": "^3.0.0-rc.0",
         "@types/classnames": "^2.2.10",
-        "@types/lodash": "^4.14.151",
-        "@types/node": "^14.0.1",
+        "@types/lodash": "^4.14.152",
+        "@types/node": "^14.0.5",
         "@types/react": "^16.9.35",
         "@types/react-is": "^16.7.1",
         "@types/webpack": "^4.41.13",
@@ -74,7 +74,7 @@
         "tslib": "^2.0.0",
         "typedoc": "^0.17.7",
         "typedoc-plugin-markdown": "^2.2.17",
-        "typescript": "^3.9.2",
+        "typescript": "^3.9.3",
         "webpack": "^4.43.0"
     },
     "peerDependencies": {
