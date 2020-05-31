@@ -20,7 +20,7 @@ sidebar_label: "ListItem"
 
 ▸ **ListItem**(`props`: [ListItemProps](../interfaces/_listitem_.listitemprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/ListItem.tsx:24](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L24)*
+*Defined in [src/ListItem.tsx:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L24)*
 
 **Parameters:**
 

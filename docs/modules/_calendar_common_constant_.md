@@ -18,7 +18,7 @@ sidebar_label: "Calendar/common/constant"
 
 • **TYPE_NEXT_MONTH**: *1* = 1
 
-*Defined in [src/Calendar/common/constant.ts:5](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/constant.ts#L5)*
+*Defined in [src/Calendar/common/constant.ts:5](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/common/constant.ts#L5)*
 
 ___
 
@@ -26,7 +26,7 @@ ___
 
 • **TYPE_NOW_MONTH**: *0* = 0
 
-*Defined in [src/Calendar/common/constant.ts:3](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/constant.ts#L3)*
+*Defined in [src/Calendar/common/constant.ts:3](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/common/constant.ts#L3)*
 
 ___
 
@@ -34,4 +34,4 @@ ___
 
 • **TYPE_PRE_MONTH**: *-1* = -1
 
-*Defined in [src/Calendar/common/constant.ts:1](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/common/constant.ts#L1)*
+*Defined in [src/Calendar/common/constant.ts:1](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/common/constant.ts#L1)*

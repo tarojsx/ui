@@ -39,7 +39,7 @@ sidebar_label: "PropsBase"
 
 • **className**? : *Calendar.classNameType*
 
-*Defined in [src/Calendar/interface.ts:22](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L22)*
+*Defined in [src/Calendar/interface.ts:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L22)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **format**? : *string*
 
-*Defined in [src/Calendar/interface.ts:4](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L4)*
+*Defined in [src/Calendar/interface.ts:4](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L4)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **hideArrow**? : *boolean*
 
-*Defined in [src/Calendar/interface.ts:18](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L18)*
+*Defined in [src/Calendar/interface.ts:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L18)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **isSwiper**? : *boolean*
 
-*Defined in [src/Calendar/interface.ts:12](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L12)*
+*Defined in [src/Calendar/interface.ts:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L12)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **isVertical**? : *boolean*
 
-*Defined in [src/Calendar/interface.ts:20](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L20)*
+*Defined in [src/Calendar/interface.ts:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L20)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **marks**? : *Array‹Mark›*
 
-*Defined in [src/Calendar/interface.ts:14](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L14)*
+*Defined in [src/Calendar/interface.ts:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L14)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 • **maxDate**? : *Calendar.DateArg*
 
-*Defined in [src/Calendar/interface.ts:10](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L10)*
+*Defined in [src/Calendar/interface.ts:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L10)*
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 • **minDate**? : *Calendar.DateArg*
 
-*Defined in [src/Calendar/interface.ts:8](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L8)*
+*Defined in [src/Calendar/interface.ts:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L8)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 • **monthFormat**? : *string*
 
-*Defined in [src/Calendar/interface.ts:16](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L16)*
+*Defined in [src/Calendar/interface.ts:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L16)*
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 • **onClickNextMonth**? : *function*
 
-*Defined in [src/Calendar/interface.ts:26](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L26)*
+*Defined in [src/Calendar/interface.ts:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L26)*
 
 #### Type declaration:
 
@@ -123,7 +123,7 @@ ___
 
 • **onClickPreMonth**? : *function*
 
-*Defined in [src/Calendar/interface.ts:24](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L24)*
+*Defined in [src/Calendar/interface.ts:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L24)*
 
 #### Type declaration:
 
@@ -135,7 +135,7 @@ ___
 
 • **onDayClick**? : *function*
 
-*Defined in [src/Calendar/interface.ts:30](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L30)*
+*Defined in [src/Calendar/interface.ts:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L30)*
 
 #### Type declaration:
 
@@ -155,7 +155,7 @@ ___
 
 • **onDayLongClick**? : *function*
 
-*Defined in [src/Calendar/interface.ts:32](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L32)*
+*Defined in [src/Calendar/interface.ts:32](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L32)*
 
 #### Type declaration:
 
@@ -175,7 +175,7 @@ ___
 
 • **onMonthChange**? : *function*
 
-*Defined in [src/Calendar/interface.ts:34](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L34)*
+*Defined in [src/Calendar/interface.ts:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L34)*
 
 #### Type declaration:
 
@@ -193,7 +193,7 @@ ___
 
 • **onSelectDate**? : *function*
 
-*Defined in [src/Calendar/interface.ts:28](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L28)*
+*Defined in [src/Calendar/interface.ts:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L28)*
 
 #### Type declaration:
 
@@ -213,4 +213,4 @@ ___
 
 • **validDates**? : *Array‹ValidDate›*
 
-*Defined in [src/Calendar/interface.ts:6](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L6)*
+*Defined in [src/Calendar/interface.ts:6](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L6)*

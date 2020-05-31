@@ -8,7 +8,7 @@ sidebar_label: "TabsPane"
 
 ### Interfaces
 
-* [TabsPanelProps](../interfaces/_tabspane_.tabspanelprops.md)
+* [TabsPaneProps](../interfaces/_tabspane_.tabspaneprops.md)
 
 ### Functions
 
@@ -18,14 +18,14 @@ sidebar_label: "TabsPane"
 
 ### `Const` TabsPane
 
-▸ **TabsPane**(`props`: [TabsPanelProps](../interfaces/_tabspane_.tabspanelprops.md) & object): *Element‹›*
+▸ **TabsPane**(`props`: [TabsPaneProps](../interfaces/_tabspane_.tabspaneprops.md) & object): *Element‹›*
 
-*Defined in [src/TabsPane.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/TabsPane.tsx#L12)*
+*Defined in [src/TabsPane.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabsPane.tsx#L12)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`props` | [TabsPanelProps](../interfaces/_tabspane_.tabspanelprops.md) & object |
+`props` | [TabsPaneProps](../interfaces/_tabspane_.tabspaneprops.md) & object |
 
 **Returns:** *Element‹›*

@@ -24,7 +24,7 @@ sidebar_label: "ModalProps"
 
 • **content**? : *React.ReactNode*
 
-*Defined in [src/Modal.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Modal.tsx#L11)*
+*Defined in [src/Modal.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L11)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Modal.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Modal.tsx#L9)*
+*Defined in [src/Modal.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L9)*
 
 ___
 
@@ -40,4 +40,4 @@ ___
 
 • **title**? : *React.ReactNode*
 
-*Defined in [src/Modal.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Modal.tsx#L10)*
+*Defined in [src/Modal.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L10)*

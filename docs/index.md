@@ -8,7 +8,7 @@ sidebar_label: "README"
     <h1>Taro3 UI</h1>
 </div>
 <div align="center">
-    <strong>我们重新(zào)发(lún)明(zi)了 <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
+    <strong>我们重新(zào)发(lún)明(zi) <a href="https://github.com/NervJS/taro-ui" target="_blank">Taro UI</a></strong>
 </div>
 
 <br />
@@ -24,7 +24,7 @@ sidebar_label: "README"
         <img src="https://badgen.net/npm/dt/@tarojsx/ui" alt="npm downloads" />
     </a>
     <a href="https://github.com/tarojsx/ui/blob/master/package.json">
-        <img src="https://badgen.net/github/dependents-pkg/tarojsx/ui" alt="npm downloads" />
+        <img src="https://badgen.net/github/dependents-pkg/tarojsx/ui" alt="dependents" />
     </a>
     <a href="http://makeapullrequest.com">
         <img src="https://badgen.net/badge/PRs/welcome/green" alt="PRs welcome" />
@@ -99,9 +99,9 @@ export default () => {
   * [ ] 子组件
 * [x] ActivityIndicator
 * [ ] Article
-* [x] Avatar
+* [x] [Avatar](./docs/components/Avatar.mdx)
 * [x] Badge
-* [x] Button
+* [x] [Button](./docs/components/Button.mdx)
 * [x] Calendar
   * [ ] Swipe 操作
 * [ ] Card
@@ -113,7 +113,7 @@ export default () => {
 * [ ] ~~Flex~~ (使用率不高)
 * [x] FloatLayout
 * [x] Form
-* [ ] Grid
+* [x] Grid
 * [x] Icon
 * [x] ImagePicker
 * [ ] Indexes
@@ -132,7 +132,7 @@ export default () => {
 * [x] Progress
 * [ ] Radio
 * [ ] Rate
-* [ ] SearchBar
+* [x] SearchBar
 * [ ] SegmentedControl
 * [ ] Slider
 * [x] Steps

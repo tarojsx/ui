@@ -41,7 +41,7 @@ sidebar_label: "MutilSelectedProps"
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[className](_calendar_interface_.propsbase.md#optional-classname)*
 
-*Defined in [src/Calendar/interface.ts:22](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L22)*
+*Defined in [src/Calendar/interface.ts:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L22)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **currentDate**? : *SelectedDate*
 
-*Defined in [src/Calendar/interface.ts:46](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L46)*
+*Defined in [src/Calendar/interface.ts:46](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L46)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[format](_calendar_interface_.propsbase.md#optional-format)*
 
-*Defined in [src/Calendar/interface.ts:4](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L4)*
+*Defined in [src/Calendar/interface.ts:4](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L4)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[hideArrow](_calendar_interface_.propsbase.md#optional-hidearrow)*
 
-*Defined in [src/Calendar/interface.ts:18](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L18)*
+*Defined in [src/Calendar/interface.ts:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L18)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **isMultiSelect**? : *true*
 
-*Defined in [src/Calendar/interface.ts:44](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L44)*
+*Defined in [src/Calendar/interface.ts:44](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L44)*
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[isSwiper](_calendar_interface_.propsbase.md#optional-isswiper)*
 
-*Defined in [src/Calendar/interface.ts:12](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L12)*
+*Defined in [src/Calendar/interface.ts:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L12)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[isVertical](_calendar_interface_.propsbase.md#optional-isvertical)*
 
-*Defined in [src/Calendar/interface.ts:20](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L20)*
+*Defined in [src/Calendar/interface.ts:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L20)*
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[marks](_calendar_interface_.propsbase.md#optional-marks)*
 
-*Defined in [src/Calendar/interface.ts:14](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L14)*
+*Defined in [src/Calendar/interface.ts:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L14)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[maxDate](_calendar_interface_.propsbase.md#optional-maxdate)*
 
-*Defined in [src/Calendar/interface.ts:10](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L10)*
+*Defined in [src/Calendar/interface.ts:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L10)*
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[minDate](_calendar_interface_.propsbase.md#optional-mindate)*
 
-*Defined in [src/Calendar/interface.ts:8](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L8)*
+*Defined in [src/Calendar/interface.ts:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L8)*
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[monthFormat](_calendar_interface_.propsbase.md#optional-monthformat)*
 
-*Defined in [src/Calendar/interface.ts:16](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L16)*
+*Defined in [src/Calendar/interface.ts:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L16)*
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onClickNextMonth](_calendar_interface_.propsbase.md#optional-onclicknextmonth)*
 
-*Defined in [src/Calendar/interface.ts:26](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L26)*
+*Defined in [src/Calendar/interface.ts:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L26)*
 
 #### Type declaration:
 
@@ -161,7 +161,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onClickPreMonth](_calendar_interface_.propsbase.md#optional-onclickpremonth)*
 
-*Defined in [src/Calendar/interface.ts:24](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L24)*
+*Defined in [src/Calendar/interface.ts:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L24)*
 
 #### Type declaration:
 
@@ -175,7 +175,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onDayClick](_calendar_interface_.propsbase.md#optional-ondayclick)*
 
-*Defined in [src/Calendar/interface.ts:30](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L30)*
+*Defined in [src/Calendar/interface.ts:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L30)*
 
 #### Type declaration:
 
@@ -197,7 +197,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onDayLongClick](_calendar_interface_.propsbase.md#optional-ondaylongclick)*
 
-*Defined in [src/Calendar/interface.ts:32](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L32)*
+*Defined in [src/Calendar/interface.ts:32](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L32)*
 
 #### Type declaration:
 
@@ -219,7 +219,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onMonthChange](_calendar_interface_.propsbase.md#optional-onmonthchange)*
 
-*Defined in [src/Calendar/interface.ts:34](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L34)*
+*Defined in [src/Calendar/interface.ts:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L34)*
 
 #### Type declaration:
 
@@ -239,7 +239,7 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[onSelectDate](_calendar_interface_.propsbase.md#optional-onselectdate)*
 
-*Defined in [src/Calendar/interface.ts:28](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L28)*
+*Defined in [src/Calendar/interface.ts:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L28)*
 
 #### Type declaration:
 
@@ -261,4 +261,4 @@ ___
 
 *Inherited from [PropsBase](_calendar_interface_.propsbase.md).[validDates](_calendar_interface_.propsbase.md#optional-validdates)*
 
-*Defined in [src/Calendar/interface.ts:6](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L6)*
+*Defined in [src/Calendar/interface.ts:6](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L6)*

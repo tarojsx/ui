@@ -21,12 +21,14 @@
     "typedocOptions": {
         "out": "docs",
         "theme": "docusaurus2",
+        "gitRevision": "v0.11.0",
         "disableOutputCheck": true,
         "excludeExternals": true,
         "excludeNotExported": true,
         "excludePrivate": true,
         "excludeProtected": true,
         "hideBreadcrumbs": true,
-        "listInvalidSymbolLinks": true
+        "listInvalidSymbolLinks": true,
+        "skipSidebar": true
     }
 }

@@ -26,7 +26,7 @@ sidebar_label: "AvatarProps"
 
 • **circle**? : *boolean*
 
-*Defined in [src/Avatar.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L12)*
+*Defined in [src/Avatar.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L12)*
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 • **className**? : *string*
 
-*Defined in [src/Avatar.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L9)*
+*Defined in [src/Avatar.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L9)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 • **image**? : *string*
 
-*Defined in [src/Avatar.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L14)*
+*Defined in [src/Avatar.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L14)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **openData**? : *object*
 
-*Defined in [src/Avatar.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L15)*
+*Defined in [src/Avatar.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L15)*
 
 #### Type declaration:
 
@@ -64,7 +64,7 @@ ___
 
 • **size**? : *"tiny" | "mini" | "small" | "large"*
 
-*Defined in [src/Avatar.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L11)*
+*Defined in [src/Avatar.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L11)*
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Avatar.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L10)*
+*Defined in [src/Avatar.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L10)*
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 • **text**? : *string*
 
-*Defined in [src/Avatar.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Avatar.tsx#L13)*
+*Defined in [src/Avatar.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L13)*

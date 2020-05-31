@@ -28,7 +28,7 @@ sidebar_label: "TagProps"
 
 • **active**? : *boolean*
 
-*Defined in [src/Tag.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L14)*
+*Defined in [src/Tag.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L14)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **circle**? : *boolean*
 
-*Defined in [src/Tag.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L13)*
+*Defined in [src/Tag.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L13)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **className**? : *string*
 
-*Defined in [src/Tag.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L8)*
+*Defined in [src/Tag.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L8)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **disabled**? : *boolean*
 
-*Defined in [src/Tag.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L15)*
+*Defined in [src/Tag.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L15)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **name**? : *string*
 
-*Defined in [src/Tag.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L12)*
+*Defined in [src/Tag.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L12)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **onClick**? : *CommonEventFunction*
 
-*Defined in [src/Tag.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L16)*
+*Defined in [src/Tag.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L16)*
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **size**? : *"small"*
 
-*Defined in [src/Tag.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L11)*
+*Defined in [src/Tag.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L11)*
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Tag.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L9)*
+*Defined in [src/Tag.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L9)*
 
 ___
 
@@ -92,4 +92,4 @@ ___
 
 • **type**? : *"primary"*
 
-*Defined in [src/Tag.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Tag.tsx#L10)*
+*Defined in [src/Tag.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L10)*

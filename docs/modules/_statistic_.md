@@ -20,7 +20,7 @@ sidebar_label: "Statistic"
 
 ▸ **Statistic**(`props`: [StatisticProps](../interfaces/_statistic_.statisticprops.md) & object): *Element‹›*
 
-*Defined in [src/Statistic.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L16)*
+*Defined in [src/Statistic.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L16)*
 
 **Parameters:**
 

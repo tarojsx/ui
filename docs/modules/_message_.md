@@ -20,7 +20,7 @@ sidebar_label: "Message"
 
 ▸ **Message**(`props`: [MessageProps](../interfaces/_message_.messageprops.md) & object): *Element‹›*
 
-*Defined in [src/Message.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/Message.tsx#L16)*
+*Defined in [src/Message.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Message.tsx#L16)*
 
 **Parameters:**
 

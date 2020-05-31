@@ -22,7 +22,7 @@ sidebar_label: "State"
 
 • **isAnimate**: *boolean*
 
-*Defined in [src/Calendar/body/interface.ts:34](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/body/interface.ts#L34)*
+*Defined in [src/Calendar/body/interface.ts:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L34)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **listGroup**: *[ListGroup](../modules/_calendar_body_interface_.md#listgroup)*
 
-*Defined in [src/Calendar/body/interface.ts:38](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/body/interface.ts#L38)*
+*Defined in [src/Calendar/body/interface.ts:38](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L38)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **offsetSize**: *number*
 
-*Defined in [src/Calendar/body/interface.ts:36](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/body/interface.ts#L36)*
+*Defined in [src/Calendar/body/interface.ts:36](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L36)*

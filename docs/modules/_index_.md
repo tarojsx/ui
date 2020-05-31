@@ -26,6 +26,9 @@ sidebar_label: "index"
 * [FloatLayoutProps](_index_.md#floatlayoutprops)
 * [Form](_index_.md#form)
 * [FormProps](_index_.md#formprops)
+* [Grid](_index_.md#grid)
+* [GridItem](_index_.md#griditem)
+* [GridProps](_index_.md#gridprops)
 * [Icon](_index_.md#icon)
 * [IconProps](_index_.md#iconprops)
 * [ImagePicker](_index_.md#imagepicker)
@@ -36,6 +39,7 @@ sidebar_label: "index"
 * [InputProps](_index_.md#inputprops)
 * [List](_index_.md#list)
 * [ListHeader](_index_.md#listheader)
+* [ListHeaderProps](_index_.md#listheaderprops)
 * [ListItem](_index_.md#listitem)
 * [ListItemProps](_index_.md#listitemprops)
 * [ListProps](_index_.md#listprops)
@@ -45,6 +49,8 @@ sidebar_label: "index"
 * [ModalProps](_index_.md#modalprops)
 * [Progress](_index_.md#progress)
 * [ProgressProps](_index_.md#progressprops)
+* [SearchBar](_index_.md#searchbar)
+* [SearchBarProps](_index_.md#searchbarprops)
 * [Statistic](_index_.md#statistic)
 * [StatisticProps](_index_.md#statisticprops)
 * [Steps](_index_.md#steps)
@@ -54,7 +60,7 @@ sidebar_label: "index"
 * [TabBarProps](_index_.md#tabbarprops)
 * [Tabs](_index_.md#tabs)
 * [TabsPane](_index_.md#tabspane)
-* [TabsPanelProps](_index_.md#tabspanelprops)
+* [TabsPaneProps](_index_.md#tabspaneprops)
 * [TabsProps](_index_.md#tabsprops)
 * [Tag](_index_.md#tag)
 * [TagProps](_index_.md#tagprops)
@@ -159,6 +165,24 @@ ___
 
 ___
 
+###  Grid
+
+• **Grid**:
+
+___
+
+###  GridItem
+
+• **GridItem**:
+
+___
+
+###  GridProps
+
+• **GridProps**:
+
+___
+
 ###  Icon
 
 • **Icon**:
@@ -219,6 +243,12 @@ ___
 
 ___
 
+###  ListHeaderProps
+
+• **ListHeaderProps**:
+
+___
+
 ###  ListItem
 
 • **ListItem**:
@@ -270,6 +300,18 @@ ___
 ###  ProgressProps
 
 • **ProgressProps**:
+
+___
+
+###  SearchBar
+
+• **SearchBar**:
+
+___
+
+###  SearchBarProps
+
+• **SearchBarProps**:
 
 ___
 
@@ -327,9 +369,9 @@ ___
 
 ___
 
-###  TabsPanelProps
+###  TabsPaneProps
 
-• **TabsPanelProps**:
+• **TabsPaneProps**:
 
 ___
 

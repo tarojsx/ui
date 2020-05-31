@@ -26,7 +26,7 @@ sidebar_label: "ListProps"
 
 *Overrides [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)*
 
-*Defined in [src/List.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/List.tsx#L9)*
+*Defined in [src/List.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/List.tsx#L9)*
 
 ___
 

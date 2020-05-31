@@ -16,6 +16,7 @@ sidebar_label: "utils"
 * [handleTouchScroll](_utils_.md#handletouchscroll)
 * [initTestEnv](_utils_.md#inittestenv)
 * [isTest](_utils_.md#istest)
+* [mergeStyle](_utils_.md#mergestyle)
 * [pxTransform](_utils_.md#pxtransform)
 * [uuid](_utils_.md#uuid)
 
@@ -25,13 +26,13 @@ sidebar_label: "utils"
 
 ▸ **delay**(`delayTime`: number): *Promise‹null›*
 
-*Defined in [src/utils.ts:6](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L6)*
+*Defined in [src/utils.ts:6](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L6)*
 
 **Parameters:**
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`delayTime` | number | 500 |
+`delayTime` | number | 25 |
 
 **Returns:** *Promise‹null›*
 
@@ -39,9 +40,9 @@ ___
 
 ###  delayGetClientRect
 
-▸ **delayGetClientRect**(`__namedParameters`: object): *Promise‹Array‹execObject››*
+▸ **delayGetClientRect**(`__namedParameters`: object): *Promise‹any[]›*
 
-*Defined in [src/utils.ts:47](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L47)*
+*Defined in [src/utils.ts:41](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L41)*
 
 **Parameters:**
 
@@ -51,17 +52,16 @@ Name | Type | Default |
 ------ | ------ | ------ |
 `delayTime` | number | 500 |
 `selectorStr` | any | - |
-`self` | any | - |
 
-**Returns:** *Promise‹Array‹execObject››*
+**Returns:** *Promise‹any[]›*
 
 ___
 
 ###  delayGetScrollOffset
 
-▸ **delayGetScrollOffset**(`__namedParameters`: object): *Promise‹Array‹execObject››*
+▸ **delayGetScrollOffset**(`__namedParameters`: object): *Promise‹any[]›*
 
-*Defined in [src/utils.ts:34](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L34)*
+*Defined in [src/utils.ts:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L28)*
 
 **Parameters:**
 
@@ -71,25 +71,24 @@ Name | Type | Default |
 ------ | ------ | ------ |
 `delayTime` | number | 500 |
 
-**Returns:** *Promise‹Array‹execObject››*
+**Returns:** *Promise‹any[]›*
 
 ___
 
 ###  delayQuerySelector
 
-▸ **delayQuerySelector**(`self`: any, `selectorStr`: string, `delayTime`: number): *Promise‹Array‹execObject››*
+▸ **delayQuerySelector**(`selectorStr`: string, `delayTime`: number): *Promise‹any[]›*
 
-*Defined in [src/utils.ts:18](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L18)*
+*Defined in [src/utils.ts:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L14)*
 
 **Parameters:**
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`self` | any | - |
 `selectorStr` | string | - |
 `delayTime` | number | 500 |
 
-**Returns:** *Promise‹Array‹execObject››*
+**Returns:** *Promise‹any[]›*
 
 ___
 
@@ -97,7 +96,7 @@ ___
 
 ▸ **getEventDetail**(`event`: any): *EventDetail*
 
-*Defined in [src/utils.ts:105](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L105)*
+*Defined in [src/utils.ts:98](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L98)*
 
 **Parameters:**
 
@@ -113,7 +112,7 @@ ___
 
 ▸ **handleTouchScroll**(`flag`: any): *void*
 
-*Defined in [src/utils.ts:189](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L189)*
+*Defined in [src/utils.ts:189](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L189)*
 
 **Parameters:**
 
@@ -129,7 +128,7 @@ ___
 
 ▸ **initTestEnv**(): *void*
 
-*Defined in [src/utils.ts:177](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L177)*
+*Defined in [src/utils.ts:170](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L170)*
 
 **Returns:** *void*
 
@@ -139,23 +138,42 @@ ___
 
 ▸ **isTest**(): *boolean*
 
-*Defined in [src/utils.ts:183](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L183)*
+*Defined in [src/utils.ts:183](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L183)*
 
 **Returns:** *boolean*
 
 ___
 
-###  pxTransform
+###  mergeStyle
 
-▸ **pxTransform**(`size`: any): *string*
+▸ **mergeStyle**(`style1`: object | string, `style2`: object | string): *object | string*
 
-*Defined in [src/utils.ts:209](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L209)*
+*Defined in [src/utils.ts:240](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L240)*
+
+合并 style
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`size` | any |
+`style1` | object &#124; string |
+`style2` | object &#124; string |
+
+**Returns:** *object | string*
+
+___
+
+###  pxTransform
+
+▸ **pxTransform**(`size`: number): *string*
+
+*Defined in [src/utils.ts:209](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L209)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`size` | number |
 
 **Returns:** *string*
 
@@ -165,7 +183,7 @@ ___
 
 ▸ **uuid**(`len`: number, `radix`: number): *string*
 
-*Defined in [src/utils.ts:63](https://github.com/tarojsx/ui/blob/6701f45/src/utils.ts#L63)*
+*Defined in [src/utils.ts:56](https://github.com/tarojsx/ui/blob/v0.11.0/src/utils.ts#L56)*
 
 **Parameters:**
 

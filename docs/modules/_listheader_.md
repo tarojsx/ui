@@ -6,6 +6,10 @@ sidebar_label: "ListHeader"
 
 ## Index
 
+### Interfaces
+
+* [ListHeaderProps](../interfaces/_listheader_.listheaderprops.md)
+
 ### Functions
 
 * [ListHeader](_listheader_.md#const-listheader)
@@ -14,14 +18,14 @@ sidebar_label: "ListHeader"
 
 ### `Const` ListHeader
 
-▸ **ListHeader**(`props`: ListHeaderProps & object): *Element‹›*
+▸ **ListHeader**(`props`: [ListHeaderProps](../interfaces/_listheader_.listheaderprops.md) & object): *Element‹›*
 
-*Defined in [src/ListHeader.tsx:23](https://github.com/tarojsx/ui/blob/6701f45/src/ListHeader.tsx#L23)*
+*Defined in [src/ListHeader.tsx:23](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L23)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`props` | ListHeaderProps & object |
+`props` | [ListHeaderProps](../interfaces/_listheader_.listheaderprops.md) & object |
 
 **Returns:** *Element‹›*

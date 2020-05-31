@@ -12,18 +12,18 @@ sidebar_label: "CustomTabBarProps"
 
 ### Properties
 
-* [appTabBarConfig](_customtabbar_.customtabbarprops.md#apptabbarconfig)
+* [appTabBarConfig](_customtabbar_.customtabbarprops.md#optional-apptabbarconfig)
 * [children](_customtabbar_.customtabbarprops.md#optional-children)
 
 ## Properties
 
-###  appTabBarConfig
+### `Optional` appTabBarConfig
 
-• **appTabBarConfig**: *TabBarConfig*
+• **appTabBarConfig**? : *TabBarConfig*
 
-*Defined in [src/CustomTabBar.tsx:35](https://github.com/tarojsx/ui/blob/6701f45/src/CustomTabBar.tsx#L35)*
+*Defined in [src/CustomTabBar.tsx:37](https://github.com/tarojsx/ui/blob/v0.11.0/src/CustomTabBar.tsx#L37)*
 
-`app.config.js` 中的 `tabBar` 字段
+`app.config.js` 中的 `tabBar` 字段, taro 3.0.0-rc.1 及以上版本可省略.
 
 **`example`** 
 ```tsx
@@ -37,7 +37,7 @@ ___
 
 • **children**? : *function*
 
-*Defined in [src/CustomTabBar.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/CustomTabBar.tsx#L10)*
+*Defined in [src/CustomTabBar.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/CustomTabBar.tsx#L12)*
 
 #### Type declaration:
 

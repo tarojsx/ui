@@ -81,7 +81,7 @@ ___
 
 • **fixed**? : *boolean*
 
-*Defined in [src/Tabs.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Tabs.tsx#L12)*
+*Defined in [src/Tabs.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L12)*
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Tabs.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Tabs.tsx#L11)*
+*Defined in [src/Tabs.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L11)*
 
 ___
 

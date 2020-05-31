@@ -21,7 +21,7 @@ sidebar_label: "State"
 
 • **generateDate**: *number*
 
-*Defined in [src/Calendar/interface.ts:74](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L74)*
+*Defined in [src/Calendar/interface.ts:74](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L74)*
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 • **selectedDate**: *SelectedDate*
 
-*Defined in [src/Calendar/interface.ts:76](https://github.com/tarojsx/ui/blob/6701f45/src/Calendar/interface.ts#L76)*
+*Defined in [src/Calendar/interface.ts:76](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L76)*

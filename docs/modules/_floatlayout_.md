@@ -20,7 +20,7 @@ sidebar_label: "FloatLayout"
 
 ▸ **FloatLayout**(`props`: [FloatLayoutProps](../interfaces/_floatlayout_.floatlayoutprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/FloatLayout.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/FloatLayout.tsx#L14)*
+*Defined in [src/FloatLayout.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/FloatLayout.tsx#L14)*
 
 **Parameters:**
 

@@ -25,7 +25,7 @@ sidebar_label: "StatisticProps"
 
 • **className**? : *string*
 
-*Defined in [src/Statistic.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L8)*
+*Defined in [src/Statistic.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L8)*
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 • **prefix**? : *React.ReactNode*
 
-*Defined in [src/Statistic.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L12)*
+*Defined in [src/Statistic.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L12)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **suffix**? : *React.ReactNode*
 
-*Defined in [src/Statistic.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L13)*
+*Defined in [src/Statistic.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L13)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **title**: *React.ReactNode*
 
-*Defined in [src/Statistic.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L9)*
+*Defined in [src/Statistic.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L9)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **value**: *string | number*
 
-*Defined in [src/Statistic.tsx:10](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L10)*
+*Defined in [src/Statistic.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L10)*
 
 ___
 
@@ -65,4 +65,4 @@ ___
 
 • **valueStyle**? : *CSSProperties*
 
-*Defined in [src/Statistic.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Statistic.tsx#L11)*
+*Defined in [src/Statistic.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L11)*

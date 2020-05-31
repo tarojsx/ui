@@ -8,6 +8,8 @@ sidebar_label: "InputNumberProps"
 
 * object
 
+* object
+
   ↳ **InputNumberProps**
 
 ## Index
@@ -24,7 +26,7 @@ sidebar_label: "InputNumberProps"
 
 • **customStyle**? : *CSSProperties*
 
-*Defined in [src/InputNumber.tsx:43](https://github.com/tarojsx/ui/blob/6701f45/src/InputNumber.tsx#L43)*
+*Defined in [src/InputNumber.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L14)*
 
 ___
 
@@ -32,7 +34,7 @@ ___
 
 • **onChange**? : *CommonEventFunction‹object›*
 
-*Defined in [src/InputNumber.tsx:49](https://github.com/tarojsx/ui/blob/6701f45/src/InputNumber.tsx#L49)*
+*Defined in [src/InputNumber.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L20)*
 
 输入框值改变时触发的事件
 
@@ -46,4 +48,4 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/InputNumber.tsx:42](https://github.com/tarojsx/ui/blob/6701f45/src/InputNumber.tsx#L42)*
+*Defined in [src/InputNumber.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L13)*

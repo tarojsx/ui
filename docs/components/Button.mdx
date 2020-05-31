@@ -1,16 +1,12 @@
 ---
-id: button
-title: Button
-sidebar_label: Button
+title: Button 按钮
 ---
 
-## Hello from Docusaurus
+## 示例
 
-Are you ready to create the documentation site for your open source project?
+import { Button } from '@tarojsx/ui/dist/Button'
 
-### type
-
-// import { Button } from '../../../src/Button'
+<Button>default</Button>
 
 ```tsx
 <Button>default</Button>
@@ -65,15 +61,15 @@ function Clock(props) {
 }
 ```
 
-:::note
-The content and title _can_ include markdown.
-:::
-
-:::tip 提示
-The content and title _can_ include markdown.
-:::
-
 ## API
 
--   [`<Button />`](modules/_button_.md)
--   [`ButtonProps`](interfaces/_button_.buttonprops.md)
+| 参数          | 说明                                | 类型                                           | 默认值 |
+| ------------- | ----------------------------------- | ---------------------------------------------- | ------ |
+| type          | 类型                                | `default` `primary` `secondary` `warn` `error` |        |
+| size          | 尺寸                                | `default` `normal` `small` `mini`              |        |
+| clickThrottle | onClick 事件节流时间间隔, 单位: ms. | `boolean` `number`                             | 500ms  |
+| transparent   | 透明按钮.                           | `boolean`                                      |        |
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/button)
+-   [`<Button />`](../modules/_button_.md)
+-   [`ButtonProps`](../interfaces/_button_.buttonprops.md)

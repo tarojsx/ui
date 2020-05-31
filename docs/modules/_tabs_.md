@@ -20,7 +20,7 @@ sidebar_label: "Tabs"
 
 ▸ **Tabs**(`props`: [TabsProps](../interfaces/_tabs_.tabsprops.md) & object): *Element‹›*
 
-*Defined in [src/Tabs.tsx:19](https://github.com/tarojsx/ui/blob/6701f45/src/Tabs.tsx#L19)*
+*Defined in [src/Tabs.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L19)*
 
 **Parameters:**
 

@@ -27,7 +27,7 @@ sidebar_label: "ProgressProps"
 
 • **className**? : *string*
 
-*Defined in [src/Progress.tsx:8](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L8)*
+*Defined in [src/Progress.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L8)*
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **color**? : *string*
 
-*Defined in [src/Progress.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L15)*
+*Defined in [src/Progress.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L15)*
 
 颜色
 
@@ -45,7 +45,7 @@ ___
 
 • **isHidePercent**? : *boolean*
 
-*Defined in [src/Progress.tsx:19](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L19)*
+*Defined in [src/Progress.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L19)*
 
 是否隐藏文字
 
@@ -55,7 +55,7 @@ ___
 
 • **percent**? : *number*
 
-*Defined in [src/Progress.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L11)*
+*Defined in [src/Progress.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L11)*
 
 进度
 
@@ -65,7 +65,7 @@ ___
 
 • **status**? : *"progress" | "success" | "error"*
 
-*Defined in [src/Progress.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L13)*
+*Defined in [src/Progress.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L13)*
 
 状态
 
@@ -75,7 +75,7 @@ ___
 
 • **strokeWidth**? : *number*
 
-*Defined in [src/Progress.tsx:17](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L17)*
+*Defined in [src/Progress.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L17)*
 
 宽度
 
@@ -85,7 +85,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Progress.tsx:9](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L9)*
+*Defined in [src/Progress.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L9)*
 
 ___
 
@@ -93,6 +93,6 @@ ___
 
 • **transitionDuration**? : *number*
 
-*Defined in [src/Progress.tsx:21](https://github.com/tarojsx/ui/blob/6701f45/src/Progress.tsx#L21)*
+*Defined in [src/Progress.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L21)*
 
 过渡动画所需的时间. 默认: 0.3, 单位: 秒, 禁用可提高性能.

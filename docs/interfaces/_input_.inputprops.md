@@ -19,6 +19,7 @@ sidebar_label: "InputProps"
 * [className](_input_.inputprops.md#optional-classname)
 * [error](_input_.inputprops.md#optional-error)
 * [innerRef](_input_.inputprops.md#optional-innerref)
+* [maxLength](_input_.inputprops.md#optional-maxlength)
 * [name](_input_.inputprops.md#optional-name)
 * [onBlur](_input_.inputprops.md#optional-onblur)
 * [onChange](_input_.inputprops.md#optional-onchange)
@@ -39,15 +40,15 @@ sidebar_label: "InputProps"
 
 • **className**? : *string*
 
-*Defined in [src/Input.tsx:31](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L31)*
+*Defined in [src/Input.tsx:31](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L31)*
 
 ___
 
 ### `Optional` error
 
-• **error**? : *string*
+• **error**? : *any*
 
-*Defined in [src/Input.tsx:37](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L37)*
+*Defined in [src/Input.tsx:41](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L41)*
 
 ___
 
@@ -55,7 +56,17 @@ ___
 
 • **innerRef**? : *any*
 
-*Defined in [src/Input.tsx:30](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L30)*
+*Defined in [src/Input.tsx:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L30)*
+
+___
+
+### `Optional` maxLength
+
+• **maxLength**? : *number*
+
+*Defined in [src/Input.tsx:39](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L39)*
+
+最大输入长度，设置为 -1 的时候不限制最大长度
 
 ___
 
@@ -63,7 +74,7 @@ ___
 
 • **name**? : *string*
 
-*Defined in [src/Input.tsx:34](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L34)*
+*Defined in [src/Input.tsx:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L34)*
 
 ___
 
@@ -71,7 +82,7 @@ ___
 
 • **onBlur**? : *_InputProps["onBlur"]*
 
-*Defined in [src/Input.tsx:40](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L40)*
+*Defined in [src/Input.tsx:44](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L44)*
 
 ___
 
@@ -79,7 +90,7 @@ ___
 
 • **onChange**? : *_InputProps["onInput"]*
 
-*Defined in [src/Input.tsx:38](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L38)*
+*Defined in [src/Input.tsx:42](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L42)*
 
 ___
 
@@ -87,7 +98,7 @@ ___
 
 • **onFocus**? : *_InputProps["onFocus"]*
 
-*Defined in [src/Input.tsx:39](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L39)*
+*Defined in [src/Input.tsx:43](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L43)*
 
 ___
 
@@ -95,7 +106,7 @@ ___
 
 • **readOnly**? : *boolean*
 
-*Defined in [src/Input.tsx:36](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L36)*
+*Defined in [src/Input.tsx:40](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L40)*
 
 ___
 
@@ -103,7 +114,7 @@ ___
 
 • **required**? : *boolean*
 
-*Defined in [src/Input.tsx:35](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L35)*
+*Defined in [src/Input.tsx:35](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L35)*
 
 ___
 
@@ -111,7 +122,7 @@ ___
 
 • **style**? : *CSSProperties*
 
-*Defined in [src/Input.tsx:32](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L32)*
+*Defined in [src/Input.tsx:32](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L32)*
 
 ___
 
@@ -119,7 +130,7 @@ ___
 
 • **type**? : *_InputProps["type"] | "phone" | "password"*
 
-*Defined in [src/Input.tsx:33](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L33)*
+*Defined in [src/Input.tsx:33](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L33)*
 
 ## Methods
 
@@ -127,7 +138,7 @@ ___
 
 ▸ **onClick**(`event`: ITouchEvent): *any*
 
-*Defined in [src/Input.tsx:41](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L41)*
+*Defined in [src/Input.tsx:45](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L45)*
 
 **Parameters:**
 
@@ -141,14 +152,14 @@ ___
 
 ### `Optional` onErrorClick
 
-▸ **onErrorClick**(`error`: string): *void*
+▸ **onErrorClick**(`error`: any): *void*
 
-*Defined in [src/Input.tsx:42](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L42)*
+*Defined in [src/Input.tsx:46](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L46)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`error` | string |
+`error` | any |
 
 **Returns:** *void*

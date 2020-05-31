@@ -20,7 +20,7 @@ sidebar_label: "Badge"
 
 ▸ **Badge**(`props`: [BadgeProps](../interfaces/_badge_.badgeprops.md) & object): *Element‹›*
 
-*Defined in [src/Badge.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/Badge.tsx#L15)*
+*Defined in [src/Badge.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L15)*
 
 **Parameters:**
 

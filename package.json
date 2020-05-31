@@ -39,13 +39,9 @@
         "start": "tsc -w --preserveWatchOutput",
         "prebuild": "rimraf dist tsconfig.tsbuildinfo",
         "build": "tsc",
-        "dev:h5": "taro build --type h5 --watch",
-        "build:h5": "taro build --type h5",
         "docs": "typedoc",
         "prepublishOnly": "npm run build",
-        "release": "np",
-        "prewebsite": "npm run docs",
-        "website": "yarn --cwd website deploy"
+        "release": "np"
     },
     "husky": {
         "hooks": {
@@ -60,7 +56,6 @@
     "devDependencies": {
         "@commitlint/cli": "^8.3.5",
         "@commitlint/config-conventional": "^8.3.4",
-        "@docusaurus/init": "^2.0.0-alpha.56",
         "@tarojs/components": "^3.0.0-rc.3",
         "@tarojs/taro": "^3.0.0-rc.3",
         "@types/classnames": "^2.2.10",
@@ -68,17 +63,13 @@
         "@types/node": "^14.0.6",
         "@types/react": "^16.9.35",
         "@types/react-is": "^16.7.1",
-        "@types/webpack": "^4.41.16",
-        "@types/webpack-chain": "^5.2.0",
-        "babel-preset-taro": "^3.0.0-rc.3",
         "husky": "^4.2.5",
         "np": "^6.2.3",
         "rimraf": "^3.0.2",
         "taro-ui": "^2.3.4",
         "typedoc": "^0.17.7",
         "typedoc-plugin-markdown": "^2.2.17",
-        "typescript": "^3.9.3",
-        "webpack": "^4.43.0"
+        "typescript": "^3.9.3"
     },
     "peerDependencies": {
         "taro-ui": "*"

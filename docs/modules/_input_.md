@@ -20,7 +20,7 @@ sidebar_label: "Input"
 
 ▸ **Input**(`props`: [InputProps](../interfaces/_input_.inputprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Input.tsx:45](https://github.com/tarojsx/ui/blob/6701f45/src/Input.tsx#L45)*
+*Defined in [src/Input.tsx:49](https://github.com/tarojsx/ui/blob/v0.11.0/src/Input.tsx#L49)*
 
 **Parameters:**
 

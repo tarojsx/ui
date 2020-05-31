@@ -20,7 +20,7 @@ sidebar_label: "Button"
 
 ▸ **Button**(`props`: [ButtonProps](../interfaces/_button_.buttonprops.md)‹› & object): *Element‹›*
 
-*Defined in [src/Button.tsx:22](https://github.com/tarojsx/ui/blob/6701f45/src/Button.tsx#L22)*
+*Defined in [src/Button.tsx:25](https://github.com/tarojsx/ui/blob/v0.11.0/src/Button.tsx#L25)*
 
 **Parameters:**
 

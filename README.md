@@ -93,9 +93,9 @@ export default () => {
   * [ ] 子组件
 * [x] ActivityIndicator
 * [ ] Article
-* [x] Avatar
+* [x] [Avatar](./docs/components/Avatar.mdx)
 * [x] Badge
-* [x] Button
+* [x] [Button](./docs/components/Button.mdx)
 * [x] Calendar
   * [ ] Swipe 操作
 * [ ] Card

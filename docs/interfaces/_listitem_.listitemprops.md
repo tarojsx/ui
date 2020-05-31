@@ -35,7 +35,7 @@ sidebar_label: "ListItemProps"
 
 • **arrow**? : *AtListItemProps["arrow"] | "clear"*
 
-*Defined in [src/ListItem.tsx:18](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L18)*
+*Defined in [src/ListItem.tsx:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L18)*
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 • **children**? : *React.ReactNode*
 
-*Defined in [src/ListItem.tsx:12](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L12)*
+*Defined in [src/ListItem.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L12)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **className**? : *string*
 
-*Defined in [src/ListItem.tsx:11](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L11)*
+*Defined in [src/ListItem.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L11)*
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 • **extra**? : *React.ReactNode*
 
-*Defined in [src/ListItem.tsx:17](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L17)*
+*Defined in [src/ListItem.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L17)*
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 • **footer**? : *React.ReactNode*
 
-*Defined in [src/ListItem.tsx:19](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L19)*
+*Defined in [src/ListItem.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L19)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 • **ghost**? : *boolean*
 
-*Defined in [src/ListItem.tsx:20](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L20)*
+*Defined in [src/ListItem.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L20)*
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 • **iconInfo**? : *[IconProps](_icon_.iconprops.md)*
 
-*Defined in [src/ListItem.tsx:14](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L14)*
+*Defined in [src/ListItem.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L14)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **thumb**? : *React.ReactNode*
 
-*Defined in [src/ListItem.tsx:15](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L15)*
+*Defined in [src/ListItem.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L15)*
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 • **thumbCircle**? : *boolean*
 
-*Defined in [src/ListItem.tsx:16](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L16)*
+*Defined in [src/ListItem.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L16)*
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 • **title**? : *React.ReactNode*
 
-*Defined in [src/ListItem.tsx:13](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L13)*
+*Defined in [src/ListItem.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L13)*
 
 ## Methods
 
@@ -115,6 +115,6 @@ ___
 
 ▸ **onClear**(): *any*
 
-*Defined in [src/ListItem.tsx:21](https://github.com/tarojsx/ui/blob/6701f45/src/ListItem.tsx#L21)*
+*Defined in [src/ListItem.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L21)*
 
 **Returns:** *any*
