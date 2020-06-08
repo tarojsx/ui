@@ -4,9 +4,10 @@ title: Button 按钮
 
 ## 示例
 
-```tsx
-import { Button } from '@tarojsx/ui'
+import { UI } from '@/ui'
+import { Button, Avatar } from '@tarojsx/ui'
 
+```jsx title="按钮类型"
 <Button>default</Button>
 
 <Button type="primary">primary</Button>
@@ -18,28 +19,53 @@ import { Button } from '@tarojsx/ui'
 <Button type="error">error</Button>
 ```
 
-```tsx live
-function Clock(props) {
-    const [date, setDate] = useState(new Date())
-    useEffect(() => {
-        var timerID = setInterval(() => tick(), 1000)
+<UI>
+    <Button>default</Button>
+</UI>
 
-        return function cleanup() {
-            clearInterval(timerID)
-        }
-    })
+<UI>
+    <Button type="primary">primary</Button>
+</UI>
 
-    function tick() {
-        setDate(new Date())
-    }
+<UI>
+    <Button type="secondary">secondary</Button>
+</UI>
 
-    return (
-        <div>
-            <h2>It is {date.toLocaleTimeString()}.</h2>
-        </div>
-    )
-}
+<UI>
+    <Button type="warn">warn</Button>
+</UI>
+
+<UI>
+    <Button type="error">error</Button>
+</UI>
+
+```jsx title="按钮尺寸"
+<Button size="mini">mini</Button>
+
+<Button size="small">small</Button>
 ```
+
+<UI>
+    <Button size="mini" type="primary">
+        mini
+    </Button>
+</UI>
+
+<UI>
+    <Button size="small">small</Button>
+</UI>
+
+```jsx title="透明按钮"
+<Button transparent openType="getUserInfo">
+    <Avatar circle text="User" />
+</Button>
+```
+
+<UI>
+    <Button transparent openType="getUserInfo">
+        <Avatar style={{ background: 'orange' }} circle text="User" />
+    </Button>
+</UI>
 
 ## API
 

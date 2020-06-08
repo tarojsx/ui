@@ -4,12 +4,81 @@ title: Avatar 头像
 
 用于展示用户头像
 
+## 示例
+
+import { UI } from '@/ui'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import { Avatar } from '@tarojsx/ui'
+
+```jsx title="头像"
+<Avatar image="img/logo.svg" />
+```
+
+<UI>
+    <Avatar image={useBaseUrl('img/logo.svg')} />
+</UI>
+
+```jsx title="文字"
+<Avatar text="UI" />
+```
+
+<UI>
+    <Avatar text="UI" />
+</UI>
+
+```jsx title="圆形头像"
+<Avatar circle image="img/logo.svg" />
+```
+
+<UI>
+    <Avatar circle image={useBaseUrl('img/logo.svg')} />
+</UI>
+
+```jsx title="圆形文字"
+<Avatar circle text="UI" />
+```
+
+<UI>
+    <Avatar circle text="UI" />
+</UI>
+
+```jsx title="尺寸"
+<Avatar size="tiny" image="img/logo.svg" />
+<Avatar size="mini" image="img/logo.svg" />
+<Avatar size="small" image="img/logo.svg" />
+<Avatar image="img/logo.svg" />
+<Avatar size="large" image="img/logo.svg" />
+```
+
+<div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
+    <UI>
+        tiny
+        <Avatar size="tiny" image={useBaseUrl('img/logo.svg')} />
+    </UI>
+    <UI>
+        mini
+        <Avatar size="mini" image={useBaseUrl('img/logo.svg')} />
+    </UI>
+    <UI>
+        small
+        <Avatar size="small" image={useBaseUrl('img/logo.svg')} />
+    </UI>
+    <UI>
+        default
+        <Avatar image={useBaseUrl('img/logo.svg')} />
+    </UI>
+    <UI>
+        large
+        <Avatar size="large" image={useBaseUrl('img/logo.svg')} />
+    </UI>
+</div>
+
 ## API
 
 | 参数 | 说明 | 类型                          | 默认值 |
 | ---- | ---- | ----------------------------- | ------ |
 | size | 尺寸 | `tiny` `mini` `small` `large` |        |
 
--   [Taro UI 文档](https://taro-ui.jd.com/#/docs/avatar)
+-   [Taro UI 文档 | 头像](https://taro-ui.jd.com/#/docs/avatar)
 -   [`<Avatar />`](modules/_avatar_.md)
 -   [`AvatarProps`](interfaces/_avatar_.avatarprops.md)

@@ -1,0 +1,56 @@
+---
+title: ActivityIndicator 活动指示器
+---
+
+该组件提供一个加载等待元素，也就是 Loading 组件
+
+## 示例
+
+import { UI } from '@/ui'
+import { ActivityIndicator } from '@tarojsx/ui'
+
+```jsx
+<ActivityIndicator isOpened />
+```
+
+<UI block>
+    <ActivityIndicator isOpened />
+</UI>
+
+```jsx
+<ActivityIndicator isOpened size="60" mode="center" />
+```
+
+<UI block>
+    <ActivityIndicator style={{ zIndex: 1 }} isOpened size="60" mode="center" />
+</UI>
+
+```jsx
+<ActivityIndicator isOpened size="20" />
+```
+
+<UI block>
+    <ActivityIndicator isOpened size="20" />
+</UI>
+
+```jsx
+<ActivityIndicator isOpened color="red" />
+```
+
+<UI block>
+    <ActivityIndicator isOpened color="red" />
+</UI>
+
+```jsx
+<ActivityIndicator isOpened content="加载中..." />
+```
+
+<UI block>
+    <ActivityIndicator isOpened content="加载中..." />
+</UI>
+
+## API
+
+-   [Taro UI 文档 | 活动指示器](https://taro-ui.jd.com/#/docs/activityindicator)
+-   [`<ActivityIndicator />`](modules/_activityindicator_.md)
+-   [`ActivityIndicatorProps`](interfaces/_activityindicator_.activityindicatorprops.md)
