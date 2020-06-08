@@ -9,17 +9,19 @@ export interface LoadingProps {
     color?: string | number
 }
 
-export const Loading: React.FC<LoadingProps> = props => {
+const px = Taro.pxTransform || ((p: number) => `${p}px`)
+
+export const Loading: React.FC<LoadingProps> = (props) => {
     const { color, size = '' } = props
 
     const loadingSize = typeof size === 'string' ? size : String(size)
     const sizeStyle = {
-        width: size ? `${Taro.pxTransform(parseInt(loadingSize))}` : '',
-        height: size ? `${Taro.pxTransform(parseInt(loadingSize))}` : '',
+        width: size ? `${px(parseInt(loadingSize))}` : '',
+        height: size ? `${px(parseInt(loadingSize))}` : '',
     }
     const colorStyle = {
         border: color ? `1px solid ${color}` : '',
-        'border-color': color ? `${color} transparent transparent transparent` : '',
+        borderColor: color ? `${color} transparent transparent transparent` : '',
     }
     const ringStyle = { ...colorStyle, ...sizeStyle }
 
