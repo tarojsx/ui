@@ -4,11 +4,9 @@ title: Button 按钮
 
 ## 示例
 
-import { Button } from '@tarojsx/ui/dist/Button'
-
-<Button>default</Button>
-
 ```tsx
+import { Button } from '@tarojsx/ui'
+
 <Button>default</Button>
 
 <Button type="primary">primary</Button>
@@ -19,24 +17,6 @@ import { Button } from '@tarojsx/ui/dist/Button'
 
 <Button type="error">error</Button>
 ```
-
-export const Highlight = ({ children, color }) => (
-    <span
-        style={{
-            backgroundColor: color,
-            borderRadius: '2px',
-            color: '#fff',
-            padding: '0.2rem',
-        }}
-    >
-        {children}
-    </span>
-)
-
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and
-<Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
-
-I can write **Markdown** alongside my _JSX_!
 
 ```tsx live
 function Clock(props) {
