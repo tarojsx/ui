@@ -4,10 +4,13 @@ title: Button 按钮
 
 ## 示例
 
+import { Button } from '@tarojsx/ui'
+import { Image } from '@tarojs/components'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import dayjs from 'dayjs'
 import { UI } from '@/ui'
-import { Button, Avatar } from '@tarojsx/ui'
 
-```jsx title="按钮类型"
+```jsx title="类型"
 <Button>default</Button>
 
 <Button type="primary">primary</Button>
@@ -39,7 +42,7 @@ import { Button, Avatar } from '@tarojsx/ui'
     <Button type="error">error</Button>
 </UI>
 
-```jsx title="按钮尺寸"
+```jsx title="尺寸"
 <Button size="mini">mini</Button>
 
 <Button size="small">small</Button>
@@ -57,14 +60,34 @@ import { Button, Avatar } from '@tarojsx/ui'
 
 ```jsx title="透明按钮"
 <Button transparent openType="getUserInfo">
-    <Avatar circle text="User" />
+    <Image src={useBaseUrl('img/logo.svg')} />
 </Button>
 ```
 
-<UI>
+<UI style={{ display: 'inline-block' }}>
     <Button transparent openType="getUserInfo">
-        <Avatar style={{ background: 'orange' }} circle text="User" />
+        <Image src={useBaseUrl('img/logo.svg')} />
     </Button>
+</UI>
+
+```jsx title="点击节流"
+<Button clickThrottle>快速点我!</Button>
+```
+
+<UI>
+    {() => {
+        const [times, setTimes] = React.useState([])
+        return (
+            <>
+                <Button type="error" clickThrottle onClick={() => setTimes((prev) => [dayjs(), ...prev.slice(0, 4)])}>
+                    快速点我!
+                </Button>
+                {times.map((time, index) => (
+                    <div key={index}>{time.format(`ss' SSS''`)}</div>
+                ))}
+            </>
+        )
+    }}
 </UI>
 
 ## API

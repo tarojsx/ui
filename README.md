@@ -94,7 +94,7 @@ export default () => {
 * [x] ActivityIndicator
 * [ ] Article
 * [x] [Avatar](./docs/components/Avatar.mdx)
-* [x] Badge
+* [x] [Badge](./docs/components/Badge.mdx)
 * [x] [Button](./docs/components/Button.mdx)
 * [x] Calendar
   * [ ] Swipe 操作
@@ -113,8 +113,8 @@ export default () => {
 * [ ] Indexes
 * [x] Input
 * [x] InputNumber
-* [x] List
-* [x] ListItem
+* [x] [List](./docs/components/List.mdx)
+* [x] [ListItem](./docs/components/List.mdx)
 * [x] Loading
 * [ ] Loadmore
 * [x] Message
@@ -146,7 +146,7 @@ export default () => {
 扩展组件
 
 * [x] CustomTabBar
-* [x] ListHeader
+* [x] [ListHeader](./docs/components/List.mdx)
 * [x] Statistic
 
 ## 支持
