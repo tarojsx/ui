@@ -12,13 +12,19 @@ export interface BadgeProps {
     maxValue?: number
 }
 
-export const Badge: React.FC<BadgeProps> = props => {
+export const Badge: React.FC<BadgeProps> = (props) => {
     const { className, style, children, dot, value, maxValue = 99 } = props
 
     const text = useMemo(() => {
         const num = Number(value)
 
-        return Number.isInteger(num) ? (num > maxValue ? `${maxValue}+` : value?.toString()) : ''
+        if (Number.isInteger(num)) {
+            return num > maxValue ? `${maxValue}+` : num.toString()
+        } else if (typeof value === 'string') {
+            return value
+        } else {
+            return ''
+        }
     }, [value, maxValue])
 
     return (
