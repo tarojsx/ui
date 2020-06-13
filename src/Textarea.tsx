@@ -12,8 +12,9 @@ export interface TextareaProps
         Pick<AtTextareaProps, 'count' | 'height' | 'textOverflowForbidden'> {
     className?: string
     style?: React.CSSProperties
+    textareaRef?: React.LegacyRef<any>
     value?: string
-     /**
+    /**
      * 最大输入长度，设置为 -1 的时候不限制最大长度
      */
     maxLength?: number
@@ -26,6 +27,7 @@ export const Textarea: React.FC<TextareaProps> = (props) => {
     const {
         className,
         style = {},
+        textareaRef,
         value = '',
         cursorSpacing = 100,
         placeholderClass,
@@ -53,18 +55,8 @@ export const Textarea: React.FC<TextareaProps> = (props) => {
     )
     const placeholderCls = classNames('placeholder', placeholderClass)
 
-    const textareaRef = useRef<any>()
-
     return (
-        <View
-            className={rootCls}
-            style={style}
-            onClick={() => {
-                if (textareaRef.current) {
-                    textareaRef.current.focus()
-                }
-            }}
-        >
+        <View className={rootCls} style={style}>
             <_Textarea
                 ref={textareaRef as any}
                 className="at-textarea__textarea"
