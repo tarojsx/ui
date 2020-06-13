@@ -16,15 +16,12 @@ export const Badge: React.FC<BadgeProps> = (props) => {
     const { className, style, children, dot, value, maxValue = 99 } = props
 
     const text = useMemo(() => {
-        const num = Number(value)
-
-        if (Number.isInteger(num)) {
-            return num > maxValue ? `${maxValue}+` : num.toString()
-        } else if (typeof value === 'string') {
+        if (value === '' || value === null || typeof value === 'undefined') return ''
+        const numValue = +value
+        if (Number.isNaN(numValue)) {
             return value
-        } else {
-            return ''
         }
+        return numValue > maxValue ? `${maxValue}+` : numValue
     }, [value, maxValue])
 
     return (
