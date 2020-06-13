@@ -1,24 +1,17 @@
-import dayjs from 'dayjs'
 import classnames from 'classnames'
-import _chunk from 'lodash/chunk'
-import _throttle from 'lodash/throttle'
-
+import dayjs from 'dayjs'
 import React from 'react'
-import bind from 'bind-decorator'
-import { View, Swiper, SwiperItem } from '@tarojs/components'
-import { ITouchEvent, ITouch } from '@tarojs/components/types/common'
-
-import Calendar from '../types'
-import AtCalendarDayList from '../ui/day-list/index'
-import AtCalendarDateList from '../ui/date-list/index'
-import generateCalendarGroup from '../common/helper'
-import { Props, State, ListGroup } from './interface'
-
+import { Swiper, SwiperItem, View } from '@tarojs/components'
+import { BaseEventOrig, ITouch, ITouchEvent } from '@tarojs/components/types/common'
+import { AtCalendarBodyListGroup, AtCalendarBodyProps, AtCalendarBodyState, Calendar } from 'taro-ui/types/calendar'
 import { delayQuerySelector } from '../../utils'
+import generateCalendarGroup from '../common/helper'
+import AtCalendarDateList from '../ui/date-list/index'
+import AtCalendarDayList from '../ui/day-list/index'
 
-const ANIMTE_DURATION: number = 300
+const ANIMTE_DURATION = 300
 
-const defaultProps: Partial<Props> = {
+const defaultProps: Partial<AtCalendarBodyProps> = {
     marks: [],
     selectedDate: {
         end: Date.now(),
@@ -28,28 +21,10 @@ const defaultProps: Partial<Props> = {
     generateDate: Date.now(),
 }
 
-/**
- * @ignore
- */
-export default class AtCalendarBody extends React.Component<Props, Readonly<State>> {
-    static options = { addGlobalClass: true }
-    static defaultProps: Partial<Props> = defaultProps
+export default class AtCalendarBody extends React.Component<AtCalendarBodyProps, Readonly<AtCalendarBodyState>> {
+    static defaultProps: Partial<AtCalendarBodyProps> = defaultProps
 
-    private changeCount: number = 0
-    private currentSwiperIndex: number = 1
-    private startX: number = 0
-    private swipeStartPoint: number = 0
-    private isPreMonth: boolean = false
-    private maxWidth: number = 0
-    private isTouching: boolean = false
-
-    private generateFunc: (
-        generateDate: number,
-        selectedDate: Calendar.SelectedDate,
-        isShowStatus?: boolean
-    ) => Calendar.ListInfo<Calendar.Item>
-
-    constructor(props) {
+    public constructor(props: AtCalendarBodyProps) {
         super(props)
         const { validDates, marks, format, minDate, maxDate, generateDate, selectedDate, selectedDates } = props
 
@@ -70,10 +45,48 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         }
     }
 
-    // @bind
-    private getGroups(generateDate: number, selectedDate: Calendar.SelectedDate): ListGroup {
+    public componentDidMount(): void {
+        delayQuerySelector('.at-calendar-slider__main').then((res) => {
+            this.maxWidth = res[0].width
+        })
+    }
+
+    public UNSAFE_componentWillReceiveProps(nextProps: AtCalendarBodyProps): void {
+        const { validDates, marks, format, minDate, maxDate, generateDate, selectedDate, selectedDates } = nextProps
+
+        this.generateFunc = generateCalendarGroup({
+            validDates,
+            format,
+            minDate,
+            maxDate,
+            marks,
+            selectedDates,
+        })
+        const listGroup = this.getGroups(generateDate, selectedDate)
+
+        this.setState({
+            offsetSize: 0,
+            listGroup,
+        })
+    }
+
+    private changeCount = 0
+    private currentSwiperIndex = 1
+    private startX = 0
+    private swipeStartPoint = 0
+    private isPreMonth = false
+    private maxWidth = 0
+    private isTouching = false
+
+    private generateFunc: (
+        generateDate: number,
+        selectedDate: Calendar.SelectedDate,
+        isShowStatus?: boolean
+    ) => Calendar.ListInfo<Calendar.Item>
+
+    private getGroups = (generateDate: number, selectedDate: Calendar.SelectedDate): AtCalendarBodyListGroup => {
         const dayjsDate = dayjs(generateDate)
-        const arr: ListGroup = []
+        const arr: AtCalendarBodyListGroup = []
         const preList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
             dayjsDate.subtract(1, 'month').valueOf(),
             selectedDate
@@ -96,33 +109,7 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         return arr
     }
 
-    UNSAFE_componentWillReceiveProps(nextProps: Props) {
-        const { validDates, marks, format, minDate, maxDate, generateDate, selectedDate, selectedDates } = nextProps
-
-        this.generateFunc = generateCalendarGroup({
-            validDates,
-            format,
-            minDate,
-            maxDate,
-            marks,
-            selectedDates,
-        })
-        const listGroup = this.getGroups(generateDate, selectedDate)
-
-        this.setState({
-            offsetSize: 0,
-            listGroup,
-        })
-    }
-
-    componentDidMount() {
-        // delayQuerySelector(this, '.at-calendar-slider__main').then(res => {
-        //     this.maxWidth = res[0].width
-        // })
-    }
-
-    // @bind
-    private handleTouchStart(e: ITouchEvent) {
+    private handleTouchStart = (e: ITouchEvent): void => {
         if (!this.props.isSwiper) {
             return
         }
@@ -130,7 +117,7 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         this.startX = e.touches[0].clientX
     }
 
-    private handleTouchMove = (e: ITouchEvent) => {
+    private handleTouchMove = (e: ITouchEvent): void => {
         if (!this.props.isSwiper) {
             return
         }
@@ -144,7 +131,7 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         })
     }
 
-    private animateMoveSlide(offset: number, callback?: Function) {
+    private animateMoveSlide = (offset: number, callback?: Function): void => {
         this.setState(
             {
                 isAnimate: true,
@@ -167,8 +154,7 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         )
     }
 
-    // @bind
-    private handleTouchEnd() {
+    private handleTouchEnd = (): void => {
         if (!this.props.isSwiper) {
             return
         }
@@ -190,39 +176,40 @@ export default class AtCalendarBody extends React.Component<Props, Readonly<Stat
         this.animateMoveSlide(0)
     }
 
-    // @bind
-    private handleChange(e) {
+    private handleChange = (
+        e: BaseEventOrig<{
+            current: number
+            source: string
+        }>
+    ): void => {
         const { current, source } = e.detail
 
         if (source === 'touch') {
             this.currentSwiperIndex = current
-            this.changeCount = this.changeCount + 1
+            this.changeCount += 1
         }
     }
 
-    // @bind
-    private handleAnimateFinish() {
+    private handleAnimateFinish = (): void => {
         if (this.changeCount > 0) {
             this.props.onSwipeMonth(this.isPreMonth ? -this.changeCount : this.changeCount)
             this.changeCount = 0
         }
     }
 
-    // @bind
-    private handleSwipeTouchStart(e: ITouchEvent & { changedTouches: Array<ITouch> }) {
+    private handleSwipeTouchStart = (e: ITouchEvent & { changedTouches: Array<ITouch> }): void => {
         const { clientY, clientX } = e.changedTouches[0]
         this.swipeStartPoint = this.props.isVertical ? clientY : clientX
     }
 
-    // @bind
-    private handleSwipeTouchEnd(e: ITouchEvent & { changedTouches: Array<ITouch> }) {
+    private handleSwipeTouchEnd = (e: ITouchEvent & { changedTouches: Array<ITouch> }): void => {
         const { clientY, clientX } = e.changedTouches[0]
         this.isPreMonth = this.props.isVertical
             ? clientY - this.swipeStartPoint > 0
             : clientX - this.swipeStartPoint > 0
     }
 
-    render() {
+    public render(): JSX.Element {
         const { isSwiper } = this.props
         const { isAnimate, offsetSize, listGroup } = this.state
 

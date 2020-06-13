@@ -2,15 +2,16 @@ import dayjs, { Dayjs } from 'dayjs'
 import classnames from 'classnames'
 import React from 'react'
 import { Text, View, Picker } from '@tarojs/components'
-import { Props, State } from './interface'
+import { AtCalendarControllerProps, AtCalendarControllerState } from 'taro-ui/types/calendar'
 
 /**
  * @ignore
  */
-export default class AtCalendarController extends React.Component<Props, State> {
-    static options = { addGlobalClass: true }
-
-    render() {
+export default class AtCalendarController extends React.Component<
+    AtCalendarControllerProps,
+    AtCalendarControllerState
+> {
+    public render(): JSX.Element {
         const { generateDate, minDate, maxDate, monthFormat, hideArrow } = this.props
 
         const dayjsDate: Dayjs = dayjs(generateDate)

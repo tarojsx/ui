@@ -1,9 +1,7 @@
-import bind from 'bind-decorator'
-import classnames from 'classnames'
-import _isFunction from 'lodash/isFunction'
 import React from 'react'
-import { View, Text } from '@tarojs/components'
-import Calendar from '../../types'
+import classnames from 'classnames'
+import { Text, View } from '@tarojs/components'
+import { Calendar } from 'taro-ui/types/calendar'
 import * as constant from '../../common/constant'
 
 const MAP: { [key: number]: string } = {
@@ -24,32 +22,27 @@ export interface Props {
  * @ignore
  */
 export default class AtCalendarList extends React.Component<Props> {
-    static options = { addGlobalClass: true }
-
-    // @bind
-    handleClick(item) {
-        if (_isFunction(this.props.onClick)) {
+    private handleClick = (item: Calendar.Item): void => {
+        if (typeof this.props.onClick === 'function') {
             this.props.onClick(item)
         }
     }
 
-    // @bind
-    handleLongClick(item) {
-        if (_isFunction(this.props.onLongClick)) {
+    private handleLongClick = (item: Calendar.Item): void => {
+        if (typeof this.props.onLongClick === 'function') {
             this.props.onLongClick(item)
         }
     }
 
-    render() {
+    public render(): JSX.Element | null {
         const { list } = this.props
-
         if (!list || list.length === 0) return null
 
         return (
             <View className="at-calendar__list flex">
-                {list.map((item, index) => (
+                {list.map((item: Calendar.Item) => (
                     <View
-                        key={`${item.text}${index}`}
+                        key={`list-item-${item.value}`}
                         onClick={this.handleClick.bind(this, item)}
                         onLongPress={this.handleLongClick.bind(this, item)}
                         className={classnames('flex__item', `flex__item--${MAP[item.type]}`, {
