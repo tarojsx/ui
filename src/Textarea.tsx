@@ -1,14 +1,14 @@
-import React, { useRef, useMemo } from 'react'
+import React, { useMemo } from 'react'
 import Taro from '@tarojs/taro'
 import classNames from 'classnames'
-import { View, Textarea as _Textarea, CommonEventFunction } from '@tarojs/components'
-import { TextareaProps as _TextareaProps } from '@tarojs/components/types/Textarea'
+import { View, CommonEventFunction } from '@tarojs/components'
 import { AtTextareaProps } from 'taro-ui/types/textarea'
 
+import { TextareaEnhance, TextareaEnhanceProps } from './TextareaEnhance'
 import '../style/Textarea.scss'
 
 export interface TextareaProps
-    extends Omit<_TextareaProps, 'className' | 'value' | 'focus' | 'onInput'>,
+    extends Omit<TextareaEnhanceProps, 'className' | 'value' | 'focus' | 'onInput'>,
         Pick<AtTextareaProps, 'count' | 'height' | 'textOverflowForbidden'> {
     className?: string
     style?: React.CSSProperties
@@ -57,19 +57,17 @@ export const Textarea: React.FC<TextareaProps> = (props) => {
 
     return (
         <View className={rootCls} style={style}>
-            <_Textarea
+            <TextareaEnhance
                 ref={textareaRef as any}
                 className="at-textarea__textarea"
                 style={textareaStyle}
                 placeholderClass={placeholderCls}
                 cursorSpacing={cursorSpacing}
                 value={value}
-                // confirmType="完成"
                 /* 兼容之前的版本 */
                 maxlength={actualMaxLength}
                 focus={autoFocus}
                 onInput={onChange}
-                // showCount={false}
                 {...rest}
             />
             {count && (
