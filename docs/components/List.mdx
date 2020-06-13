@@ -41,9 +41,9 @@ import { UI } from '@/ui'
         <ListItem title={<Text style={{ color: 'orange' }}>标题组件</Text>} extra={<Icon value="download" />} />
         <ListItem title="子组件" arrow="right">
             {['TaroX', 'UI', 'ListItem'].map((c) => (
-                <Tag style={{ marginRight: 20 }} size="small">
+                <Tag key={c} style={{ marginRight: 20 }} size="small">
                     {c}
-                </Tag> 
+                </Tag>
             ))}
         </ListItem>
         <ListItem title="清除按钮" extra="2020-06-06" arrow="clear" onClear={() => alert('清除')} />
