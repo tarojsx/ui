@@ -24,35 +24,39 @@ export interface TextareaEnhanceProps extends TextareaProps {
 export const TextareaEnhance: React.FC<TextareaEnhanceProps> = (props) => {
     const { mergeChangeEvent = true, onInput, onBlur, onConfirm, ...rest } = props
 
-    const previousInputValue = useRef<string>()
+    /** 上一个输入值 */
+    const previousInputValue = useRef<string>(props.value)
 
     const handleInput = useCallback<typeof onInput>(
         (e) => {
+            // 记录新值
             previousInputValue.current = e.detail.value
-            onInput(e)
+            onInput && onInput(e)
         },
         [onInput]
     )
 
     const handleBlur = useCallback<typeof onBlur>(
         (e) => {
-            if (mergeChangeEvent && e.detail.value !== previousInputValue.current) {
+            // 如果丢失焦点时的值与上一个值不同, 先触发 onInput
+            if (onInput && mergeChangeEvent && e.detail.value !== previousInputValue.current) {
                 onInput({ ...e, detail: { ...e.detail, keyCode: 0 } })
             }
-            onBlur(e)
+            onBlur && onBlur(e)
         },
-        [onBlur, mergeChangeEvent]
+        [onInput, onBlur, mergeChangeEvent]
     )
 
     const handleConfirm = useCallback<typeof onConfirm>(
         (e) => {
-            if (mergeChangeEvent && e.detail.value !== previousInputValue.current) {
+            // 如果点击"完成"绿按钮时的值与上一个值不同, 先触发 onInput
+            if (onInput && mergeChangeEvent && e.detail.value !== previousInputValue.current) {
                 onInput({ ...e, detail: { ...e.detail, keyCode: 0, cursor: 0 } })
             }
-            onConfirm(e)
+            onConfirm && onConfirm(e)
         },
-        [onConfirm, mergeChangeEvent]
+        [onInput, onConfirm, mergeChangeEvent]
     )
 
-    return <Textarea onInput={(e) => handleInput} onBlur={handleBlur} onConfirm={handleConfirm} {...rest} />
+    return <Textarea onInput={handleInput} onBlur={handleBlur} onConfirm={handleConfirm} {...rest} />
 }
