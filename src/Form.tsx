@@ -16,7 +16,7 @@ export const Form: React.FC<FormProps> = (props) => {
         if (!onSubmit) return
 
         const event = (e as unknown) as React.BaseSyntheticEvent
-        event.persist = () => {}
+        if (!event.persist) event.persist = () => {}
 
         onSubmit(event)
     }, submitThrottle)
