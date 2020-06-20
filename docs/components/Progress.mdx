@@ -1,0 +1,119 @@
+---
+title: Progress 进度条
+---
+
+## 示例
+
+import { Progress } from '@tarojsx/ui'
+import { useHarmonicIntervalFn } from 'react-use'
+import { UI } from '@/ui'
+
+```jsx title="基础"
+<Progress />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return <Progress percent={percent} />
+    }}
+</UI>
+
+```jsx title="隐藏文字"
+<Progress isHidePercent />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return <Progress percent={percent} isHidePercent />
+    }}
+</UI>
+
+```jsx title="线宽"
+<Progress strokeWidth={6} />
+<Progress strokeWidth={8} />
+<Progress strokeWidth={10} />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return (
+            <div>
+                <Progress percent={percent} strokeWidth={6} />
+                <Progress percent={percent} strokeWidth={8} />
+                <Progress percent={percent} strokeWidth={10} />
+            </div>
+        )
+    }}
+</UI>
+
+```jsx title="过渡时间"
+<Progress />
+<Progress transitionDuration={0} />
+<Progress transitionDuration={0.75} />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return (
+            <div>
+                <Progress percent={percent} />
+                <Progress percent={percent} transitionDuration={0} />
+                <Progress percent={percent} transitionDuration={0.75} />
+            </div>
+        )
+    }}
+</UI>
+
+```jsx title="颜色"
+<Progress color='#FF4949' />
+<Progress color='#13CE66' />
+<Progress color='#FFC82C' />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return (
+            <div>
+                <Progress percent={percent} color="#FF4949" />
+                <Progress percent={percent} color="#13CE66" />
+                <Progress percent={percent} color="#FFC82C" />
+            </div>
+        )
+    }}
+</UI>
+
+```jsx title="状态"
+<AtProgress status='error' />
+<AtProgress status='progress' />
+<AtProgress status='success' />
+```
+
+<UI>
+    {() => {
+        const [percent, setPercent] = React.useState(0)
+        useHarmonicIntervalFn(() => setPercent(Math.round((Date.now() / 100) % 100)), 1000)
+        return (
+            <div>
+                <Progress percent={percent} status="progress" />
+                <Progress percent={percent} status="success" />
+                <Progress percent={percent} status="error" />
+            </div>
+        )
+    }}
+</UI>
+
+## API
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/progress)
+-   [`<Progress />`](../modules/_progress_.md)
+-   [`ProgressProps`](../interfaces/_progress_.progressprops.md)

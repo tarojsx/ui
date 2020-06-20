@@ -1,0 +1,96 @@
+---
+title: Steps 步骤条
+---
+
+## 示例
+
+import { Steps } from '@tarojsx/ui'
+import { UI } from '@/ui'
+
+```jsx title="基础"
+const Demo = () => {
+    const [current, setCurrent] = React.useState(0)
+    const onChange = React.useCallback((index) => {
+        setCurrent(index)
+    }, [])
+    return (
+        <Steps
+            items={[
+                { title: '选购' },
+                {
+                    title: '确认',
+                    desc: '这里是额外的信息，最多两行',
+                    icon: {
+                        value: 'shopping-cart',
+                        activeColor: '#fff',
+                        inactiveColor: '#78A4FA',
+                        size: '14',
+                    },
+                },
+                {
+                    title: '支付',
+                    icon: {
+                        value: 'credit-card',
+                        activeColor: '#fff',
+                        inactiveColor: '#78A4FA',
+                        size: '14',
+                    },
+                },
+                {
+                    title: '完成',
+                    status: 'success',
+                },
+            ]}
+            current={current}
+            onChange={onChange}
+        />
+    )
+}
+```
+
+<UI>
+    {() => {
+        const [current, setCurrent] = React.useState(0)
+        const onChange = React.useCallback((index) => {
+            setCurrent(index)
+        }, [])
+        return (
+            <Steps
+                items={[
+                    { title: '选购' },
+                    {
+                        title: '确认',
+                        desc: '这里是额外的信息，最多两行',
+                        icon: {
+                            value: 'shopping-cart',
+                            activeColor: '#fff',
+                            inactiveColor: '#78A4FA',
+                            size: '14',
+                        },
+                    },
+                    {
+                        title: '支付',
+                        icon: {
+                            value: 'credit-card',
+                            activeColor: '#fff',
+                            inactiveColor: '#78A4FA',
+                            size: '14',
+                        },
+                    },
+                    {
+                        title: '完成',
+                        status: 'success',
+                    },
+                ]}
+                current={current}
+                onChange={onChange}
+            />
+        )
+    }}
+</UI>
+
+## API
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/steps)
+-   [`<Steps />`](../modules/_steps_.md)
+-   [`StepsProps`](../interfaces/_steps_.stepsprops.md)

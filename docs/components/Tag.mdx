@@ -1,0 +1,98 @@
+---
+title: Tag 标签
+---
+
+## 示例
+
+import { Tag } from '@tarojsx/ui'
+import { UI } from '@/ui'
+
+```jsx title="基础"
+<Tag>标签</Tag>
+<Tag circle>圆标签</Tag>
+<Tag type='primary'>主要标签</Tag>
+<Tag type='primary' circle>主要圆标签</Tag>
+```
+
+<UI>
+    <Tag>标签</Tag>
+    <Tag circle>圆标签</Tag>
+    <Tag type="primary">主要标签</Tag>
+    <Tag type="primary" circle>
+        主要圆标签
+    </Tag>
+</UI>
+
+```jsx title="激活"
+<Tag active>标签</Tag>
+<Tag active circle>圆标签</Tag>
+<Tag active type='primary'>主要标签</Tag>
+<Tag active type='primary' circle>主要圆标签</Tag>
+```
+
+<UI>
+    <Tag active>标签</Tag>
+    <Tag active circle>
+        圆标签
+    </Tag>
+    <Tag active type="primary">
+        主要标签
+    </Tag>
+    <Tag active type="primary" circle>
+        主要圆标签
+    </Tag>
+</UI>
+
+```jsx title="小标签"
+<Tag size="small">小标签</Tag>
+<Tag size="small" circle>圆小标签</Tag>
+<Tag size="small" type='primary'>主要小标签</Tag>
+<Tag size="small" type='primary' circle>主要圆小标签</Tag>
+```
+
+<UI>
+    <Tag size="small">小标签</Tag>
+    <Tag size="small" circle>
+        圆小标签
+    </Tag>
+    <Tag size="small" type="primary">
+        主要小标签
+    </Tag>
+    <Tag size="small" type="primary" circle>
+        主要圆小标签
+    </Tag>
+</UI>
+
+```jsx title="禁用"
+<Tag disabled>标签</Tag>
+<Tag disabled circle>圆标签</Tag>
+<Tag disabled type='primary'>主要标签</Tag>
+<Tag disabled type='primary' circle>主要圆标签</Tag>
+```
+
+<UI>
+    <Tag disabled>标签</Tag>
+    <Tag disabled circle>
+        圆标签
+    </Tag>
+    <Tag disabled type="primary">
+        主要标签
+    </Tag>
+    <Tag disabled type="primary" circle>
+        主要圆标签
+    </Tag>
+</UI>
+
+```jsx title="点击"
+<Tag active onClick={alert('点击标签')}>点击标签</Tag>
+```
+
+<UI>
+    <Tag active onClick={() => alert('点击标签')}>点击标签</Tag>
+</UI>
+
+## API
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/tag)
+-   [`<Tag />`](../modules/_tag_.md)
+-   [`TagProps`](../interfaces/_tag_.tagprops.md)

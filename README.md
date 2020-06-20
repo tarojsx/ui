@@ -112,7 +112,7 @@ export default () => {
 * [x] ImagePicker
 * [ ] Indexes
 * [x] Input
-* [x] InputNumber
+* [x] [InputNumber](./docs/components/InputNumber.mdx)
 * [x] [List](./docs/components/List.mdx)
 * [x] [ListItem](./docs/components/List.mdx)
 * [x] Loading
@@ -123,22 +123,22 @@ export default () => {
 * [ ] Noticebar
 * [ ] Pagination
 * [ ] Picker
-* [x] Progress
+* [x] [Progress](./docs/components/Progress.mdx)
 * [ ] Radio
 * [ ] Rate
-* [x] SearchBar
+* [x] [SearchBar](./docs/components/SearchBar.mdx)
 * [ ] SegmentedControl
 * [ ] Slider
-* [x] Steps
+* [x] [Steps](./docs/components/Steps.mdx)
 * [ ] SwipeAction
 * [ ] Swiper
 * [ ] Switch
-* [x] TabBar
+* [x] [TabBar](./docs/components/TabBar.mdx)
 * [x] Tabs
   * [ ] Swipe 操作
 * [x] TabsPane
   * [ ] Swipe 操作
-* [x] Tag
+* [x] [Tag](./docs/components/Tag.mdx)
 * [x] Textarea
 * [ ] Timeline
 * [ ] Toast

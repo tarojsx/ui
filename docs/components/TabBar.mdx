@@ -1,0 +1,181 @@
+---
+title: TabBar 标签栏
+---
+
+## 示例
+
+import { TabBar, ListHeader } from '@tarojsx/ui'
+import { UI } from '@/ui'
+
+```jsx title="文本"
+const Demo = () => {
+    const [current, setCurrent] = React.useState(0)
+    const onClick = React.useCallback((e) => {
+        setCurrent(e.detail.value)
+    }, [])
+    return (
+        <TabBar
+            tabList={[{ title: '待办事项', text: 8 }, { title: '拍照' }, { title: '通讯录', dot: true }]}
+            current={current}
+            onClick={onClick}
+        />
+    )
+}
+```
+
+```jsx title="颜色/图标"
+const Demo = () => {
+    const [current, setCurrent] = React.useState(0)
+    const onClick = React.useCallback((e) => {
+        setCurrent(e.detail.value)
+    }, [])
+    return (
+        <TabBar
+            backgroundColor="#ececec"
+            color="#ea6bb8"
+            selectedColor="#ff3333"
+            tabList={[
+                { title: '待办事项', iconType: 'bullet-list', text: 'new' },
+                { title: '拍照', iconType: 'camera' },
+                { title: '文件夹', iconType: 'folder', text: '100', max: 99 },
+            ]}
+            current={current}
+            onClick={onClick}
+        />
+    )
+}
+```
+
+```jsx title="图片"
+const Demo = () => {
+    const [current, setCurrent] = React.useState(0)
+    const onClick = React.useCallback((e) => {
+        setCurrent(e.detail.value)
+    }, [])
+    return (
+        <TabBar
+            tabList={[
+                {
+                    title: '领取中心',
+                    image:
+                        'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+                    selectedImage:
+                        'https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png',
+                    text: 'new',
+                },
+                {
+                    title: '找折扣',
+                    image:
+                        'https://img20.360buyimg.com/jdphoto/s72x72_jfs/t15151/308/1012305375/2300/536ee6ef/5a411466N040a074b.png',
+                },
+                {
+                    title: '领会员',
+                    image:
+                        'https://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png',
+                    text: '100',
+                    max: 99,
+                },
+            ]}
+            current={current}
+            onClick={onClick}
+        />
+    )
+}
+```
+
+```jsx title="固定底部"
+const Demo = () => {
+    const [current, setCurrent] = React.useState(0)
+    const onClick = React.useCallback((e) => {
+        setCurrent(e.detail.value)
+    }, [])
+    return (
+        <TabBar
+            fixed
+            tabList={[
+                { title: '待办事项', iconType: 'bullet-list', text: 'new' },
+                { title: '拍照', iconType: 'camera' },
+                { title: '文件夹', iconType: 'folder', text: '100', max: 99 },
+            ]}
+            current={current}
+            onClick={onClick}
+        />
+    )
+}
+```
+
+<UI phone title="标签栏">
+    {() => {
+        const [current, setCurrent] = React.useState(0)
+        const onClick = React.useCallback((e) => {
+            setCurrent(e.detail.value)
+        }, [])
+        return (
+            <div>
+                <ListHeader title="文字"/>
+                <TabBar
+                    tabList={[{ title: '待办事项', text: 8 }, { title: '拍照' }, { title: '通讯录', dot: true }]}
+                    current={current}
+                    onClick={onClick}
+                />
+                <ListHeader title="颜色/图标"/>
+                <TabBar
+                    backgroundColor="#ececec"
+                    color="#ea6bb8"
+                    selectedColor="#ff3333"
+                    tabList={[
+                        { title: '待办事项', iconType: 'bullet-list', text: 'new' },
+                        { title: '拍照', iconType: 'camera' },
+                        { title: '文件夹', iconType: 'folder', text: '100', max: 99 },
+                    ]}
+                    current={current}
+                    onClick={onClick}
+                />
+                <ListHeader title="图片"/>
+                <TabBar
+                    tabList={[
+                        {
+                            title: '领取中心',
+                            image:
+                                'https://img12.360buyimg.com/jdphoto/s72x72_jfs/t6160/14/2008729947/2754/7d512a86/595c3aeeNa89ddf71.png',
+                            selectedImage:
+                                'https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png',
+                            text: 'new',
+                        },
+                        {
+                            title: '找折扣',
+                            image:
+                                'https://img20.360buyimg.com/jdphoto/s72x72_jfs/t15151/308/1012305375/2300/536ee6ef/5a411466N040a074b.png',
+                        },
+                        {
+                            title: '领会员',
+                            image:
+                                'https://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png',
+                            text: '100',
+                            max: 99,
+                        },
+                    ]}
+                    current={current}
+                    onClick={onClick}
+                />
+                <TabBar
+                    fixed
+                    tabList={[
+                        { title: '待办事项', iconType: 'bullet-list', text: 'new' },
+                        { title: '拍照', iconType: 'camera' },
+                        { title: '文件夹', iconType: 'folder', text: '100', max: 99 },
+                    ]}
+                    current={current}
+                    onClick={onClick}
+                />
+            </div>
+        )
+    }}
+
+</UI>
+
+## API
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/tabbar)
+-   [`<TabBar />`](../modules/_tabbar_.md)
+-   [`TabBarProps`](../interfaces/_tabbar_.tabbarprops.md)

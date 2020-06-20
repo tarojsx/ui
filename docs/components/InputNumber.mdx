@@ -1,0 +1,66 @@
+---
+title: InputNumber 数字输入框
+---
+
+## 示例
+
+import { InputNumber } from '@tarojsx/ui'
+import { UI } from '@/ui'
+
+```jsx title="整数"
+<InputNumber />
+```
+
+<UI>
+    {() => {
+        const [value, setValue] = React.useState(0)
+        return <InputNumber value={value} onChange={(e) => setValue(e.detail.value)} />
+    }}
+</UI>
+
+```jsx title="小数"
+<InputNumber step={0.1} />
+```
+
+<UI>
+    {() => {
+        const [value, setValue] = React.useState(0)
+        return <InputNumber step={0.1} value={value} onChange={(e) => setValue(e.detail.value)} />
+    }}
+</UI>
+
+```jsx title="5-8"
+<InputNumber min={5} max={8} />
+```
+
+<UI>
+    {() => {
+        const [value, setValue] = React.useState(6)
+        return <InputNumber min={5} max={8} value={value} onChange={(e) => setValue(e.detail.value)} />
+    }}
+</UI>
+
+```jsx title="禁止输入"
+<InputNumber disabledInput />
+```
+
+<UI>
+    {() => {
+        const [value, setValue] = React.useState(0)
+        return <InputNumber disabledInput value={value} onChange={(e) => setValue(e.detail.value)} />
+    }}
+</UI>
+
+```jsx title="禁用"
+<InputNumber disabled />
+```
+
+<UI>
+    <InputNumber disabled />
+</UI>
+
+## API
+
+-   [Taro UI 文档](https://taro-ui.jd.com/#/docs/inputnumber)
+-   [`<InputNumber />`](../modules/_inputnumber_.md)
+-   [`InputNumberProps`](../interfaces/_inputnumber_.inputnumberprops.md)
