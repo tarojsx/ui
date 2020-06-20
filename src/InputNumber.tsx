@@ -5,6 +5,7 @@ import { View, Input, Text, CommonEventFunction } from '@tarojs/components'
 import { InputProps } from '@tarojs/components/types/Input'
 import { AtInputNumberProps } from 'taro-ui/types/input-number'
 
+import { setEventDetail } from './utils'
 import '../style/InputNumber.scss'
 
 export interface InputNumberProps
@@ -42,7 +43,7 @@ const decimalAdd = (a: number, b: number) => {
  * - 手动输入数字时调起数字(number)或小数(digit)键盘, 默认距离键盘50px.
  * - 失去光标时强制格式化数字.
  */
-export const InputNumber: React.FC<InputNumberProps> = props => {
+export const InputNumber: React.FC<InputNumberProps> = (props) => {
     const {
         className,
         style = {},
@@ -64,13 +65,10 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
 
     const inputValue = useMemo(() => parseFloat(String(value)) || 0, [value])
 
-    const clamp = useCallback(n => Math.max(min, Math.min(max, n)), [min, max])
+    const clamp = useCallback((n) => Math.max(min, Math.min(max, n)), [min, max])
 
     const handleClick = useCallback<InputNumberProps['onChange']>(
-        e => {
-            e.preventDefault()
-            e.stopPropagation()
-
+        (e) => {
             if (disabled) return
 
             e.detail.value = clamp(decimalAdd(inputValue, e.detail.delta))
@@ -80,7 +78,7 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
     )
 
     const handleChange = useCallback<InputProps['onInput']>(
-        e => {
+        (e) => {
             const { value } = e.detail
             const num = parseFloat(value) || 0
             if (num.toString() === value) {
@@ -92,7 +90,7 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
     )
 
     const handleBlur = useCallback<InputProps['onBlur']>(
-        e => {
+        (e) => {
             const num = parseFloat(e.detail.value)
             e.detail.value = isNaN(num) ? '' : (clamp(num) as any)
             onChange(e)
@@ -110,9 +108,10 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
                 className={classNames('at-input-number__btn', {
                     'at-input-number--disabled': inputValue <= min! || disabled,
                 })}
-                onClick={e => {
-                    e.detail.delta = -step
-                    handleClick(e)
+                onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    handleClick && handleClick(setEventDetail(e, { delta: -step }))
                 }}
             >
                 <Text className="at-icon at-icon-subtract at-input-number__btn-subtract"></Text>
@@ -133,9 +132,10 @@ export const InputNumber: React.FC<InputNumberProps> = props => {
                 className={classNames('at-input-number__btn', {
                     'at-input-number--disabled': inputValue >= max! || disabled,
                 })}
-                onClick={e => {
-                    e.detail.delta = step
-                    handleClick(e)
+                onClick={(e) => {
+                    e.preventDefault()
+                    e.stopPropagation()
+                    handleClick && handleClick(setEventDetail(e, { delta: step }))
                 }}
             >
                 <Text className="at-icon at-icon-add at-input-number__btn-add"></Text>

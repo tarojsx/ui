@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import { View, Text, Image, CommonEventFunction } from '@tarojs/components'
 
+import { setEventDetail } from './utils'
 import { Badge } from './Badge'
 import '../style/TabBar.scss'
 
@@ -42,7 +43,7 @@ export interface TabBarProps {
     onClick?: CommonEventFunction<{ value: number }>
 }
 
-export const TabBar: React.FC<TabBarProps> = props => {
+export const TabBar: React.FC<TabBarProps> = (props) => {
     const {
         className,
         style = {},
@@ -75,9 +76,8 @@ export const TabBar: React.FC<TabBarProps> = props => {
                     key={item.key || item.title || index}
                     className={classNames('at-tab-bar__item', { 'at-tab-bar__item--active': current === index })}
                     style={current === index ? selectedStyle : defaultStyle}
-                    onClick={e => {
-                        e.detail.value = index
-                        onClick && onClick(e)
+                    onClick={(e) => {
+                        onClick && onClick(setEventDetail(e, { value: index }))
                     }}
                 >
                     {item.iconType ? (

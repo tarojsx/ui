@@ -11,7 +11,7 @@ function delay(delayTime = 25): Promise<null> {
     })
 }
 
-function delayQuerySelector(selectorStr: string, delayTime = 500): Promise<any[]> {
+export function delayQuerySelector(selectorStr: string, delayTime = 500): Promise<any[]> {
     return new Promise((resolve) => {
         const selector: SelectorQuery = Taro.createSelectorQuery()
         delay(delayTime).then(() => {
@@ -53,7 +53,7 @@ function delayGetClientRect({ selectorStr, delayTime = 500 }): Promise<any[]> {
     })
 }
 
-function uuid(len = 8, radix = 16): string {
+export function uuid(len = 8, radix = 16): string {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('')
     const value: string[] = []
     let i = 0
@@ -167,6 +167,14 @@ function getEventDetail(event: any): EventDetail {
     return detail
 }
 
+export function setEventDetail<E>(e: E, detail: any) {
+    if (process.env.TARO_ENV === 'h5') {
+        return Object.create(e as any, { detail: { value: detail } })
+    } else {
+        e['detail'] = detail
+    }
+}
+
 function initTestEnv(): void {
     if (process.env.NODE_ENV === 'test') {
         Taro.initPxTransform({
@@ -242,18 +250,4 @@ function mergeStyle(style1: object | string, style2: object | string): object | 
         return Object.assign({}, style1, style2)
     }
     return objectToString(style1) + objectToString(style2)
-}
-
-export {
-    delay,
-    delayQuerySelector,
-    uuid,
-    getEventDetail,
-    initTestEnv,
-    isTest,
-    pxTransform,
-    handleTouchScroll,
-    delayGetClientRect,
-    delayGetScrollOffset,
-    mergeStyle,
 }
