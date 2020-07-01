@@ -172,6 +172,7 @@ export function setEventDetail<E>(e: E, detail: any) {
         return Object.create(e as any, { detail: { value: detail } })
     } else {
         e['detail'] = detail
+        return e
     }
 }
 
