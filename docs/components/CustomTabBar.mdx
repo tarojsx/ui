@@ -1,0 +1,125 @@
+---
+title: CustomTabBar 自定义标签栏
+---
+
+自定义标签栏高阶组件
+
+自动从 app.config 中获取 tabBar 配置，内部全面管理标签状态（显示、激活、颜色、图标、红点等），支持 TabBar 相关 API。
+
+## 示例
+
+```jsx title="custom-tab-bar/index.js"
+import { CustomTabBar, TabBar } from '@tarojsx/ui'
+
+export default () => {
+    return (
+        <CustomTabBar>
+            {({
+                hidden,
+                current,
+                list,
+                switchTabIndex,
+                style: { backgroundColor, color, selectedColor, borderStyle, position },
+            }) => (
+                <TabBar
+                    style={{ display: hidden ? 'none' : 'flex' }}
+                    backgroundColor={backgroundColor}
+                    color={color}
+                    selectedColor={selectedColor}
+                    tabList={list.map(({ key, text, iconPath, selectedIconPath, badge, redDot }, index) => ({
+                        key,
+                        title: text,
+                        image: iconPath,
+                        selectedImage: selectedIconPath,
+                        text: badge,
+                        dot: redDot,
+                    }))}
+                    current={current}
+                    onClick={onClick}
+                />
+            )}
+        </CustomTabBar>
+    )
+}
+```
+
+以下为 app 配置代码片段:
+
+```js title="app.config.js"
+export default {
+    tabBar: {
+        custom: true,
+        color: '#888888',
+        selectedColor: '#3B7CF7',
+        list: [
+            {
+                pagePath: 'pages/todo',
+                text: '待办事项',
+                iconPath: 'assets/todo.png',
+                selectedIconPath: 'assets/todo2.png',
+            },
+            {
+                pagePath: 'pages/shot',
+                text: '拍照',
+                iconPath: 'assets/shot.png',
+                selectedIconPath: 'assets/shot2.png',
+            },
+            {
+                pagePath: 'pages/contact',
+                text: '通讯录',
+                iconPath: 'assets/contact.png',
+                selectedIconPath: 'assets/contact2.png',
+            },
+        ],
+    },
+}
+```
+
+支持 API:
+
+| 参数                   | 说明                                           |
+| ---------------------- | ---------------------------------------------- |
+| Taro.hideTabBar        | 隐藏标签栏，子组件属性 `hidden` 变成 `true`。  |
+| Taro.showTabBar        | 显示标签栏，子组件属性 `hidden` 变成 `false`。 |
+| Taro.setTabBarStyle    | 设置标签栏样式，子组件属性 `style` 随之更新。  |
+| Taro.setTabBarItem     | 设置标签，子组件属性 `list` 随之更新。         |
+| Taro.setTabBarBadge    | 设置标签 badge，子组件属性 `list` 随之更新。   |
+| Taro.removeTabBarBadge | 移除标签 badge，子组件属性 `list` 随之更新。   |
+| Taro.showTabBarRedDot  | 显示标签红点，子组件属性 `list` 随之更新。     |
+| Taro.hideTabBarRedDot  | 隐藏标签红点，子组件属性 `list` 随之更新。     |
+
+子组件属性：
+
+| 参数           | 说明           | 类型                     | 默认值 |
+| -------------- | -------------- | ------------------------ | ------ |
+| hidden         | 是否隐藏标签栏 | boolean                  |        |
+| current        | 当前索引       | number                   |        |
+| list           | 标签列表       | object (参见 标签列表项) |        |
+| style          | 标签栏样式     | object (参见 标签栏样式) |        |
+| switchTabIndex | 切换激活标签   | `(index:number) => void` |        |
+
+标签列表项：
+
+| 参数             | 说明            | 类型    | 默认值 |
+| ---------------- | --------------- | ------- | ------ |
+| key              | React 组件 key  | string  |        |
+| text             | 源自 app.config | string  |        |
+| iconPath         | 源自 app.config | string  |        |
+| selectedIconPath | 源自 app.config | string  |        |
+| badge            | badge 文字      | string  |        |
+| redDot           | 小红点          | boolean |        |
+
+标签栏样式：
+
+| 参数            | 说明            | 类型   | 默认值 |
+| --------------- | --------------- | ------ | ------ |
+| backgroundColor | 源自 app.config | string |        |
+| color           | 源自 app.config | string |        |
+| selectedColor   | 源自 app.config | string |        |
+| borderStyle     | 源自 app.config | string |        |
+| position        | 源自 app.config | string |        |
+
+## API
+
+-   [`<CustomTabBar />`](../modules/_customtabbar_.md)
+-   [`CustomTabBarProps`](../interfaces/_customtabbar_.customtabbarprops.md)

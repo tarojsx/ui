@@ -145,7 +145,7 @@ export default () => {
 
 扩展组件
 
-* [x] CustomTabBar
+* [x] [CustomTabBar](./docs/components/CustomTabBar.mdx)
 * [x] [ListHeader](./docs/components/List.mdx)
 * [x] Statistic
 
