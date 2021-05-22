@@ -1,31 +1,31 @@
 ---
-id: "_loading_"
-title: "Loading"
-sidebar_label: "Loading"
+id: '_loading_'
+title: 'Loading'
+sidebar_label: 'Loading'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [LoadingProps](../interfaces/_loading_.loadingprops.md)
+- [LoadingProps](../interfaces/_loading_.loadingprops.md)
 
 ### Functions
 
-* [Loading](_loading_.md#const-loading)
+- [Loading](_loading_.md#const-loading)
 
 ## Functions
 
 ### `Const` Loading
 
-▸ **Loading**(`props`: [LoadingProps](../interfaces/_loading_.loadingprops.md) & object): *Element‹›*
+▸ **Loading**(`props`: [LoadingProps](../interfaces/_loading_.loadingprops.md) & object): _Element‹›_
 
-*Defined in [src/Loading.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L12)*
+_Defined in [src/Loading.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L12)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [LoadingProps](../interfaces/_loading_.loadingprops.md) & object |
+| Name    | Type                                                             |
+| ------- | ---------------------------------------------------------------- |
+| `props` | [LoadingProps](../interfaces/_loading_.loadingprops.md) & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

@@ -1,12 +1,12 @@
 ---
-id: "_listitem_.listitemprops"
-title: "ListItemProps"
-sidebar_label: "ListItemProps"
+id: '_listitem_.listitemprops'
+title: 'ListItemProps'
+sidebar_label: 'ListItemProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
   ↳ **ListItemProps**
 
@@ -14,107 +14,107 @@ sidebar_label: "ListItemProps"
 
 ### Properties
 
-* [arrow](_listitem_.listitemprops.md#optional-arrow)
-* [children](_listitem_.listitemprops.md#optional-children)
-* [className](_listitem_.listitemprops.md#optional-classname)
-* [extra](_listitem_.listitemprops.md#optional-extra)
-* [footer](_listitem_.listitemprops.md#optional-footer)
-* [ghost](_listitem_.listitemprops.md#optional-ghost)
-* [iconInfo](_listitem_.listitemprops.md#optional-iconinfo)
-* [thumb](_listitem_.listitemprops.md#optional-thumb)
-* [thumbCircle](_listitem_.listitemprops.md#optional-thumbcircle)
-* [title](_listitem_.listitemprops.md#optional-title)
+- [arrow](_listitem_.listitemprops.md#optional-arrow)
+- [children](_listitem_.listitemprops.md#optional-children)
+- [className](_listitem_.listitemprops.md#optional-classname)
+- [extra](_listitem_.listitemprops.md#optional-extra)
+- [footer](_listitem_.listitemprops.md#optional-footer)
+- [ghost](_listitem_.listitemprops.md#optional-ghost)
+- [iconInfo](_listitem_.listitemprops.md#optional-iconinfo)
+- [thumb](_listitem_.listitemprops.md#optional-thumb)
+- [thumbCircle](_listitem_.listitemprops.md#optional-thumbcircle)
+- [title](_listitem_.listitemprops.md#optional-title)
 
 ### Methods
 
-* [onClear](_listitem_.listitemprops.md#optional-onclear)
+- [onClear](_listitem_.listitemprops.md#optional-onclear)
 
 ## Properties
 
 ### `Optional` arrow
 
-• **arrow**? : *AtListItemProps["arrow"] | "clear"*
+• **arrow**? : _AtListItemProps["arrow"] | "clear"_
 
-*Defined in [src/ListItem.tsx:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L18)*
+_Defined in [src/ListItem.tsx:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L18)_
 
-___
+---
 
 ### `Optional` children
 
-• **children**? : *React.ReactNode*
+• **children**? : _React.ReactNode_
 
-*Defined in [src/ListItem.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L12)*
+_Defined in [src/ListItem.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L12)_
 
-___
+---
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/ListItem.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L11)*
+_Defined in [src/ListItem.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L11)_
 
-___
+---
 
 ### `Optional` extra
 
-• **extra**? : *React.ReactNode*
+• **extra**? : _React.ReactNode_
 
-*Defined in [src/ListItem.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L17)*
+_Defined in [src/ListItem.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L17)_
 
-___
+---
 
 ### `Optional` footer
 
-• **footer**? : *React.ReactNode*
+• **footer**? : _React.ReactNode_
 
-*Defined in [src/ListItem.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L19)*
+_Defined in [src/ListItem.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L19)_
 
-___
+---
 
 ### `Optional` ghost
 
-• **ghost**? : *boolean*
+• **ghost**? : _boolean_
 
-*Defined in [src/ListItem.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L20)*
+_Defined in [src/ListItem.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L20)_
 
-___
+---
 
 ### `Optional` iconInfo
 
-• **iconInfo**? : *[IconProps](_icon_.iconprops.md)*
+• **iconInfo**? : _[IconProps](\_icon_.iconprops.md)\_
 
-*Defined in [src/ListItem.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L14)*
+_Defined in [src/ListItem.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L14)_
 
-___
+---
 
 ### `Optional` thumb
 
-• **thumb**? : *React.ReactNode*
+• **thumb**? : _React.ReactNode_
 
-*Defined in [src/ListItem.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L15)*
+_Defined in [src/ListItem.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L15)_
 
-___
+---
 
 ### `Optional` thumbCircle
 
-• **thumbCircle**? : *boolean*
+• **thumbCircle**? : _boolean_
 
-*Defined in [src/ListItem.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L16)*
+_Defined in [src/ListItem.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L16)_
 
-___
+---
 
 ### `Optional` title
 
-• **title**? : *React.ReactNode*
+• **title**? : _React.ReactNode_
 
-*Defined in [src/ListItem.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L13)*
+_Defined in [src/ListItem.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L13)_
 
 ## Methods
 
 ### `Optional` onClear
 
-▸ **onClear**(): *any*
+▸ **onClear**(): _any_
 
-*Defined in [src/ListItem.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L21)*
+_Defined in [src/ListItem.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListItem.tsx#L21)_
 
-**Returns:** *any*
+**Returns:** _any_

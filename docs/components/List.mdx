@@ -4,54 +4,54 @@ title: List 列表
 
 ## 示例
 
-import { List, ListHeader, ListItem, Icon, Tag } from '@tarojsx/ui'
-import { Text } from '@tarojs/components'
-import { UI } from '@/ui'
+import { List, ListHeader, ListItem, Icon, Tag } from '@tarojsx/ui';
+import { Text } from '@tarojs/components';
+import { UI } from '@/ui';
 
 ```jsx title="基本用法"
 <List>
-    <ListHeader title="基本用法" />
-    <ListItem title="文字" />
-    <ListItem title="箭头" arrow="right" />
-    <ListItem title="文字" extra="详细信息" />
-    <ListItem title="禁用" disabled arrow="right" />
+  <ListHeader title="基本用法" />
+  <ListItem title="文字" />
+  <ListItem title="箭头" arrow="right" />
+  <ListItem title="文字" extra="详细信息" />
+  <ListItem title="禁用" disabled arrow="right" />
 </List>
 ```
 
 ```jsx title="高级用法"
 <List>
-    <ListHeader title="高级用法" />
-    <ListItem title={<Text style={{ color: 'orange' }}>标题组件</Text>} extra={<Icon value="download" />} />
-    <ListItem title="子组件" arrow="right">
-        children
-    </ListItem>
+  <ListHeader title="高级用法" />
+  <ListItem title={<Text style={{ color: 'orange' }}>标题组件</Text>} extra={<Icon value="download" />} />
+  <ListItem title="子组件" arrow="right">
+    children
+  </ListItem>
 </List>
 ```
 
 <UI phone title="列表">
-    <List>
-        <ListHeader title="基本用法" />
-        <ListItem title="文字" />
-        <ListItem title="箭头" arrow="right" />
-        <ListItem title="文字" extra="详细信息" />
-        <ListItem title="禁用" disabled arrow="right" />
-    </List>
-    <List>
-        <ListHeader title="高级用法" />
-        <ListItem title={<Text style={{ color: 'orange' }}>标题组件</Text>} extra={<Icon value="download" />} />
-        <ListItem title="子组件" arrow="right">
-            {['TaroX', 'UI', 'ListItem'].map((c) => (
-                <Tag key={c} style={{ marginRight: 20 }} size="small">
-                    {c}
-                </Tag>
-            ))}
-        </ListItem>
-        <ListItem title="清除按钮" extra="2020-06-06" arrow="clear" onClear={() => alert('清除')} />
-    </List>
+  <List>
+    <ListHeader title="基本用法" />
+    <ListItem title="文字" />
+    <ListItem title="箭头" arrow="right" />
+    <ListItem title="文字" extra="详细信息" />
+    <ListItem title="禁用" disabled arrow="right" />
+  </List>
+  <List>
+    <ListHeader title="高级用法" />
+    <ListItem title={<Text style={{ color: 'orange' }}>标题组件</Text>} extra={<Icon value="download" />} />
+    <ListItem title="子组件" arrow="right">
+      {['TaroX', 'UI', 'ListItem'].map((c) => (
+        <Tag key={c} style={{ marginRight: 20 }} size="small">
+          {c}
+        </Tag>
+      ))}
+    </ListItem>
+    <ListItem title="清除按钮" extra="2020-06-06" arrow="clear" onClear={() => alert('清除')} />
+  </List>
 </UI>
 
 ## API
 
--   [Taro UI 文档](https://taro-ui.jd.com/#/docs/list)
--   [`<List />`](../modules/_list_.md)
--   [`ListProps`](../interfaces/_list_.listprops.md)
+- [Taro UI 文档](https://taro-ui.jd.com/#/docs/list)
+- [`<List />`](../modules/_list_.md)
+- [`ListProps`](../interfaces/_list_.listprops.md)

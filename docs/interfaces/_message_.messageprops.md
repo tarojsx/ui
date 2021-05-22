@@ -1,32 +1,32 @@
 ---
-id: "_message_.messageprops"
-title: "MessageProps"
-sidebar_label: "MessageProps"
+id: '_message_.messageprops'
+title: 'MessageProps'
+sidebar_label: 'MessageProps'
 ---
 
 ## Hierarchy
 
-* **MessageProps**
+- **MessageProps**
 
 ## Index
 
 ### Properties
 
-* [className](_message_.messageprops.md#optional-classname)
-* [style](_message_.messageprops.md#optional-style)
+- [className](_message_.messageprops.md#optional-classname)
+- [style](_message_.messageprops.md#optional-style)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/Message.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Message.tsx#L9)*
+_Defined in [src/Message.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Message.tsx#L9)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Message.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Message.tsx#L10)*
+_Defined in [src/Message.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Message.tsx#L10)_

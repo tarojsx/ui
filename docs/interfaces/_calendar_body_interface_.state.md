@@ -1,41 +1,41 @@
 ---
-id: "_calendar_body_interface_.state"
-title: "State"
-sidebar_label: "State"
+id: '_calendar_body_interface_.state'
+title: 'State'
+sidebar_label: 'State'
 ---
 
 ## Hierarchy
 
-* **State**
+- **State**
 
 ## Index
 
 ### Properties
 
-* [isAnimate](_calendar_body_interface_.state.md#isanimate)
-* [listGroup](_calendar_body_interface_.state.md#listgroup)
-* [offsetSize](_calendar_body_interface_.state.md#offsetsize)
+- [isAnimate](_calendar_body_interface_.state.md#isanimate)
+- [listGroup](_calendar_body_interface_.state.md#listgroup)
+- [offsetSize](_calendar_body_interface_.state.md#offsetsize)
 
 ## Properties
 
-###  isAnimate
+### isAnimate
 
-• **isAnimate**: *boolean*
+• **isAnimate**: _boolean_
 
-*Defined in [src/Calendar/body/interface.ts:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L34)*
+_Defined in [src/Calendar/body/interface.ts:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L34)_
 
-___
+---
 
-###  listGroup
+### listGroup
 
-• **listGroup**: *[ListGroup](../modules/_calendar_body_interface_.md#listgroup)*
+• **listGroup**: _[ListGroup](../modules/\_calendar_body_interface_.md#listgroup)\_
 
-*Defined in [src/Calendar/body/interface.ts:38](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L38)*
+_Defined in [src/Calendar/body/interface.ts:38](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L38)_
 
-___
+---
 
-###  offsetSize
+### offsetSize
 
-• **offsetSize**: *number*
+• **offsetSize**: _number_
 
-*Defined in [src/Calendar/body/interface.ts:36](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L36)*
+_Defined in [src/Calendar/body/interface.ts:36](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L36)_

@@ -1,197 +1,197 @@
 ---
-id: "_imagepicker_.imagepickerprops"
-title: "ImagePickerProps"
-sidebar_label: "ImagePickerProps"
+id: '_imagepicker_.imagepickerprops'
+title: 'ImagePickerProps'
+sidebar_label: 'ImagePickerProps'
 ---
 
 ## Hierarchy
 
-* **ImagePickerProps**
+- **ImagePickerProps**
 
 ## Index
 
 ### Properties
 
-* [className](_imagepicker_.imagepickerprops.md#optional-classname)
-* [count](_imagepicker_.imagepickerprops.md#optional-count)
-* [files](_imagepicker_.imagepickerprops.md#files)
-* [length](_imagepicker_.imagepickerprops.md#optional-length)
-* [limit](_imagepicker_.imagepickerprops.md#optional-limit)
-* [mode](_imagepicker_.imagepickerprops.md#optional-mode)
-* [multiple](_imagepicker_.imagepickerprops.md#optional-multiple)
-* [onChange](_imagepicker_.imagepickerprops.md#onchange)
-* [onFail](_imagepicker_.imagepickerprops.md#optional-onfail)
-* [onImageClick](_imagepicker_.imagepickerprops.md#optional-onimageclick)
-* [showAddBtn](_imagepicker_.imagepickerprops.md#optional-showaddbtn)
-* [sizeType](_imagepicker_.imagepickerprops.md#optional-sizetype)
-* [sourceType](_imagepicker_.imagepickerprops.md#optional-sourcetype)
-* [style](_imagepicker_.imagepickerprops.md#optional-style)
+- [className](_imagepicker_.imagepickerprops.md#optional-classname)
+- [count](_imagepicker_.imagepickerprops.md#optional-count)
+- [files](_imagepicker_.imagepickerprops.md#files)
+- [length](_imagepicker_.imagepickerprops.md#optional-length)
+- [limit](_imagepicker_.imagepickerprops.md#optional-limit)
+- [mode](_imagepicker_.imagepickerprops.md#optional-mode)
+- [multiple](_imagepicker_.imagepickerprops.md#optional-multiple)
+- [onChange](_imagepicker_.imagepickerprops.md#onchange)
+- [onFail](_imagepicker_.imagepickerprops.md#optional-onfail)
+- [onImageClick](_imagepicker_.imagepickerprops.md#optional-onimageclick)
+- [showAddBtn](_imagepicker_.imagepickerprops.md#optional-showaddbtn)
+- [sizeType](_imagepicker_.imagepickerprops.md#optional-sizetype)
+- [sourceType](_imagepicker_.imagepickerprops.md#optional-sourcetype)
+- [style](_imagepicker_.imagepickerprops.md#optional-style)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/ImagePicker.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L21)*
+_Defined in [src/ImagePicker.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L21)_
 
-___
+---
 
 ### `Optional` count
 
-• **count**? : *number*
+• **count**? : _number_
 
-*Defined in [src/ImagePicker.tsx:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L34)*
+_Defined in [src/ImagePicker.tsx:34](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L34)_
 
 最多可以选择的图片张数
 
-___
+---
 
-###  files
+### files
 
-• **files**: *ImagePickerFile[]*
+• **files**: _ImagePickerFile[]_
 
-*Defined in [src/ImagePicker.tsx:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L24)*
+_Defined in [src/ImagePicker.tsx:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L24)_
 
 图片文件数组, 元素为对象, 包含属性 url（必选)
 
-___
+---
 
 ### `Optional` length
 
-• **length**? : *number*
+• **length**? : _number_
 
-*Defined in [src/ImagePicker.tsx:32](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L32)*
+_Defined in [src/ImagePicker.tsx:32](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L32)_
 
 单行的图片数量
 
-___
+---
 
 ### `Optional` limit
 
-• **limit**? : *number*
+• **limit**? : _number_
 
-*Defined in [src/ImagePicker.tsx:36](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L36)*
+_Defined in [src/ImagePicker.tsx:36](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L36)_
 
 图片数据限制
 
-___
+---
 
 ### `Optional` mode
 
-• **mode**? : *ImageProps["mode"]*
+• **mode**? : _ImageProps["mode"]_
 
-*Defined in [src/ImagePicker.tsx:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L26)*
+_Defined in [src/ImagePicker.tsx:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L26)_
 
 图片预览模式，详见[微信开发者文档](https://developers.weixin.qq.com/miniprogram/dev/component/image.html)
 
-___
+---
 
 ### `Optional` multiple
 
-• **multiple**? : *boolean*
+• **multiple**? : _boolean_
 
-*Defined in [src/ImagePicker.tsx:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L30)*
+_Defined in [src/ImagePicker.tsx:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L30)_
 
 是否支持多选
 
-___
+---
 
-###  onChange
+### onChange
 
-• **onChange**: *function*
+• **onChange**: _function_
 
-*Defined in [src/ImagePicker.tsx:42](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L42)*
+_Defined in [src/ImagePicker.tsx:42](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L42)_
 
 files 值发生变化触发的回调函数, operationType 操作类型有添加，移除，如果是移除操作，则第三个参数代表的是移除图片的索引
 
 #### Type declaration:
 
-▸ (`files`: ImagePickerFile[], `operationType`: "add" | "remove", `index?`: number): *void*
+▸ (`files`: ImagePickerFile[], `operationType`: "add" | "remove", `index?`: number): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`files` | ImagePickerFile[] |
-`operationType` | "add" &#124; "remove" |
-`index?` | number |
+| Name            | Type                  |
+| --------------- | --------------------- |
+| `files`         | ImagePickerFile[]     |
+| `operationType` | "add" &#124; "remove" |
+| `index?`        | number                |
 
-___
+---
 
 ### `Optional` onFail
 
-• **onFail**? : *function*
+• **onFail**? : _function_
 
-*Defined in [src/ImagePicker.tsx:46](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L46)*
+_Defined in [src/ImagePicker.tsx:46](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L46)_
 
 选择失败触发的回调
 
 #### Type declaration:
 
-▸ (`message`: string): *void*
+▸ (`message`: string): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`message` | string |
+| Name      | Type   |
+| --------- | ------ |
+| `message` | string |
 
-___
+---
 
 ### `Optional` onImageClick
 
-• **onImageClick**? : *function*
+• **onImageClick**? : _function_
 
-*Defined in [src/ImagePicker.tsx:44](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L44)*
+_Defined in [src/ImagePicker.tsx:44](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L44)_
 
 点击图片触发的回调
 
 #### Type declaration:
 
-▸ (`index`: number, `file`: Object): *void*
+▸ (`index`: number, `file`: Object): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`index` | number |
-`file` | Object |
+| Name    | Type   |
+| ------- | ------ |
+| `index` | number |
+| `file`  | Object |
 
-___
+---
 
 ### `Optional` showAddBtn
 
-• **showAddBtn**? : *boolean*
+• **showAddBtn**? : _boolean_
 
-*Defined in [src/ImagePicker.tsx:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L28)*
+_Defined in [src/ImagePicker.tsx:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L28)_
 
 是否显示添加图片按钮
 
-___
+---
 
 ### `Optional` sizeType
 
-• **sizeType**? : *"original" | "compressed"[]*
+• **sizeType**? : _"original" | "compressed"[]_
 
-*Defined in [src/ImagePicker.tsx:38](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L38)*
+_Defined in [src/ImagePicker.tsx:38](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L38)_
 
 所选的图片的尺寸
 
-___
+---
 
 ### `Optional` sourceType
 
-• **sourceType**? : *"album" | "camera"[]*
+• **sourceType**? : _"album" | "camera"[]_
 
-*Defined in [src/ImagePicker.tsx:40](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L40)*
+_Defined in [src/ImagePicker.tsx:40](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L40)_
 
 选择图片的来源
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/ImagePicker.tsx:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L22)*
+_Defined in [src/ImagePicker.tsx:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L22)_

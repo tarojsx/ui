@@ -1,83 +1,83 @@
 ---
-id: "_avatar_.avatarprops"
-title: "AvatarProps"
-sidebar_label: "AvatarProps"
+id: '_avatar_.avatarprops'
+title: 'AvatarProps'
+sidebar_label: 'AvatarProps'
 ---
 
 ## Hierarchy
 
-* **AvatarProps**
+- **AvatarProps**
 
 ## Index
 
 ### Properties
 
-* [circle](_avatar_.avatarprops.md#optional-circle)
-* [className](_avatar_.avatarprops.md#optional-classname)
-* [image](_avatar_.avatarprops.md#optional-image)
-* [openData](_avatar_.avatarprops.md#optional-opendata)
-* [size](_avatar_.avatarprops.md#optional-size)
-* [style](_avatar_.avatarprops.md#optional-style)
-* [text](_avatar_.avatarprops.md#optional-text)
+- [circle](_avatar_.avatarprops.md#optional-circle)
+- [className](_avatar_.avatarprops.md#optional-classname)
+- [image](_avatar_.avatarprops.md#optional-image)
+- [openData](_avatar_.avatarprops.md#optional-opendata)
+- [size](_avatar_.avatarprops.md#optional-size)
+- [style](_avatar_.avatarprops.md#optional-style)
+- [text](_avatar_.avatarprops.md#optional-text)
 
 ## Properties
 
 ### `Optional` circle
 
-• **circle**? : *boolean*
+• **circle**? : _boolean_
 
-*Defined in [src/Avatar.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L12)*
+_Defined in [src/Avatar.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L12)_
 
-___
+---
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/Avatar.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L9)*
+_Defined in [src/Avatar.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L9)_
 
-___
+---
 
 ### `Optional` image
 
-• **image**? : *string*
+• **image**? : _string_
 
-*Defined in [src/Avatar.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L14)*
+_Defined in [src/Avatar.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L14)_
 
-___
+---
 
 ### `Optional` openData
 
-• **openData**? : *object*
+• **openData**? : _object_
 
-*Defined in [src/Avatar.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L15)*
+_Defined in [src/Avatar.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L15)_
 
 #### Type declaration:
 
-* **lang**? : *OpenDataProps["lang"]*
+- **lang**? : _OpenDataProps["lang"]_
 
-* **type**: *"userAvatarUrl"*
+- **type**: _"userAvatarUrl"_
 
-___
+---
 
 ### `Optional` size
 
-• **size**? : *"tiny" | "mini" | "small" | "large"*
+• **size**? : _"tiny" | "mini" | "small" | "large"_
 
-*Defined in [src/Avatar.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L11)*
+_Defined in [src/Avatar.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L11)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Avatar.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L10)*
+_Defined in [src/Avatar.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L10)_
 
-___
+---
 
 ### `Optional` text
 
-• **text**? : *string*
+• **text**? : _string_
 
-*Defined in [src/Avatar.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L13)*
+_Defined in [src/Avatar.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Avatar.tsx#L13)_

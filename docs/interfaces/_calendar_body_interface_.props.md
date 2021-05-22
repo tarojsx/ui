@@ -1,161 +1,161 @@
 ---
-id: "_calendar_body_interface_.props"
-title: "Props"
-sidebar_label: "Props"
+id: '_calendar_body_interface_.props'
+title: 'Props'
+sidebar_label: 'Props'
 ---
 
 ## Hierarchy
 
-* **Props**
+- **Props**
 
 ## Index
 
 ### Properties
 
-* [format](_calendar_body_interface_.props.md#format)
-* [generateDate](_calendar_body_interface_.props.md#generatedate)
-* [isSwiper](_calendar_body_interface_.props.md#isswiper)
-* [isVertical](_calendar_body_interface_.props.md#isvertical)
-* [marks](_calendar_body_interface_.props.md#marks)
-* [maxDate](_calendar_body_interface_.props.md#optional-maxdate)
-* [minDate](_calendar_body_interface_.props.md#optional-mindate)
-* [onDayClick](_calendar_body_interface_.props.md#ondayclick)
-* [onLongClick](_calendar_body_interface_.props.md#onlongclick)
-* [onSwipeMonth](_calendar_body_interface_.props.md#onswipemonth)
-* [selectedDate](_calendar_body_interface_.props.md#selecteddate)
-* [selectedDates](_calendar_body_interface_.props.md#selecteddates)
-* [validDates](_calendar_body_interface_.props.md#validdates)
+- [format](_calendar_body_interface_.props.md#format)
+- [generateDate](_calendar_body_interface_.props.md#generatedate)
+- [isSwiper](_calendar_body_interface_.props.md#isswiper)
+- [isVertical](_calendar_body_interface_.props.md#isvertical)
+- [marks](_calendar_body_interface_.props.md#marks)
+- [maxDate](_calendar_body_interface_.props.md#optional-maxdate)
+- [minDate](_calendar_body_interface_.props.md#optional-mindate)
+- [onDayClick](_calendar_body_interface_.props.md#ondayclick)
+- [onLongClick](_calendar_body_interface_.props.md#onlongclick)
+- [onSwipeMonth](_calendar_body_interface_.props.md#onswipemonth)
+- [selectedDate](_calendar_body_interface_.props.md#selecteddate)
+- [selectedDates](_calendar_body_interface_.props.md#selecteddates)
+- [validDates](_calendar_body_interface_.props.md#validdates)
 
 ## Properties
 
-###  format
+### format
 
-• **format**: *string*
+• **format**: _string_
 
-*Defined in [src/Calendar/body/interface.ts:6](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L6)*
+_Defined in [src/Calendar/body/interface.ts:6](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L6)_
 
-___
+---
 
-###  generateDate
+### generateDate
 
-• **generateDate**: *number*
+• **generateDate**: _number_
 
-*Defined in [src/Calendar/body/interface.ts:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L20)*
+_Defined in [src/Calendar/body/interface.ts:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L20)_
 
-___
+---
 
-###  isSwiper
+### isSwiper
 
-• **isSwiper**: *boolean*
+• **isSwiper**: _boolean_
 
-*Defined in [src/Calendar/body/interface.ts:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L12)*
+_Defined in [src/Calendar/body/interface.ts:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L12)_
 
-___
+---
 
-###  isVertical
+### isVertical
 
-• **isVertical**: *boolean*
+• **isVertical**: _boolean_
 
-*Defined in [src/Calendar/body/interface.ts:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L18)*
+_Defined in [src/Calendar/body/interface.ts:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L18)_
 
-___
+---
 
-###  marks
+### marks
 
-• **marks**: *Array‹Mark›*
+• **marks**: _Array‹Mark›_
 
-*Defined in [src/Calendar/body/interface.ts:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L10)*
+_Defined in [src/Calendar/body/interface.ts:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L10)_
 
-___
+---
 
 ### `Optional` maxDate
 
-• **maxDate**? : *Calendar.DateArg*
+• **maxDate**? : _Calendar.DateArg_
 
-*Defined in [src/Calendar/body/interface.ts:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L16)*
+_Defined in [src/Calendar/body/interface.ts:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L16)_
 
-___
+---
 
 ### `Optional` minDate
 
-• **minDate**? : *Calendar.DateArg*
+• **minDate**? : _Calendar.DateArg_
 
-*Defined in [src/Calendar/body/interface.ts:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L14)*
+_Defined in [src/Calendar/body/interface.ts:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L14)_
 
-___
+---
 
-###  onDayClick
+### onDayClick
 
-• **onDayClick**: *function*
+• **onDayClick**: _function_
 
-*Defined in [src/Calendar/body/interface.ts:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L26)*
-
-#### Type declaration:
-
-▸ (`item`: Item): *void*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`item` | Item |
-
-___
-
-###  onLongClick
-
-• **onLongClick**: *function*
-
-*Defined in [src/Calendar/body/interface.ts:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L30)*
+_Defined in [src/Calendar/body/interface.ts:26](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L26)_
 
 #### Type declaration:
 
-▸ (`item`: Item): *void*
+▸ (`item`: Item): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`item` | Item |
+| Name   | Type |
+| ------ | ---- |
+| `item` | Item |
 
-___
+---
 
-###  onSwipeMonth
+### onLongClick
 
-• **onSwipeMonth**: *function*
+• **onLongClick**: _function_
 
-*Defined in [src/Calendar/body/interface.ts:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L28)*
+_Defined in [src/Calendar/body/interface.ts:30](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L30)_
 
 #### Type declaration:
 
-▸ (`vectorCount`: number): *void*
+▸ (`item`: Item): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`vectorCount` | number |
+| Name   | Type |
+| ------ | ---- |
+| `item` | Item |
 
-___
+---
 
-###  selectedDate
+### onSwipeMonth
 
-• **selectedDate**: *SelectedDate*
+• **onSwipeMonth**: _function_
 
-*Defined in [src/Calendar/body/interface.ts:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L22)*
+_Defined in [src/Calendar/body/interface.ts:28](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L28)_
 
-___
+#### Type declaration:
 
-###  selectedDates
+▸ (`vectorCount`: number): _void_
 
-• **selectedDates**: *Array‹SelectedDate› | []*
+**Parameters:**
 
-*Defined in [src/Calendar/body/interface.ts:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L24)*
+| Name          | Type   |
+| ------------- | ------ |
+| `vectorCount` | number |
 
-___
+---
 
-###  validDates
+### selectedDate
 
-• **validDates**: *Array‹ValidDate›*
+• **selectedDate**: _SelectedDate_
 
-*Defined in [src/Calendar/body/interface.ts:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L8)*
+_Defined in [src/Calendar/body/interface.ts:22](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L22)_
+
+---
+
+### selectedDates
+
+• **selectedDates**: _Array‹SelectedDate› | []_
+
+_Defined in [src/Calendar/body/interface.ts:24](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L24)_
+
+---
+
+### validDates
+
+• **validDates**: _Array‹ValidDate›_
+
+_Defined in [src/Calendar/body/interface.ts:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/body/interface.ts#L8)_

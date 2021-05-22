@@ -1,68 +1,68 @@
 ---
-id: "_statistic_.statisticprops"
-title: "StatisticProps"
-sidebar_label: "StatisticProps"
+id: '_statistic_.statisticprops'
+title: 'StatisticProps'
+sidebar_label: 'StatisticProps'
 ---
 
 ## Hierarchy
 
-* **StatisticProps**
+- **StatisticProps**
 
 ## Index
 
 ### Properties
 
-* [className](_statistic_.statisticprops.md#optional-classname)
-* [prefix](_statistic_.statisticprops.md#optional-prefix)
-* [suffix](_statistic_.statisticprops.md#optional-suffix)
-* [title](_statistic_.statisticprops.md#title)
-* [value](_statistic_.statisticprops.md#value)
-* [valueStyle](_statistic_.statisticprops.md#optional-valuestyle)
+- [className](_statistic_.statisticprops.md#optional-classname)
+- [prefix](_statistic_.statisticprops.md#optional-prefix)
+- [suffix](_statistic_.statisticprops.md#optional-suffix)
+- [title](_statistic_.statisticprops.md#title)
+- [value](_statistic_.statisticprops.md#value)
+- [valueStyle](_statistic_.statisticprops.md#optional-valuestyle)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/Statistic.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L8)*
+_Defined in [src/Statistic.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L8)_
 
-___
+---
 
 ### `Optional` prefix
 
-• **prefix**? : *React.ReactNode*
+• **prefix**? : _React.ReactNode_
 
-*Defined in [src/Statistic.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L12)*
+_Defined in [src/Statistic.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L12)_
 
-___
+---
 
 ### `Optional` suffix
 
-• **suffix**? : *React.ReactNode*
+• **suffix**? : _React.ReactNode_
 
-*Defined in [src/Statistic.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L13)*
+_Defined in [src/Statistic.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L13)_
 
-___
+---
 
-###  title
+### title
 
-• **title**: *React.ReactNode*
+• **title**: _React.ReactNode_
 
-*Defined in [src/Statistic.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L9)*
+_Defined in [src/Statistic.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L9)_
 
-___
+---
 
-###  value
+### value
 
-• **value**: *string | number*
+• **value**: _string | number_
 
-*Defined in [src/Statistic.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L10)*
+_Defined in [src/Statistic.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L10)_
 
-___
+---
 
 ### `Optional` valueStyle
 
-• **valueStyle**? : *CSSProperties*
+• **valueStyle**? : _CSSProperties_
 
-*Defined in [src/Statistic.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L11)*
+_Defined in [src/Statistic.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Statistic.tsx#L11)_

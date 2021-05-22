@@ -9,70 +9,70 @@ title: CustomTabBar 自定义标签栏
 ## 示例
 
 ```jsx title="custom-tab-bar/index.js"
-import { CustomTabBar, TabBar } from '@tarojsx/ui'
+import { CustomTabBar, TabBar } from '@tarojsx/ui';
 
 export default () => {
-    return (
-        <CustomTabBar>
-            {({
-                hidden,
-                current,
-                list,
-                switchTabIndex,
-                style: { backgroundColor, color, selectedColor, borderStyle, position },
-            }) => (
-                <TabBar
-                    style={{ display: hidden ? 'none' : 'flex' }}
-                    backgroundColor={backgroundColor}
-                    color={color}
-                    selectedColor={selectedColor}
-                    tabList={list.map(({ key, text, iconPath, selectedIconPath, badge, redDot }, index) => ({
-                        key,
-                        title: text,
-                        image: iconPath,
-                        selectedImage: selectedIconPath,
-                        text: badge,
-                        dot: redDot,
-                    }))}
-                    current={current}
-                    onClick={onClick}
-                />
-            )}
-        </CustomTabBar>
-    )
-}
+  return (
+    <CustomTabBar>
+      {({
+        hidden,
+        current,
+        list,
+        switchTabIndex,
+        style: { backgroundColor, color, selectedColor, borderStyle, position },
+      }) => (
+        <TabBar
+          style={{ display: hidden ? 'none' : 'flex' }}
+          backgroundColor={backgroundColor}
+          color={color}
+          selectedColor={selectedColor}
+          tabList={list.map(({ key, text, iconPath, selectedIconPath, badge, redDot }, index) => ({
+            key,
+            title: text,
+            image: iconPath,
+            selectedImage: selectedIconPath,
+            text: badge,
+            dot: redDot,
+          }))}
+          current={current}
+          onClick={onClick}
+        />
+      )}
+    </CustomTabBar>
+  );
+};
 ```
 
 以下为 app 配置代码片段:
 
 ```js title="app.config.js"
 export default {
-    tabBar: {
-        custom: true,
-        color: '#888888',
-        selectedColor: '#3B7CF7',
-        list: [
-            {
-                pagePath: 'pages/todo',
-                text: '待办事项',
-                iconPath: 'assets/todo.png',
-                selectedIconPath: 'assets/todo2.png',
-            },
-            {
-                pagePath: 'pages/shot',
-                text: '拍照',
-                iconPath: 'assets/shot.png',
-                selectedIconPath: 'assets/shot2.png',
-            },
-            {
-                pagePath: 'pages/contact',
-                text: '通讯录',
-                iconPath: 'assets/contact.png',
-                selectedIconPath: 'assets/contact2.png',
-            },
-        ],
-    },
-}
+  tabBar: {
+    custom: true,
+    color: '#888888',
+    selectedColor: '#3B7CF7',
+    list: [
+      {
+        pagePath: 'pages/todo',
+        text: '待办事项',
+        iconPath: 'assets/todo.png',
+        selectedIconPath: 'assets/todo2.png',
+      },
+      {
+        pagePath: 'pages/shot',
+        text: '拍照',
+        iconPath: 'assets/shot.png',
+        selectedIconPath: 'assets/shot2.png',
+      },
+      {
+        pagePath: 'pages/contact',
+        text: '通讯录',
+        iconPath: 'assets/contact.png',
+        selectedIconPath: 'assets/contact2.png',
+      },
+    ],
+  },
+};
 ```
 
 支持 API:
@@ -121,5 +121,5 @@ export default {
 
 ## API
 
--   [`<CustomTabBar />`](../modules/_customtabbar_.md)
--   [`CustomTabBarProps`](../interfaces/_customtabbar_.customtabbarprops.md)
+- [`<CustomTabBar />`](../modules/_customtabbar_.md)
+- [`CustomTabBarProps`](../interfaces/_customtabbar_.customtabbarprops.md)

@@ -1,31 +1,31 @@
 ---
-id: "_list_"
-title: "List"
-sidebar_label: "List"
+id: '_list_'
+title: 'List'
+sidebar_label: 'List'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [ListProps](../interfaces/_list_.listprops.md)
+- [ListProps](../interfaces/_list_.listprops.md)
 
 ### Functions
 
-* [List](_list_.md#const-list)
+- [List](_list_.md#const-list)
 
 ## Functions
 
 ### `Const` List
 
-▸ **List**(`props`: [ListProps](../interfaces/_list_.listprops.md) & object): *Element‹›*
+▸ **List**(`props`: [ListProps](../interfaces/_list_.listprops.md) & object): _Element‹›_
 
-*Defined in [src/List.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/List.tsx#L12)*
+_Defined in [src/List.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/List.tsx#L12)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [ListProps](../interfaces/_list_.listprops.md) & object |
+| Name    | Type                                                    |
+| ------- | ------------------------------------------------------- |
+| `props` | [ListProps](../interfaces/_list_.listprops.md) & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

@@ -4,16 +4,16 @@ $at-avatar-size-xxs: 48px !default;
 $at-avatar-size-xs: 56px !default;
 
 .at-avatar {
-    &--tiny {
-        width: $at-avatar-size-xxs;
-        height: $at-avatar-size-xxs;
-        font-size: $at-avatar-size-xxs / 2.5;
-        line-height: $at-avatar-size-xxs;
-    }
-    &--mini {
-        width: $at-avatar-size-xs;
-        height: $at-avatar-size-xs;
-        font-size: $at-avatar-size-xs / 2.5;
-        line-height: $at-avatar-size-xs;
-    }
+  &--tiny {
+    width: $at-avatar-size-xxs;
+    height: $at-avatar-size-xxs;
+    font-size: $at-avatar-size-xxs / 2.5;
+    line-height: $at-avatar-size-xxs;
+  }
+  &--mini {
+    width: $at-avatar-size-xs;
+    height: $at-avatar-size-xs;
+    font-size: $at-avatar-size-xs / 2.5;
+    line-height: $at-avatar-size-xs;
+  }
 }

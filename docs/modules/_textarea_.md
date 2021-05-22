@@ -1,31 +1,31 @@
 ---
-id: "_textarea_"
-title: "Textarea"
-sidebar_label: "Textarea"
+id: '_textarea_'
+title: 'Textarea'
+sidebar_label: 'Textarea'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [TextareaProps](../interfaces/_textarea_.textareaprops.md)
+- [TextareaProps](../interfaces/_textarea_.textareaprops.md)
 
 ### Functions
 
-* [Textarea](_textarea_.md#const-textarea)
+- [Textarea](_textarea_.md#const-textarea)
 
 ## Functions
 
 ### `Const` Textarea
 
-▸ **Textarea**(`props`: [TextareaProps](../interfaces/_textarea_.textareaprops.md)‹› & object): *Element‹›*
+▸ **Textarea**(`props`: [TextareaProps](../interfaces/_textarea_.textareaprops.md)‹› & object): _Element‹›_
 
-*Defined in [src/Textarea.tsx:25](https://github.com/tarojsx/ui/blob/v0.11.0/src/Textarea.tsx#L25)*
+_Defined in [src/Textarea.tsx:25](https://github.com/tarojsx/ui/blob/v0.11.0/src/Textarea.tsx#L25)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [TextareaProps](../interfaces/_textarea_.textareaprops.md)‹› & object |
+| Name    | Type                                                                  |
+| ------- | --------------------------------------------------------------------- |
+| `props` | [TextareaProps](../interfaces/_textarea_.textareaprops.md)‹› & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

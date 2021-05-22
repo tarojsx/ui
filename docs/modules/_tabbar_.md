@@ -1,65 +1,65 @@
 ---
-id: "_tabbar_"
-title: "TabBar"
-sidebar_label: "TabBar"
+id: '_tabbar_'
+title: 'TabBar'
+sidebar_label: 'TabBar'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [TabBarProps](../interfaces/_tabbar_.tabbarprops.md)
+- [TabBarProps](../interfaces/_tabbar_.tabbarprops.md)
 
 ### Type aliases
 
-* [TabBarListItem](_tabbar_.md#tabbarlistitem)
+- [TabBarListItem](_tabbar_.md#tabbarlistitem)
 
 ### Functions
 
-* [TabBar](_tabbar_.md#const-tabbar)
+- [TabBar](_tabbar_.md#const-tabbar)
 
 ## Type aliases
 
-###  TabBarListItem
+### TabBarListItem
 
-Ƭ **TabBarListItem**: *object*
+Ƭ **TabBarListItem**: _object_
 
-*Defined in [src/TabBar.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabBar.tsx#L8)*
+_Defined in [src/TabBar.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabBar.tsx#L8)_
 
 #### Type declaration:
 
-* **dot**? : *boolean*
+- **dot**? : _boolean_
 
-* **iconPrefixClass**? : *string*
+- **iconPrefixClass**? : _string_
 
-* **iconType**? : *string*
+- **iconType**? : _string_
 
-* **image**? : *string*
+- **image**? : _string_
 
-* **key**? : *string*
+- **key**? : _string_
 
-* **max**? : *number*
+- **max**? : _number_
 
-* **selectedIconType**? : *string*
+- **selectedIconType**? : _string_
 
-* **selectedImage**? : *string*
+- **selectedImage**? : _string_
 
-* **text**? : *string*
+- **text**? : _string_
 
-* **title**: *string*
+- **title**: _string_
 
 ## Functions
 
 ### `Const` TabBar
 
-▸ **TabBar**(`props`: [TabBarProps](../interfaces/_tabbar_.tabbarprops.md) & object): *Element‹›*
+▸ **TabBar**(`props`: [TabBarProps](../interfaces/_tabbar_.tabbarprops.md) & object): _Element‹›_
 
-*Defined in [src/TabBar.tsx:45](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabBar.tsx#L45)*
+_Defined in [src/TabBar.tsx:45](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabBar.tsx#L45)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [TabBarProps](../interfaces/_tabbar_.tabbarprops.md) & object |
+| Name    | Type                                                          |
+| ------- | ------------------------------------------------------------- |
+| `props` | [TabBarProps](../interfaces/_tabbar_.tabbarprops.md) & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

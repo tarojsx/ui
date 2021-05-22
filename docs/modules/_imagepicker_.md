@@ -1,31 +1,31 @@
 ---
-id: "_imagepicker_"
-title: "ImagePicker"
-sidebar_label: "ImagePicker"
+id: '_imagepicker_'
+title: 'ImagePicker'
+sidebar_label: 'ImagePicker'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md)
+- [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md)
 
 ### Functions
 
-* [ImagePicker](_imagepicker_.md#const-imagepicker)
+- [ImagePicker](_imagepicker_.md#const-imagepicker)
 
 ## Functions
 
 ### `Const` ImagePicker
 
-▸ **ImagePicker**(`props`: [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md) & object): *Element‹›*
+▸ **ImagePicker**(`props`: [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md) & object): _Element‹›_
 
-*Defined in [src/ImagePicker.tsx:49](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L49)*
+_Defined in [src/ImagePicker.tsx:49](https://github.com/tarojsx/ui/blob/v0.11.0/src/ImagePicker.tsx#L49)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md) & object |
+| Name    | Type                                                                         |
+| ------- | ---------------------------------------------------------------------------- |
+| `props` | [ImagePickerProps](../interfaces/_imagepicker_.imagepickerprops.md) & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

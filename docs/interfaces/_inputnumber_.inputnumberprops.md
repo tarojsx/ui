@@ -1,14 +1,14 @@
 ---
-id: "_inputnumber_.inputnumberprops"
-title: "InputNumberProps"
-sidebar_label: "InputNumberProps"
+id: '_inputnumber_.inputnumberprops'
+title: 'InputNumberProps'
+sidebar_label: 'InputNumberProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
-* object
+- object
 
   ↳ **InputNumberProps**
 
@@ -16,25 +16,25 @@ sidebar_label: "InputNumberProps"
 
 ### Properties
 
-* [customStyle](_inputnumber_.inputnumberprops.md#optional-customstyle)
-* [onChange](_inputnumber_.inputnumberprops.md#optional-onchange)
-* [style](_inputnumber_.inputnumberprops.md#optional-style)
+- [customStyle](_inputnumber_.inputnumberprops.md#optional-customstyle)
+- [onChange](_inputnumber_.inputnumberprops.md#optional-onchange)
+- [style](_inputnumber_.inputnumberprops.md#optional-style)
 
 ## Properties
 
 ### `Optional` customStyle
 
-• **customStyle**? : *CSSProperties*
+• **customStyle**? : _CSSProperties_
 
-*Defined in [src/InputNumber.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L14)*
+_Defined in [src/InputNumber.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L14)_
 
-___
+---
 
 ### `Optional` onChange
 
-• **onChange**? : *CommonEventFunction‹object›*
+• **onChange**? : _CommonEventFunction‹object›_
 
-*Defined in [src/InputNumber.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L20)*
+_Defined in [src/InputNumber.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L20)_
 
 输入框值改变时触发的事件
 
@@ -42,10 +42,10 @@ ___
 
 **`description`** 开发者需要通过 onChange 事件来更新 value 值变化，onChange 函数必填
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/InputNumber.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L13)*
+_Defined in [src/InputNumber.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/InputNumber.tsx#L13)_

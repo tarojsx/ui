@@ -6,16 +6,16 @@ title: Avatar 头像
 
 ## 示例
 
-import { Avatar } from '@tarojsx/ui'
-import useBaseUrl from '@docusaurus/useBaseUrl'
-import { UI } from '@/ui'
+import { Avatar } from '@tarojsx/ui';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { UI } from '@/ui';
 
 ```jsx title="头像"
 <Avatar image="img/logo.svg" />
 ```
 
 <UI>
-    <Avatar image={useBaseUrl('img/logo.svg')} />
+  <Avatar image={useBaseUrl('img/logo.svg')} />
 </UI>
 
 ```jsx title="文字"
@@ -23,7 +23,7 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    <Avatar text="UI" />
+  <Avatar text="UI" />
 </UI>
 
 ```jsx title="圆形头像"
@@ -31,7 +31,7 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    <Avatar circle image={useBaseUrl('img/logo.svg')} />
+  <Avatar circle image={useBaseUrl('img/logo.svg')} />
 </UI>
 
 ```jsx title="圆形文字"
@@ -39,7 +39,7 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    <Avatar circle text="UI" />
+  <Avatar circle text="UI" />
 </UI>
 
 ```jsx title="尺寸"
@@ -51,26 +51,26 @@ import { UI } from '@/ui'
 ```
 
 <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-    <UI>
-        tiny
-        <Avatar size="tiny" image={useBaseUrl('img/logo.svg')} />
-    </UI>
-    <UI>
-        mini
-        <Avatar size="mini" image={useBaseUrl('img/logo.svg')} />
-    </UI>
-    <UI>
-        small
-        <Avatar size="small" image={useBaseUrl('img/logo.svg')} />
-    </UI>
-    <UI>
-        default
-        <Avatar image={useBaseUrl('img/logo.svg')} />
-    </UI>
-    <UI>
-        large
-        <Avatar size="large" image={useBaseUrl('img/logo.svg')} />
-    </UI>
+  <UI>
+    tiny
+    <Avatar size="tiny" image={useBaseUrl('img/logo.svg')} />
+  </UI>
+  <UI>
+    mini
+    <Avatar size="mini" image={useBaseUrl('img/logo.svg')} />
+  </UI>
+  <UI>
+    small
+    <Avatar size="small" image={useBaseUrl('img/logo.svg')} />
+  </UI>
+  <UI>
+    default
+    <Avatar image={useBaseUrl('img/logo.svg')} />
+  </UI>
+  <UI>
+    large
+    <Avatar size="large" image={useBaseUrl('img/logo.svg')} />
+  </UI>
 </div>
 
 ## API
@@ -79,6 +79,6 @@ import { UI } from '@/ui'
 | ---- | ---- | ----------------------------- | ------ |
 | size | 尺寸 | `tiny` `mini` `small` `large` |        |
 
--   [Taro UI 文档 | 头像](https://taro-ui.jd.com/#/docs/avatar)
--   [`<Avatar />`](modules/_avatar_.md)
--   [`AvatarProps`](interfaces/_avatar_.avatarprops.md)
+- [Taro UI 文档 | 头像](https://taro-ui.jd.com/#/docs/avatar)
+- [`<Avatar />`](modules/_avatar_.md)
+- [`AvatarProps`](interfaces/_avatar_.avatarprops.md)

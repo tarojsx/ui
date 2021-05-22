@@ -1,122 +1,122 @@
 ---
-id: "_listheader_.listheaderprops"
-title: "ListHeaderProps"
-sidebar_label: "ListHeaderProps"
+id: '_listheader_.listheaderprops'
+title: 'ListHeaderProps'
+sidebar_label: 'ListHeaderProps'
 ---
 
 ## Hierarchy
 
-* **ListHeaderProps**
+- **ListHeaderProps**
 
 ## Index
 
 ### Properties
 
-* [className](_listheader_.listheaderprops.md#optional-classname)
-* [iconColor](_listheader_.listheaderprops.md#optional-iconcolor)
-* [iconInfo](_listheader_.listheaderprops.md#optional-iconinfo)
-* [iconPrefixClass](_listheader_.listheaderprops.md#optional-iconprefixclass)
-* [iconSize](_listheader_.listheaderprops.md#optional-iconsize)
-* [iconType](_listheader_.listheaderprops.md#optional-icontype)
-* [sticky](_listheader_.listheaderprops.md#optional-sticky)
-* [style](_listheader_.listheaderprops.md#optional-style)
-* [thumb](_listheader_.listheaderprops.md#optional-thumb)
-* [title](_listheader_.listheaderprops.md#title)
-* [top](_listheader_.listheaderprops.md#optional-top)
-* [transparent](_listheader_.listheaderprops.md#optional-transparent)
+- [className](_listheader_.listheaderprops.md#optional-classname)
+- [iconColor](_listheader_.listheaderprops.md#optional-iconcolor)
+- [iconInfo](_listheader_.listheaderprops.md#optional-iconinfo)
+- [iconPrefixClass](_listheader_.listheaderprops.md#optional-iconprefixclass)
+- [iconSize](_listheader_.listheaderprops.md#optional-iconsize)
+- [iconType](_listheader_.listheaderprops.md#optional-icontype)
+- [sticky](_listheader_.listheaderprops.md#optional-sticky)
+- [style](_listheader_.listheaderprops.md#optional-style)
+- [thumb](_listheader_.listheaderprops.md#optional-thumb)
+- [title](_listheader_.listheaderprops.md#title)
+- [top](_listheader_.listheaderprops.md#optional-top)
+- [transparent](_listheader_.listheaderprops.md#optional-transparent)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/ListHeader.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L9)*
+_Defined in [src/ListHeader.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L9)_
 
-___
+---
 
 ### `Optional` iconColor
 
-• **iconColor**? : *string*
+• **iconColor**? : _string_
 
-*Defined in [src/ListHeader.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L17)*
+_Defined in [src/ListHeader.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L17)_
 
-___
+---
 
 ### `Optional` iconInfo
 
-• **iconInfo**? : *[IconProps](_icon_.iconprops.md)*
+• **iconInfo**? : _[IconProps](\_icon_.iconprops.md)\_
 
-*Defined in [src/ListHeader.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L14)*
+_Defined in [src/ListHeader.tsx:14](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L14)_
 
-___
+---
 
 ### `Optional` iconPrefixClass
 
-• **iconPrefixClass**? : *string*
+• **iconPrefixClass**? : _string_
 
-*Defined in [src/ListHeader.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L16)*
+_Defined in [src/ListHeader.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L16)_
 
-___
+---
 
 ### `Optional` iconSize
 
-• **iconSize**? : *number*
+• **iconSize**? : _number_
 
-*Defined in [src/ListHeader.tsx:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L18)*
+_Defined in [src/ListHeader.tsx:18](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L18)_
 
-___
+---
 
 ### `Optional` iconType
 
-• **iconType**? : *string*
+• **iconType**? : _string_
 
-*Defined in [src/ListHeader.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L15)*
+_Defined in [src/ListHeader.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L15)_
 
-___
+---
 
 ### `Optional` sticky
 
-• **sticky**? : *boolean*
+• **sticky**? : _boolean_
 
-*Defined in [src/ListHeader.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L19)*
+_Defined in [src/ListHeader.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L19)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/ListHeader.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L10)*
+_Defined in [src/ListHeader.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L10)_
 
-___
+---
 
 ### `Optional` thumb
 
-• **thumb**? : *string*
+• **thumb**? : _string_
 
-*Defined in [src/ListHeader.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L13)*
+_Defined in [src/ListHeader.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L13)_
 
-___
+---
 
-###  title
+### title
 
-• **title**: *React.ReactNode*
+• **title**: _React.ReactNode_
 
-*Defined in [src/ListHeader.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L11)*
+_Defined in [src/ListHeader.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L11)_
 
-___
+---
 
 ### `Optional` top
 
-• **top**? : *number | string*
+• **top**? : _number | string_
 
-*Defined in [src/ListHeader.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L20)*
+_Defined in [src/ListHeader.tsx:20](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L20)_
 
-___
+---
 
 ### `Optional` transparent
 
-• **transparent**? : *boolean*
+• **transparent**? : _boolean_
 
-*Defined in [src/ListHeader.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L12)*
+_Defined in [src/ListHeader.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ListHeader.tsx#L12)_

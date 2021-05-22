@@ -1,17 +1,17 @@
 @import '~taro-ui/dist/style/components/tabs.scss';
 
 .at-tabs {
-    &__header {
-        z-index: $zindex-tab;
+  &__header {
+    z-index: $zindex-tab;
 
-        &_fixed {
-            position: fixed !important;
-        }
+    &_fixed {
+      position: fixed !important;
     }
+  }
 
-    &__body {
-        &_fixed {
-            padding-top: 90px;
-        }
+  &__body {
+    &_fixed {
+      padding-top: 90px;
     }
+  }
 }

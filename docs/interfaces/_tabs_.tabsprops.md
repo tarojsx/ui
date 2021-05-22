@@ -1,12 +1,12 @@
 ---
-id: "_tabs_.tabsprops"
-title: "TabsProps"
-sidebar_label: "TabsProps"
+id: '_tabs_.tabsprops'
+title: 'TabsProps'
+sidebar_label: 'TabsProps'
 ---
 
 ## Hierarchy
 
-* AtTabsProps
+- AtTabsProps
 
   ↳ **TabsProps**
 
@@ -14,26 +14,26 @@ sidebar_label: "TabsProps"
 
 ### Properties
 
-* [animated](_tabs_.tabsprops.md#optional-animated)
-* [className](_tabs_.tabsprops.md#optional-classname)
-* [current](_tabs_.tabsprops.md#current)
-* [customStyle](_tabs_.tabsprops.md#optional-customstyle)
-* [fixed](_tabs_.tabsprops.md#optional-fixed)
-* [height](_tabs_.tabsprops.md#optional-height)
-* [onClick](_tabs_.tabsprops.md#onclick)
-* [scroll](_tabs_.tabsprops.md#optional-scroll)
-* [style](_tabs_.tabsprops.md#optional-style)
-* [swipeable](_tabs_.tabsprops.md#optional-swipeable)
-* [tabDirection](_tabs_.tabsprops.md#optional-tabdirection)
-* [tabList](_tabs_.tabsprops.md#tablist)
+- [animated](_tabs_.tabsprops.md#optional-animated)
+- [className](_tabs_.tabsprops.md#optional-classname)
+- [current](_tabs_.tabsprops.md#current)
+- [customStyle](_tabs_.tabsprops.md#optional-customstyle)
+- [fixed](_tabs_.tabsprops.md#optional-fixed)
+- [height](_tabs_.tabsprops.md#optional-height)
+- [onClick](_tabs_.tabsprops.md#onclick)
+- [scroll](_tabs_.tabsprops.md#optional-scroll)
+- [style](_tabs_.tabsprops.md#optional-style)
+- [swipeable](_tabs_.tabsprops.md#optional-swipeable)
+- [tabDirection](_tabs_.tabsprops.md#optional-tabdirection)
+- [tabList](_tabs_.tabsprops.md#tablist)
 
 ## Properties
 
 ### `Optional` animated
 
-• **animated**? : *boolean*
+• **animated**? : _boolean_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[animated](_tabs_.tabsprops.md#optional-animated)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[animated](_tabs_.tabsprops.md#optional-animated)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:38
 
@@ -41,23 +41,23 @@ Defined in node_modules/taro-ui/types/tabs.d.ts:38
 
 **`default`** true
 
-___
+---
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Inherited from [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)*
+_Inherited from [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)\_
 
 Defined in node_modules/taro-ui/types/base.d.ts:4
 
-___
+---
 
-###  current
+### current
 
-• **current**: *number*
+• **current**: _number_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[current](_tabs_.tabsprops.md#current)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[current](_tabs_.tabsprops.md#current)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:28
 
@@ -65,44 +65,44 @@ Defined in node_modules/taro-ui/types/tabs.d.ts:28
 
 **`default`** 0
 
-___
+---
 
 ### `Optional` customStyle
 
-• **customStyle**? : *string | CSSProperties*
+• **customStyle**? : _string | CSSProperties_
 
-*Inherited from [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)*
+_Inherited from [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)\_
 
 Defined in node_modules/taro-ui/types/base.d.ts:6
 
-___
+---
 
 ### `Optional` fixed
 
-• **fixed**? : *boolean*
+• **fixed**? : _boolean_
 
-*Defined in [src/Tabs.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L12)*
+_Defined in [src/Tabs.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L12)_
 
-___
+---
 
 ### `Optional` height
 
-• **height**? : *string*
+• **height**? : _string_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[height](_tabs_.tabsprops.md#optional-height)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[height](_tabs_.tabsprops.md#optional-height)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:23
 
 Tab 高度，当 tabDirection='vertical' 时，需要设置；
 当 tabDirection='horizontal' 时，会自动根据内容撑开，请勿设置
 
-___
+---
 
-###  onClick
+### onClick
 
-• **onClick**: *function*
+• **onClick**: _function_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[onClick](_tabs_.tabsprops.md#onclick)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[onClick](_tabs_.tabsprops.md#onclick)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:51
 
@@ -110,22 +110,22 @@ Defined in node_modules/taro-ui/types/tabs.d.ts:51
 
 #### Type declaration:
 
-▸ (`index`: number, `event`: CommonEvent): *void*
+▸ (`index`: number, `event`: CommonEvent): _void_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`index` | number |
-`event` | CommonEvent |
+| Name    | Type        |
+| ------- | ----------- |
+| `index` | number      |
+| `event` | CommonEvent |
 
-___
+---
 
 ### `Optional` scroll
 
-• **scroll**? : *boolean*
+• **scroll**? : _boolean_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[scroll](_tabs_.tabsprops.md#optional-scroll)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[scroll](_tabs_.tabsprops.md#optional-scroll)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:33
 
@@ -133,21 +133,21 @@ Defined in node_modules/taro-ui/types/tabs.d.ts:33
 
 **`default`** false
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Tabs.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L11)*
+_Defined in [src/Tabs.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tabs.tsx#L11)_
 
-___
+---
 
 ### `Optional` swipeable
 
-• **swipeable**? : *boolean*
+• **swipeable**? : _boolean_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[swipeable](_tabs_.tabsprops.md#optional-swipeable)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[swipeable](_tabs_.tabsprops.md#optional-swipeable)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:43
 
@@ -155,13 +155,13 @@ Defined in node_modules/taro-ui/types/tabs.d.ts:43
 
 **`default`** true
 
-___
+---
 
 ### `Optional` tabDirection
 
-• **tabDirection**? : *"horizontal" | "vertical"*
+• **tabDirection**? : _"horizontal" | "vertical"_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[tabDirection](_tabs_.tabsprops.md#optional-tabdirection)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[tabDirection](_tabs_.tabsprops.md#optional-tabdirection)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:18
 
@@ -169,13 +169,13 @@ Tab 方向，请跟 AtTabPane 保持一致
 
 **`default`** 'horizontal'
 
-___
+---
 
-###  tabList
+### tabList
 
-• **tabList**: *TabItem[]*
+• **tabList**: _TabItem[]_
 
-*Inherited from [TabsProps](_tabs_.tabsprops.md).[tabList](_tabs_.tabsprops.md#tablist)*
+_Inherited from [TabsProps](\_tabs_.tabsprops.md).[tabList](_tabs_.tabsprops.md#tablist)\_
 
 Defined in node_modules/taro-ui/types/tabs.d.ts:47
 

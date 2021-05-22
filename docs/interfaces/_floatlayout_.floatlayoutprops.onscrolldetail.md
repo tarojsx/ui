@@ -1,75 +1,75 @@
 ---
-id: "_floatlayout_.floatlayoutprops.onscrolldetail"
-title: "onScrollDetail"
-sidebar_label: "onScrollDetail"
+id: '_floatlayout_.floatlayoutprops.onscrolldetail'
+title: 'onScrollDetail'
+sidebar_label: 'onScrollDetail'
 ---
 
 ## Hierarchy
 
-* **onScrollDetail**
+- **onScrollDetail**
 
 ## Index
 
 ### Properties
 
-* [deltaX](_floatlayout_.floatlayoutprops.onscrolldetail.md#deltax)
-* [deltaY](_floatlayout_.floatlayoutprops.onscrolldetail.md#deltay)
-* [scrollHeight](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollheight)
-* [scrollLeft](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollleft)
-* [scrollTop](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrolltop)
-* [scrollWidth](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollwidth)
+- [deltaX](_floatlayout_.floatlayoutprops.onscrolldetail.md#deltax)
+- [deltaY](_floatlayout_.floatlayoutprops.onscrolldetail.md#deltay)
+- [scrollHeight](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollheight)
+- [scrollLeft](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollleft)
+- [scrollTop](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrolltop)
+- [scrollWidth](_floatlayout_.floatlayoutprops.onscrolldetail.md#scrollwidth)
 
 ## Properties
 
-###  deltaX
+### deltaX
 
-• **deltaX**: *number*
+• **deltaX**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:147
 
-___
+---
 
-###  deltaY
+### deltaY
 
-• **deltaY**: *number*
+• **deltaY**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:148
 
-___
+---
 
-###  scrollHeight
+### scrollHeight
 
-• **scrollHeight**: *number*
+• **scrollHeight**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:144
 
 滚动条高度
 
-___
+---
 
-###  scrollLeft
+### scrollLeft
 
-• **scrollLeft**: *number*
+• **scrollLeft**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:140
 
 横向滚动条位置
 
-___
+---
 
-###  scrollTop
+### scrollTop
 
-• **scrollTop**: *number*
+• **scrollTop**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:142
 
 竖向滚动条位置
 
-___
+---
 
-###  scrollWidth
+### scrollWidth
 
-• **scrollWidth**: *number*
+• **scrollWidth**: _number_
 
 Defined in node_modules/@tarojs/components/types/ScrollView.d.ts:146
 

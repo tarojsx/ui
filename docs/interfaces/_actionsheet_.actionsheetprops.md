@@ -1,12 +1,12 @@
 ---
-id: "_actionsheet_.actionsheetprops"
-title: "ActionSheetProps"
-sidebar_label: "ActionSheetProps"
+id: '_actionsheet_.actionsheetprops'
+title: 'ActionSheetProps'
+sidebar_label: 'ActionSheetProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
   ↳ **ActionSheetProps**
 
@@ -14,48 +14,48 @@ sidebar_label: "ActionSheetProps"
 
 ### Properties
 
-* [cancelText](_actionsheet_.actionsheetprops.md#optional-canceltext)
-* [className](_actionsheet_.actionsheetprops.md#optional-classname)
-* [isOpened](_actionsheet_.actionsheetprops.md#optional-isopened)
-* [style](_actionsheet_.actionsheetprops.md#optional-style)
-* [title](_actionsheet_.actionsheetprops.md#optional-title)
+- [cancelText](_actionsheet_.actionsheetprops.md#optional-canceltext)
+- [className](_actionsheet_.actionsheetprops.md#optional-classname)
+- [isOpened](_actionsheet_.actionsheetprops.md#optional-isopened)
+- [style](_actionsheet_.actionsheetprops.md#optional-style)
+- [title](_actionsheet_.actionsheetprops.md#optional-title)
 
 ## Properties
 
 ### `Optional` cancelText
 
-• **cancelText**? : *React.ReactNode*
+• **cancelText**? : _React.ReactNode_
 
-*Defined in [src/ActionSheet.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L13)*
+_Defined in [src/ActionSheet.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L13)_
 
-___
+---
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/ActionSheet.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L9)*
+_Defined in [src/ActionSheet.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L9)_
 
-___
+---
 
 ### `Optional` isOpened
 
-• **isOpened**? : *boolean*
+• **isOpened**? : _boolean_
 
-*Defined in [src/ActionSheet.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L11)*
+_Defined in [src/ActionSheet.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L11)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/ActionSheet.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L10)*
+_Defined in [src/ActionSheet.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L10)_
 
-___
+---
 
 ### `Optional` title
 
-• **title**? : *React.ReactNode*
+• **title**? : _React.ReactNode_
 
-*Defined in [src/ActionSheet.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L12)*
+_Defined in [src/ActionSheet.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L12)_

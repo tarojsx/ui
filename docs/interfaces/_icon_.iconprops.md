@@ -1,12 +1,12 @@
 ---
-id: "_icon_.iconprops"
-title: "IconProps"
-sidebar_label: "IconProps"
+id: '_icon_.iconprops'
+title: 'IconProps'
+sidebar_label: 'IconProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
   ↳ **IconProps**
 
@@ -14,30 +14,30 @@ sidebar_label: "IconProps"
 
 ### Properties
 
-* [onClick](_icon_.iconprops.md#optional-onclick)
-* [size](_icon_.iconprops.md#optional-size)
-* [style](_icon_.iconprops.md#optional-style)
+- [onClick](_icon_.iconprops.md#optional-onclick)
+- [size](_icon_.iconprops.md#optional-size)
+- [style](_icon_.iconprops.md#optional-style)
 
 ## Properties
 
 ### `Optional` onClick
 
-• **onClick**? : *CommonEventFunction*
+• **onClick**? : _CommonEventFunction_
 
-*Defined in [src/Icon.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L12)*
+_Defined in [src/Icon.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L12)_
 
-___
+---
 
 ### `Optional` size
 
-• **size**? : *number | string*
+• **size**? : _number | string_
 
-*Defined in [src/Icon.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L11)*
+_Defined in [src/Icon.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L11)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Icon.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L10)*
+_Defined in [src/Icon.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Icon.tsx#L10)_

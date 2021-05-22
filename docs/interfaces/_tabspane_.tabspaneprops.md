@@ -1,12 +1,12 @@
 ---
-id: "_tabspane_.tabspaneprops"
-title: "TabsPaneProps"
-sidebar_label: "TabsPaneProps"
+id: '_tabspane_.tabspaneprops'
+title: 'TabsPaneProps'
+sidebar_label: 'TabsPaneProps'
 ---
 
 ## Hierarchy
 
-* AtTabsPaneProps
+- AtTabsPaneProps
 
   ↳ **TabsPaneProps**
 
@@ -14,30 +14,30 @@ sidebar_label: "TabsPaneProps"
 
 ### Properties
 
-* [className](_tabspane_.tabspaneprops.md#optional-classname)
-* [current](_tabspane_.tabspaneprops.md#current)
-* [customStyle](_tabspane_.tabspaneprops.md#optional-customstyle)
-* [index](_tabspane_.tabspaneprops.md#index)
-* [style](_tabspane_.tabspaneprops.md#optional-style)
-* [tabDirection](_tabspane_.tabspaneprops.md#optional-tabdirection)
+- [className](_tabspane_.tabspaneprops.md#optional-classname)
+- [current](_tabspane_.tabspaneprops.md#current)
+- [customStyle](_tabspane_.tabspaneprops.md#optional-customstyle)
+- [index](_tabspane_.tabspaneprops.md#index)
+- [style](_tabspane_.tabspaneprops.md#optional-style)
+- [tabDirection](_tabspane_.tabspaneprops.md#optional-tabdirection)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Inherited from [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)*
+_Inherited from [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)\_
 
 Defined in node_modules/taro-ui/types/base.d.ts:4
 
-___
+---
 
-###  current
+### current
 
-• **current**: *number*
+• **current**: _number_
 
-*Inherited from [TabsPaneProps](_tabspane_.tabspaneprops.md).[current](_tabspane_.tabspaneprops.md#current)*
+_Inherited from [TabsPaneProps](\_tabspane_.tabspaneprops.md).[current](_tabspane_.tabspaneprops.md#current)\_
 
 Defined in node_modules/taro-ui/types/tabs-pane.d.ts:15
 
@@ -45,23 +45,23 @@ Defined in node_modules/taro-ui/types/tabs-pane.d.ts:15
 
 **`default`** 0
 
-___
+---
 
 ### `Optional` customStyle
 
-• **customStyle**? : *string | CSSProperties*
+• **customStyle**? : _string | CSSProperties_
 
-*Inherited from [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)*
+_Inherited from [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)\_
 
 Defined in node_modules/taro-ui/types/base.d.ts:6
 
-___
+---
 
-###  index
+### index
 
-• **index**: *number*
+• **index**: _number_
 
-*Inherited from [TabsPaneProps](_tabspane_.tabspaneprops.md).[index](_tabspane_.tabspaneprops.md#index)*
+_Inherited from [TabsPaneProps](\_tabspane_.tabspaneprops.md).[index](_tabspane_.tabspaneprops.md#index)\_
 
 Defined in node_modules/taro-ui/types/tabs-pane.d.ts:20
 
@@ -69,21 +69,21 @@ tabPane 排序，从 0 计数
 
 **`default`** 0
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/TabsPane.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabsPane.tsx#L9)*
+_Defined in [src/TabsPane.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/TabsPane.tsx#L9)_
 
-___
+---
 
 ### `Optional` tabDirection
 
-• **tabDirection**? : *"horizontal" | "vertical"*
+• **tabDirection**? : _"horizontal" | "vertical"_
 
-*Inherited from [TabsPaneProps](_tabspane_.tabspaneprops.md).[tabDirection](_tabspane_.tabspaneprops.md#optional-tabdirection)*
+_Inherited from [TabsPaneProps](\_tabspane_.tabspaneprops.md).[tabDirection](_tabspane_.tabspaneprops.md#optional-tabdirection)\_
 
 Defined in node_modules/taro-ui/types/tabs-pane.d.ts:10
 

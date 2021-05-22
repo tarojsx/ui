@@ -4,11 +4,11 @@ title: Button 按钮
 
 ## 示例
 
-import { Button } from '@tarojsx/ui'
-import { Image } from '@tarojs/components'
-import useBaseUrl from '@docusaurus/useBaseUrl'
-import dayjs from 'dayjs'
-import { UI } from '@/ui'
+import { Button } from '@tarojsx/ui';
+import { Image } from '@tarojs/components';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import dayjs from 'dayjs';
+import { UI } from '@/ui';
 
 ```jsx title="类型"
 <Button>default</Button>
@@ -23,23 +23,23 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    <Button>default</Button>
+  <Button>default</Button>
 </UI>
 
 <UI>
-    <Button type="primary">primary</Button>
+  <Button type="primary">primary</Button>
 </UI>
 
 <UI>
-    <Button type="secondary">secondary</Button>
+  <Button type="secondary">secondary</Button>
 </UI>
 
 <UI>
-    <Button type="warn">warn</Button>
+  <Button type="warn">warn</Button>
 </UI>
 
 <UI>
-    <Button type="error">error</Button>
+  <Button type="error">error</Button>
 </UI>
 
 ```jsx title="尺寸"
@@ -49,25 +49,25 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    <Button size="mini" type="primary">
-        mini
-    </Button>
+  <Button size="mini" type="primary">
+    mini
+  </Button>
 </UI>
 
 <UI>
-    <Button size="small">small</Button>
+  <Button size="small">small</Button>
 </UI>
 
 ```jsx title="透明按钮"
 <Button transparent openType="getUserInfo">
-    <Image src={useBaseUrl('img/logo.svg')} />
+  <Image src={useBaseUrl('img/logo.svg')} />
 </Button>
 ```
 
 <UI style={{ display: 'inline-block' }}>
-    <Button transparent openType="getUserInfo">
-        <Image src={useBaseUrl('img/logo.svg')} />
-    </Button>
+  <Button transparent openType="getUserInfo">
+    <Image src={useBaseUrl('img/logo.svg')} />
+  </Button>
 </UI>
 
 ```jsx title="点击节流"
@@ -75,19 +75,19 @@ import { UI } from '@/ui'
 ```
 
 <UI>
-    {() => {
-        const [times, setTimes] = React.useState([])
-        return (
-            <>
-                <Button type="error" clickThrottle onClick={() => setTimes((prev) => [dayjs(), ...prev.slice(0, 4)])}>
-                    快速点我!
-                </Button>
-                {times.map((time, index) => (
-                    <div key={index}>{time.format(`ss' SSS''`)}</div>
-                ))}
-            </>
-        )
-    }}
+  {() => {
+    const [times, setTimes] = React.useState([]);
+    return (
+      <>
+        <Button type="error" clickThrottle onClick={() => setTimes((prev) => [dayjs(), ...prev.slice(0, 4)])}>
+          快速点我!
+        </Button>
+        {times.map((time, index) => (
+          <div key={index}>{time.format(`ss' SSS''`)}</div>
+        ))}
+      </>
+    );
+  }}
 </UI>
 
 ## API
@@ -99,6 +99,6 @@ import { UI } from '@/ui'
 | clickThrottle | onClick 事件节流时间间隔, 单位: ms. | `boolean` `number`                             | 500ms  |
 | transparent   | 透明按钮.                           | `boolean`                                      |        |
 
--   [Taro UI 文档](https://taro-ui.jd.com/#/docs/button)
--   [`<Button />`](../modules/_button_.md)
--   [`ButtonProps`](../interfaces/_button_.buttonprops.md)
+- [Taro UI 文档](https://taro-ui.jd.com/#/docs/button)
+- [`<Button />`](../modules/_button_.md)
+- [`ButtonProps`](../interfaces/_button_.buttonprops.md)

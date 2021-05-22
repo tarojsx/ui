@@ -1,32 +1,32 @@
 ---
-id: "_loading_.loadingprops"
-title: "LoadingProps"
-sidebar_label: "LoadingProps"
+id: '_loading_.loadingprops'
+title: 'LoadingProps'
+sidebar_label: 'LoadingProps'
 ---
 
 ## Hierarchy
 
-* **LoadingProps**
+- **LoadingProps**
 
 ## Index
 
 ### Properties
 
-* [color](_loading_.loadingprops.md#optional-color)
-* [size](_loading_.loadingprops.md#optional-size)
+- [color](_loading_.loadingprops.md#optional-color)
+- [size](_loading_.loadingprops.md#optional-size)
 
 ## Properties
 
 ### `Optional` color
 
-• **color**? : *string | number*
+• **color**? : _string | number_
 
-*Defined in [src/Loading.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L9)*
+_Defined in [src/Loading.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L9)_
 
-___
+---
 
 ### `Optional` size
 
-• **size**? : *string | number*
+• **size**? : _string | number_
 
-*Defined in [src/Loading.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L8)*
+_Defined in [src/Loading.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Loading.tsx#L8)_

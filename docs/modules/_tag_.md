@@ -1,31 +1,31 @@
 ---
-id: "_tag_"
-title: "Tag"
-sidebar_label: "Tag"
+id: '_tag_'
+title: 'Tag'
+sidebar_label: 'Tag'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [TagProps](../interfaces/_tag_.tagprops.md)
+- [TagProps](../interfaces/_tag_.tagprops.md)
 
 ### Functions
 
-* [Tag](_tag_.md#const-tag)
+- [Tag](_tag_.md#const-tag)
 
 ## Functions
 
 ### `Const` Tag
 
-▸ **Tag**(`props`: [TagProps](../interfaces/_tag_.tagprops.md) & object): *Element‹›*
+▸ **Tag**(`props`: [TagProps](../interfaces/_tag_.tagprops.md) & object): _Element‹›_
 
-*Defined in [src/Tag.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L19)*
+_Defined in [src/Tag.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Tag.tsx#L19)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [TagProps](../interfaces/_tag_.tagprops.md) & object |
+| Name    | Type                                                 |
+| ------- | ---------------------------------------------------- |
+| `props` | [TagProps](../interfaces/_tag_.tagprops.md) & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

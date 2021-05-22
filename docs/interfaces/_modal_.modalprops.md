@@ -1,12 +1,12 @@
 ---
-id: "_modal_.modalprops"
-title: "ModalProps"
-sidebar_label: "ModalProps"
+id: '_modal_.modalprops'
+title: 'ModalProps'
+sidebar_label: 'ModalProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
   ↳ **ModalProps**
 
@@ -14,30 +14,30 @@ sidebar_label: "ModalProps"
 
 ### Properties
 
-* [content](_modal_.modalprops.md#optional-content)
-* [style](_modal_.modalprops.md#optional-style)
-* [title](_modal_.modalprops.md#optional-title)
+- [content](_modal_.modalprops.md#optional-content)
+- [style](_modal_.modalprops.md#optional-style)
+- [title](_modal_.modalprops.md#optional-title)
 
 ## Properties
 
 ### `Optional` content
 
-• **content**? : *React.ReactNode*
+• **content**? : _React.ReactNode_
 
-*Defined in [src/Modal.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L11)*
+_Defined in [src/Modal.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L11)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Modal.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L9)*
+_Defined in [src/Modal.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L9)_
 
-___
+---
 
 ### `Optional` title
 
-• **title**? : *React.ReactNode*
+• **title**? : _React.ReactNode_
 
-*Defined in [src/Modal.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L10)*
+_Defined in [src/Modal.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Modal.tsx#L10)_

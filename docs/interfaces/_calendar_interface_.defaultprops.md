@@ -1,104 +1,104 @@
 ---
-id: "_calendar_interface_.defaultprops"
-title: "DefaultProps"
-sidebar_label: "DefaultProps"
+id: '_calendar_interface_.defaultprops'
+title: 'DefaultProps'
+sidebar_label: 'DefaultProps'
 ---
 
 ## Hierarchy
 
-* **DefaultProps**
+- **DefaultProps**
 
 ## Index
 
 ### Properties
 
-* [currentDate](_calendar_interface_.defaultprops.md#currentdate)
-* [format](_calendar_interface_.defaultprops.md#format)
-* [hideArrow](_calendar_interface_.defaultprops.md#hidearrow)
-* [isMultiSelect](_calendar_interface_.defaultprops.md#ismultiselect)
-* [isSwiper](_calendar_interface_.defaultprops.md#isswiper)
-* [isVertical](_calendar_interface_.defaultprops.md#isvertical)
-* [marks](_calendar_interface_.defaultprops.md#marks)
-* [monthFormat](_calendar_interface_.defaultprops.md#monthformat)
-* [selectedDates](_calendar_interface_.defaultprops.md#selecteddates)
-* [validDates](_calendar_interface_.defaultprops.md#validdates)
+- [currentDate](_calendar_interface_.defaultprops.md#currentdate)
+- [format](_calendar_interface_.defaultprops.md#format)
+- [hideArrow](_calendar_interface_.defaultprops.md#hidearrow)
+- [isMultiSelect](_calendar_interface_.defaultprops.md#ismultiselect)
+- [isSwiper](_calendar_interface_.defaultprops.md#isswiper)
+- [isVertical](_calendar_interface_.defaultprops.md#isvertical)
+- [marks](_calendar_interface_.defaultprops.md#marks)
+- [monthFormat](_calendar_interface_.defaultprops.md#monthformat)
+- [selectedDates](_calendar_interface_.defaultprops.md#selecteddates)
+- [validDates](_calendar_interface_.defaultprops.md#validdates)
 
 ## Properties
 
-###  currentDate
+### currentDate
 
-• **currentDate**: *Calendar.DateArg | SelectedDate*
+• **currentDate**: _Calendar.DateArg | SelectedDate_
 
-*Defined in [src/Calendar/interface.ts:60](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L60)*
+_Defined in [src/Calendar/interface.ts:60](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L60)_
 
-___
+---
 
-###  format
+### format
 
-• **format**: *string*
+• **format**: _string_
 
-*Defined in [src/Calendar/interface.ts:52](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L52)*
+_Defined in [src/Calendar/interface.ts:52](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L52)_
 
-___
+---
 
-###  hideArrow
+### hideArrow
 
-• **hideArrow**: *boolean*
+• **hideArrow**: _boolean_
 
-*Defined in [src/Calendar/interface.ts:64](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L64)*
+_Defined in [src/Calendar/interface.ts:64](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L64)_
 
-___
+---
 
-###  isMultiSelect
+### isMultiSelect
 
-• **isMultiSelect**: *boolean*
+• **isMultiSelect**: _boolean_
 
-*Defined in [src/Calendar/interface.ts:68](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L68)*
+_Defined in [src/Calendar/interface.ts:68](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L68)_
 
-___
+---
 
-###  isSwiper
+### isSwiper
 
-• **isSwiper**: *boolean*
+• **isSwiper**: _boolean_
 
-*Defined in [src/Calendar/interface.ts:54](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L54)*
+_Defined in [src/Calendar/interface.ts:54](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L54)_
 
-___
+---
 
-###  isVertical
+### isVertical
 
-• **isVertical**: *boolean*
+• **isVertical**: _boolean_
 
-*Defined in [src/Calendar/interface.ts:66](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L66)*
+_Defined in [src/Calendar/interface.ts:66](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L66)_
 
-___
+---
 
-###  marks
+### marks
 
-• **marks**: *Array‹Mark›*
+• **marks**: _Array‹Mark›_
 
-*Defined in [src/Calendar/interface.ts:58](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L58)*
+_Defined in [src/Calendar/interface.ts:58](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L58)_
 
-___
+---
 
-###  monthFormat
+### monthFormat
 
-• **monthFormat**: *string*
+• **monthFormat**: _string_
 
-*Defined in [src/Calendar/interface.ts:62](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L62)*
+_Defined in [src/Calendar/interface.ts:62](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L62)_
 
-___
+---
 
-###  selectedDates
+### selectedDates
 
-• **selectedDates**: *Array‹SelectedDate›*
+• **selectedDates**: _Array‹SelectedDate›_
 
-*Defined in [src/Calendar/interface.ts:70](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L70)*
+_Defined in [src/Calendar/interface.ts:70](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L70)_
 
-___
+---
 
-###  validDates
+### validDates
 
-• **validDates**: *Array‹ValidDate›*
+• **validDates**: _Array‹ValidDate›_
 
-*Defined in [src/Calendar/interface.ts:56](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L56)*
+_Defined in [src/Calendar/interface.ts:56](https://github.com/tarojsx/ui/blob/v0.11.0/src/Calendar/interface.ts#L56)_

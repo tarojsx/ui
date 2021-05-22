@@ -1,12 +1,12 @@
 ---
-id: "_list_.listprops"
-title: "ListProps"
-sidebar_label: "ListProps"
+id: '_list_.listprops'
+title: 'ListProps'
+sidebar_label: 'ListProps'
 ---
 
 ## Hierarchy
 
-* AtListProps
+- AtListProps
 
   ↳ **ListProps**
 
@@ -14,37 +14,37 @@ sidebar_label: "ListProps"
 
 ### Properties
 
-* [className](_list_.listprops.md#optional-classname)
-* [customStyle](_list_.listprops.md#optional-customstyle)
-* [hasBorder](_list_.listprops.md#optional-hasborder)
+- [className](_list_.listprops.md#optional-classname)
+- [customStyle](_list_.listprops.md#optional-customstyle)
+- [hasBorder](_list_.listprops.md#optional-hasborder)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Overrides [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)*
+_Overrides [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[className](_activityindicator_.activityindicatorprops.md#optional-classname)\_
 
-*Defined in [src/List.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/List.tsx#L9)*
+_Defined in [src/List.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/List.tsx#L9)_
 
-___
+---
 
 ### `Optional` customStyle
 
-• **customStyle**? : *string | CSSProperties*
+• **customStyle**? : _string | CSSProperties_
 
-*Inherited from [ActivityIndicatorProps](_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)*
+_Inherited from [ActivityIndicatorProps](\_activityindicator_.activityindicatorprops.md).[customStyle](_activityindicator_.activityindicatorprops.md#optional-customstyle)\_
 
 Defined in node_modules/taro-ui/types/base.d.ts:6
 
-___
+---
 
 ### `Optional` hasBorder
 
-• **hasBorder**? : *boolean*
+• **hasBorder**? : _boolean_
 
-*Inherited from [ListProps](_list_.listprops.md).[hasBorder](_list_.listprops.md#optional-hasborder)*
+_Inherited from [ListProps](\_list_.listprops.md).[hasBorder](_list_.listprops.md#optional-hasborder)\_
 
 Defined in node_modules/taro-ui/types/list.d.ts:11
 

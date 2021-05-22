@@ -1,12 +1,12 @@
 ---
-id: "_steps_.stepsprops"
-title: "StepsProps"
-sidebar_label: "StepsProps"
+id: '_steps_.stepsprops'
+title: 'StepsProps'
+sidebar_label: 'StepsProps'
 ---
 
 ## Hierarchy
 
-* object
+- object
 
   ↳ **StepsProps**
 
@@ -14,21 +14,21 @@ sidebar_label: "StepsProps"
 
 ### Properties
 
-* [items](_steps_.stepsprops.md#optional-items)
-* [style](_steps_.stepsprops.md#optional-style)
+- [items](_steps_.stepsprops.md#optional-items)
+- [style](_steps_.stepsprops.md#optional-style)
 
 ## Properties
 
 ### `Optional` items
 
-• **items**? : *object[]*
+• **items**? : _object[]_
 
-*Defined in [src/Steps.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Steps.tsx#L10)*
+_Defined in [src/Steps.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Steps.tsx#L10)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Steps.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Steps.tsx#L9)*
+_Defined in [src/Steps.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Steps.tsx#L9)_

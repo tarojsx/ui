@@ -1,31 +1,31 @@
 ---
-id: "_actionsheet_"
-title: "ActionSheet"
-sidebar_label: "ActionSheet"
+id: '_actionsheet_'
+title: 'ActionSheet'
+sidebar_label: 'ActionSheet'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)
+- [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)
 
 ### Functions
 
-* [ActionSheet](_actionsheet_.md#const-actionsheet)
+- [ActionSheet](_actionsheet_.md#const-actionsheet)
 
 ## Functions
 
 ### `Const` ActionSheet
 
-▸ **ActionSheet**(`props`: [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)‹› & object): *Element‹›*
+▸ **ActionSheet**(`props`: [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)‹› & object): _Element‹›_
 
-*Defined in [src/ActionSheet.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L16)*
+_Defined in [src/ActionSheet.tsx:16](https://github.com/tarojsx/ui/blob/v0.11.0/src/ActionSheet.tsx#L16)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)‹› & object |
+| Name    | Type                                                                           |
+| ------- | ------------------------------------------------------------------------------ |
+| `props` | [ActionSheetProps](../interfaces/_actionsheet_.actionsheetprops.md)‹› & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

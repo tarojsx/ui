@@ -1,98 +1,98 @@
 ---
-id: "_progress_.progressprops"
-title: "ProgressProps"
-sidebar_label: "ProgressProps"
+id: '_progress_.progressprops'
+title: 'ProgressProps'
+sidebar_label: 'ProgressProps'
 ---
 
 ## Hierarchy
 
-* **ProgressProps**
+- **ProgressProps**
 
 ## Index
 
 ### Properties
 
-* [className](_progress_.progressprops.md#optional-classname)
-* [color](_progress_.progressprops.md#optional-color)
-* [isHidePercent](_progress_.progressprops.md#optional-ishidepercent)
-* [percent](_progress_.progressprops.md#optional-percent)
-* [status](_progress_.progressprops.md#optional-status)
-* [strokeWidth](_progress_.progressprops.md#optional-strokewidth)
-* [style](_progress_.progressprops.md#optional-style)
-* [transitionDuration](_progress_.progressprops.md#optional-transitionduration)
+- [className](_progress_.progressprops.md#optional-classname)
+- [color](_progress_.progressprops.md#optional-color)
+- [isHidePercent](_progress_.progressprops.md#optional-ishidepercent)
+- [percent](_progress_.progressprops.md#optional-percent)
+- [status](_progress_.progressprops.md#optional-status)
+- [strokeWidth](_progress_.progressprops.md#optional-strokewidth)
+- [style](_progress_.progressprops.md#optional-style)
+- [transitionDuration](_progress_.progressprops.md#optional-transitionduration)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/Progress.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L8)*
+_Defined in [src/Progress.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L8)_
 
-___
+---
 
 ### `Optional` color
 
-• **color**? : *string*
+• **color**? : _string_
 
-*Defined in [src/Progress.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L15)*
+_Defined in [src/Progress.tsx:15](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L15)_
 
 颜色
 
-___
+---
 
 ### `Optional` isHidePercent
 
-• **isHidePercent**? : *boolean*
+• **isHidePercent**? : _boolean_
 
-*Defined in [src/Progress.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L19)*
+_Defined in [src/Progress.tsx:19](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L19)_
 
 是否隐藏文字
 
-___
+---
 
 ### `Optional` percent
 
-• **percent**? : *number*
+• **percent**? : _number_
 
-*Defined in [src/Progress.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L11)*
+_Defined in [src/Progress.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L11)_
 
 进度
 
-___
+---
 
 ### `Optional` status
 
-• **status**? : *"progress" | "success" | "error"*
+• **status**? : _"progress" | "success" | "error"_
 
-*Defined in [src/Progress.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L13)*
+_Defined in [src/Progress.tsx:13](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L13)_
 
 状态
 
-___
+---
 
 ### `Optional` strokeWidth
 
-• **strokeWidth**? : *number*
+• **strokeWidth**? : _number_
 
-*Defined in [src/Progress.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L17)*
+_Defined in [src/Progress.tsx:17](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L17)_
 
 宽度
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Progress.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L9)*
+_Defined in [src/Progress.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L9)_
 
-___
+---
 
 ### `Optional` transitionDuration
 
-• **transitionDuration**? : *number*
+• **transitionDuration**? : _number_
 
-*Defined in [src/Progress.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L21)*
+_Defined in [src/Progress.tsx:21](https://github.com/tarojsx/ui/blob/v0.11.0/src/Progress.tsx#L21)_
 
 过渡动画所需的时间. 默认: 0.3, 单位: 秒, 禁用可提高性能.

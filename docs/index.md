@@ -1,7 +1,7 @@
 ---
-id: "index"
-title: "@tarojsx/ui"
-sidebar_label: "README"
+id: 'index'
+title: '@tarojsx/ui'
+sidebar_label: 'README'
 ---
 
 <div align="center">
@@ -64,8 +64,8 @@ Taro3 释放了 React 的潜能, 是时候对 Taro UI 进行改进了.
 
 ## 需求
 
-* **taro 3+**
-* react 16.8+
+- **taro 3+**
+- react 16.8+
 
 ## 安装
 
@@ -74,86 +74,86 @@ Taro3 释放了 React 的潜能, 是时候对 Taro UI 进行改进了.
 ## 使用
 
 ```tsx
-import React from 'react'
-import { Text } from '@tarojs/components'
-import { List, ListHeader, ListItem } from '@tarojsx/ui'
+import React from 'react';
+import { Text } from '@tarojs/components';
+import { List, ListHeader, ListItem } from '@tarojsx/ui';
 
 export default () => {
-    return (
-        <List>
-            <ListHeader title="Taro3 UI" />
-            <ListItem title="版本" extra={<Text>0.2.0</Text>}>
-                我们重新(zào)发(lún)明(zi)了 Taro UI
-            </ListItem>
-        </List>
-    )
-}
+  return (
+    <List>
+      <ListHeader title="Taro3 UI" />
+      <ListItem title="版本" extra={<Text>0.2.0</Text>}>
+        我们重新(zào)发(lún)明(zi)了 Taro UI
+      </ListItem>
+    </List>
+  );
+};
 ```
 
 ## 组件
 
 源于 Taro UI
 
-* [ ] Accordion
-* [x] ActionSheet
-  * [ ] 子组件
-* [x] ActivityIndicator
-* [ ] Article
-* [x] [Avatar](./docs/components/Avatar.mdx)
-* [x] Badge
-* [x] [Button](./docs/components/Button.mdx)
-* [x] Calendar
-  * [ ] Swipe 操作
-* [ ] Card
-* [ ] Checkbox
-* [ ] Countdown
-* [ ] Divider
-* [ ] Drawer
-* [ ] ~~Fab~~ (已合并入 Button)
-* [ ] ~~Flex~~ (使用率不高)
-* [x] FloatLayout
-* [x] Form
-* [x] Grid
-* [x] Icon
-* [x] ImagePicker
-* [ ] Indexes
-* [x] Input
-* [x] InputNumber
-* [x] List
-* [x] ListItem
-* [x] Loading
-* [ ] Loadmore
-* [x] Message
-* [ ] Modal
-* [ ] NavBar
-* [ ] Noticebar
-* [ ] Pagination
-* [ ] Picker
-* [x] Progress
-* [ ] Radio
-* [ ] Rate
-* [x] SearchBar
-* [ ] SegmentedControl
-* [ ] Slider
-* [x] Steps
-* [ ] SwipeAction
-* [ ] Swiper
-* [ ] Switch
-* [x] TabBar
-* [x] Tabs
-  * [ ] Swipe 操作
-* [x] TabsPane
-  * [ ] Swipe 操作
-* [x] Tag
-* [x] Textarea
-* [ ] Timeline
-* [ ] Toast
+- [ ] Accordion
+- [x] ActionSheet
+  - [ ] 子组件
+- [x] ActivityIndicator
+- [ ] Article
+- [x] [Avatar](./docs/components/Avatar.mdx)
+- [x] Badge
+- [x] [Button](./docs/components/Button.mdx)
+- [x] Calendar
+  - [ ] Swipe 操作
+- [ ] Card
+- [ ] Checkbox
+- [ ] Countdown
+- [ ] Divider
+- [ ] Drawer
+- [ ] ~~Fab~~ (已合并入 Button)
+- [ ] ~~Flex~~ (使用率不高)
+- [x] FloatLayout
+- [x] Form
+- [x] Grid
+- [x] Icon
+- [x] ImagePicker
+- [ ] Indexes
+- [x] Input
+- [x] InputNumber
+- [x] List
+- [x] ListItem
+- [x] Loading
+- [ ] Loadmore
+- [x] Message
+- [ ] Modal
+- [ ] NavBar
+- [ ] Noticebar
+- [ ] Pagination
+- [ ] Picker
+- [x] Progress
+- [ ] Radio
+- [ ] Rate
+- [x] SearchBar
+- [ ] SegmentedControl
+- [ ] Slider
+- [x] Steps
+- [ ] SwipeAction
+- [ ] Swiper
+- [ ] Switch
+- [x] TabBar
+- [x] Tabs
+  - [ ] Swipe 操作
+- [x] TabsPane
+  - [ ] Swipe 操作
+- [x] Tag
+- [x] Textarea
+- [ ] Timeline
+- [ ] Toast
 
 扩展组件
 
-* [x] CustomTabBar
-* [x] ListHeader
-* [x] Statistic
+- [x] CustomTabBar
+- [x] ListHeader
+- [x] Statistic
 
 ## 支持
 

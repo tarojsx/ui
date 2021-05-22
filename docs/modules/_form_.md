@@ -1,31 +1,31 @@
 ---
-id: "_form_"
-title: "Form"
-sidebar_label: "Form"
+id: '_form_'
+title: 'Form'
+sidebar_label: 'Form'
 ---
 
 ## Index
 
 ### Interfaces
 
-* [FormProps](../interfaces/_form_.formprops.md)
+- [FormProps](../interfaces/_form_.formprops.md)
 
 ### Functions
 
-* [Form](_form_.md#const-form)
+- [Form](_form_.md#const-form)
 
 ## Functions
 
 ### `Const` Form
 
-▸ **Form**(`props`: [FormProps](../interfaces/_form_.formprops.md)‹› & object): *Element‹›*
+▸ **Form**(`props`: [FormProps](../interfaces/_form_.formprops.md)‹› & object): _Element‹›_
 
-*Defined in [src/Form.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Form.tsx#L12)*
+_Defined in [src/Form.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Form.tsx#L12)_
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`props` | [FormProps](../interfaces/_form_.formprops.md)‹› & object |
+| Name    | Type                                                      |
+| ------- | --------------------------------------------------------- |
+| `props` | [FormProps](../interfaces/_form_.formprops.md)‹› & object |
 
-**Returns:** *Element‹›*
+**Returns:** _Element‹›_

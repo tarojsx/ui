@@ -1,59 +1,59 @@
 ---
-id: "_badge_.badgeprops"
-title: "BadgeProps"
-sidebar_label: "BadgeProps"
+id: '_badge_.badgeprops'
+title: 'BadgeProps'
+sidebar_label: 'BadgeProps'
 ---
 
 ## Hierarchy
 
-* **BadgeProps**
+- **BadgeProps**
 
 ## Index
 
 ### Properties
 
-* [className](_badge_.badgeprops.md#optional-classname)
-* [dot](_badge_.badgeprops.md#optional-dot)
-* [maxValue](_badge_.badgeprops.md#optional-maxvalue)
-* [style](_badge_.badgeprops.md#optional-style)
-* [value](_badge_.badgeprops.md#optional-value)
+- [className](_badge_.badgeprops.md#optional-classname)
+- [dot](_badge_.badgeprops.md#optional-dot)
+- [maxValue](_badge_.badgeprops.md#optional-maxvalue)
+- [style](_badge_.badgeprops.md#optional-style)
+- [value](_badge_.badgeprops.md#optional-value)
 
 ## Properties
 
 ### `Optional` className
 
-• **className**? : *string*
+• **className**? : _string_
 
-*Defined in [src/Badge.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L8)*
+_Defined in [src/Badge.tsx:8](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L8)_
 
-___
+---
 
 ### `Optional` dot
 
-• **dot**? : *boolean*
+• **dot**? : _boolean_
 
-*Defined in [src/Badge.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L10)*
+_Defined in [src/Badge.tsx:10](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L10)_
 
-___
+---
 
 ### `Optional` maxValue
 
-• **maxValue**? : *number*
+• **maxValue**? : _number_
 
-*Defined in [src/Badge.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L12)*
+_Defined in [src/Badge.tsx:12](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L12)_
 
-___
+---
 
 ### `Optional` style
 
-• **style**? : *CSSProperties*
+• **style**? : _CSSProperties_
 
-*Defined in [src/Badge.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L9)*
+_Defined in [src/Badge.tsx:9](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L9)_
 
-___
+---
 
 ### `Optional` value
 
-• **value**? : *number | string*
+• **value**? : _number | string_
 
-*Defined in [src/Badge.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L11)*
+_Defined in [src/Badge.tsx:11](https://github.com/tarojsx/ui/blob/v0.11.0/src/Badge.tsx#L11)_
