@@ -27,7 +27,6 @@
   },
   "license": "MIT",
   "author": "colder",
-  "sideEffects": false,
   "main": "dist/index.js",
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
